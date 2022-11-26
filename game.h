@@ -11,7 +11,9 @@ enum EGameState {
   START,
   PLACING_SHIPS,
   GAME,
-  PAUSE, //When starting timer
+  QUESTION,
+  SHOT,
+  TIMER, //When starting timer
   END
 };
 
@@ -32,6 +34,15 @@ public:
   void setGameState(EGameState gameState);
 
   EGameState getGameState();
+
+signals:
+  void sendUpdatedShipToTable(Ship *ship);
+
+public slots:
+  void getUpdatedShip(Ship *ship);
+
+  void getDeadShip(Ship *ship);
+
 
 private:
   field *_Field;

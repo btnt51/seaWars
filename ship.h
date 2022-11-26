@@ -21,9 +21,9 @@ public:
 
     void setAmmountOfLifes(unsigned int amountOfLifes);
 
-    void addLifes();
+    void addLifes(unsigned int amountOfAddedLifes = 1);
 
-    void sendLife();
+    void sendLife(Ship* deadShip);
 
     void subLifes(int amountOfSubsLifes = 1);
 
@@ -39,6 +39,13 @@ public:
 
     bool getHitStatus();
 
+    int getNumber();
+
+signals:
+    void shipIsDead(Ship *ship);
+
+    void updateShipInfo(Ship *ship);
+
 private:
     QString _name;
     int _row;
@@ -46,7 +53,8 @@ private:
     bool _isDead;
     unsigned int _lifes;
     bool _isHitted;
-
+    int _number;
+    static int amountOfShips;
     QColor *_color;
 
 };

@@ -18,10 +18,12 @@ Game::Game(int shots, QTimer *timer) {
 
 
 void Game::placeShip(Ship *ship) {
-    int x = 0;
-    int y = 0;
-    std::tie(x, y) = ship->getCoordinats();
-    this->_Field->setShip(x, y, ship);
+    int row = 0;
+    int column = 0;
+    //std::tie(row, column) = ship->getCoordinats();
+    //this->_Field->setShip(row, column, ship);
+    //connect(ship, SIGNAL(updateShipInfo(Ship*)), this, SLOT(getUpdatedShip(Ship *ship)));
+    //ship->subLifes();
 }
 
 
@@ -56,7 +58,7 @@ void Game::RandomShot() {
         if(this->_Field->getCell(x, y) == ECell::CLEAR || this->_Field->getCell(x, y) == ECell::SHIP) {
             if(this->_Field->getCell(x, y) == ECell::SHIP) {
                 //this->_Field->setCell(x, y, ECell::FIRED);
-                this->_Field->getShip(x, y)->setHitStatus(true);
+                //this->_Field->getShip(x, y)->setHitStatus(true);
                 //this->
             }
         }
@@ -71,4 +73,12 @@ void Game::setGameState(EGameState gameState) {
 
 EGameState Game::getGameState() {
     return this->_currentState;
+}
+
+void Game::getUpdatedShip(Ship *ship) {
+    emit sendUpdatedShipToTable(ship);
+}
+
+void Game::getDeadShip(Ship *ship) {
+
 }

@@ -21,20 +21,20 @@ public:
 
   ECell getCell(size_t row, size_t column);
 
-  void setShip(size_t row, size_t column, Ship *ship);
+  bool static checkDotsOr(size_t row, size_t column);
+
+  bool static checkDotsAnd(size_t row, size_t column);
+
 
   QVector<ECell> getField();
 
-  Ship *getShip(size_t row, size_t column);
+
 
 
 private:
   void clear();
 
   QVector<ECell> _field;
-
-  QVector<Ship*> _ships;
-
 };
 
 #endif // FIELD_H

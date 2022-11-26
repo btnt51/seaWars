@@ -147,6 +147,13 @@
         </widget>
        </item>
        <item>
+        <widget class="QPushButton" name="addShipBut">
+         <property name="text">
+          <string>Добавить корабль</string>
+         </property>
+        </widget>
+       </item>
+       <item>
         <spacer name="verticalSpacer_3">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -163,6 +170,13 @@
         <widget class="QPushButton" name="shootBut">
          <property name="text">
           <string>Выстрел</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="timerBut">
+         <property name="text">
+          <string>Таймер</string>
          </property>
         </widget>
        </item>
