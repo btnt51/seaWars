@@ -25,6 +25,9 @@ set(PROJECT_SOURCES
         game.h
         ship.cpp
         ship.h
+        shipname.cpp
+        shipname.h
+        shipname.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

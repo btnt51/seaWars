@@ -15,8 +15,9 @@ MainWindow::MainWindow(QWidget *parent)
     game = new Game(10, nullptr);
     _ships.fill(nullptr, 100);
     //connect(game, SIGNAL(sendUpdatedShipToTable(Ship*)), this, SLOT(updateCommandShip(Ship*)));
-    if(game->getGameState() == EGameState::NOTSTARTED)
+    if(game->getGameState() == EGameState::NOTSTARTED) {
         game->setGameState(EGameState::START);
+    }
 }
 
 MainWindow::~MainWindow() {
@@ -26,14 +27,20 @@ MainWindow::~MainWindow() {
     delete pposkLogo;
     delete timer;
     delete time;
+    delete _shipForm;
     ui = nullptr;
     game = nullptr;
     anchor = nullptr;
     pposkLogo = nullptr;
     timer = nullptr;
     time = nullptr;
-    for(auto el : _ships) {
+    _shipForm = nullptr;
+    for (auto el : _ships) {
         delete el;
+        el = nullptr;
+    }
+    for (auto el : colorList) {
+        delete  el;
         el = nullptr;
     }
 }
@@ -41,7 +48,7 @@ MainWindow::~MainWindow() {
 
 void MainWindow::on_fieldTable_cellClicked(int row, int column) {
     try {
-        switch(game->getGameState()) {
+        switch (game->getGameState()) {
             case QUESTION:
                 break;
             case SHOT:
@@ -53,29 +60,28 @@ void MainWindow::on_fieldTable_cellClicked(int row, int column) {
             case START:
                 break;
             case PLACING_SHIPS:
-                if(game->getField()->getCell(row, column) != ECell::SHIP) {
-                    qDebug() << " ========== ";
-                    qDebug() << "Placing ships";
-                    QString name = "test";
-                    QColor *color = new QColor(250, 250, 250);
-
-                    Ship *ship = new Ship(name, row, column, color);
+                if (game->getField()->getCell(row, column) != ECell::SHIP) {
+                    this->_shipForm = new ShipName(false, nullptr);
+                    connect(this->_shipForm, SIGNAL(sendShipName(QString)), this, SLOT(setNameQstring(QString)));
+                    this->_shipForm->exec();
+                    this->_shipForm = nullptr;
+                    Ship *ship = new Ship(this->_shipNameString, row, column, this->getColor());
                     connect(ship, SIGNAL(updateShipInfo(Ship*)), this, SLOT(updateCommandShip(Ship*)));
                     connect(ship, SIGNAL(shipIsDead(Ship*)), this, SLOT(updateDeadShip(Ship*)));
                     setShip(row, column, ship);
+
                 }
                 break;
             case GAME:
-                if(game->getField()->getCell(row, column) == ECell::SHIP && this->getShip(row, column)->getDeadStatus() != true) {
+                if (game->getField()->getCell(row, column) == ECell::SHIP && this->getShip(row, column)->getDeadStatus() != true) {
                     ui->fieldTable->item(row, column)->setBackground(Qt::transparent);
-                    size_t n = column * 10 + row;
                     ui->commandsTable->selectRow(this->getShip(row, column)->getNumber());
                 }
                 break;
             case END:
                 break;
         }
-    } catch (std::exception &e){
+    } catch (std::exception &e) {
         qDebug() << e.what();
 
     }
@@ -83,13 +89,13 @@ void MainWindow::on_fieldTable_cellClicked(int row, int column) {
 
 
 void MainWindow::on_placeBut_clicked() {
-    if(game->getGameState() == EGameState::START) {
+    if (game->getGameState() == EGameState::START) {
         game->setGameState(EGameState::PLACING_SHIPS);
         ui->placeBut->setText("Закончить расстановку");
         ui->addShipBut->setVisible(true);
         return;
     }
-    if(game->getGameState() == EGameState::PLACING_SHIPS) {
+    if (game->getGameState() == EGameState::PLACING_SHIPS) {
         game->setGameState(EGameState::GAME);
         ui->placeBut->setVisible(false);
         ui->addShipBut->setVisible(false);
@@ -99,7 +105,7 @@ void MainWindow::on_placeBut_clicked() {
 void MainWindow::updateTimer() {
     *time = time->addSecs(-1);
     ui->timerLabel->setText("00:" + time->toString("ss"));
-    if(time->toString("ss") == "00")
+    if (time->toString("ss") == "00")
         timer->stop();
 }
 
@@ -117,8 +123,8 @@ void MainWindow::initializeFieldTable() {
     ui->fieldTable->setHorizontalHeaderLabels(headerName);
     ui->fieldTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->fieldTable->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
-    for(auto i = 0; i < 10; ++i) {
-        for(auto j = 0; j < 10; ++j) {
+    for (auto i = 0; i < 10; ++i) {
+        for (auto j = 0; j < 10; ++j) {
             QTableWidgetItem *item = new QTableWidgetItem();
             item->setFlags(item->flags() ^ Qt::ItemIsEditable);
             ui->fieldTable->setItem(i, j, item);
@@ -167,11 +173,11 @@ void MainWindow::initializePposkLogo() {
 
 void MainWindow::on_shootBut_clicked() {
     this->game->setGameState(EGameState::SHOT);
-    for(int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; ++i) {
         int row = 0, column = 0;
         std::tie(row, column) = this->game->getRandomValueForXY(this->blacklist);
         this->ui->fieldTable->item(row, column)->setBackground(Qt::red);
-        if(this->game->getField()->getCell(row, column) == ECell::SHIP) {
+        if (this->game->getField()->getCell(row, column) == ECell::SHIP) {
             this->getShip(row, column)->setHitStatus(true);
             this->getShip(row, column)->subLifes();
         }
@@ -194,7 +200,7 @@ void MainWindow::updateCommandShip(Ship *ship) {
 
 void MainWindow::updateDeadShip(Ship *ship) {
     bool lifeIsGifted = false;
-    if(lifeIsGifted) {
+    if (lifeIsGifted) {
 
     } else {
         for (int i = 0; i < 4; ++i) {
@@ -215,7 +221,7 @@ QString MainWindow::convertCoordinates(std::tuple<int, int> pair) {
     int row = 0, column = 0;
     std::tie(row, column) = pair;
     QString result = QString::number(row+1);
-    switch(column) {
+    switch (column) {
         case 0:
             result += "А";
         break;
@@ -253,7 +259,7 @@ QString MainWindow::convertCoordinates(std::tuple<int, int> pair) {
 QPair<int, int> MainWindow::convertCoordinates(QString coordinates) {
     int row = 0, column = 0;
     row = coordinates[0].digitValue() - 1;
-    switch(coordinates[1].unicode()) {
+    switch (coordinates[1].unicode()) {
         case u'А':
             column = 0;
         break;
@@ -286,13 +292,48 @@ QPair<int, int> MainWindow::convertCoordinates(QString coordinates) {
         break;
 
     }
-    //TODO: realize converted
     return qMakePair(row, column);
+}
+
+bool checkColor(QVector<QColor*> blackList, QColor* clr) {
+    bool res = true;
+    for(auto el : blackList) {
+        if(el == clr) {
+            res = false;
+            break;
+        }
+    }
+    return res;
+}
+
+QColor* MainWindow::getColor() {
+    int r = static_cast<int>(QRandomGenerator::global()->bounded(0, 256));
+    int g = static_cast<int>(QRandomGenerator::global()->bounded(0, 256));
+    int b = static_cast<int>(QRandomGenerator::global()->bounded(0, 256));
+    while(true) {
+        if(checkColor(this->colorList, new QColor(r, g, b))) {
+           break;
+        }
+
+        r = static_cast<int>(QRandomGenerator::global()->bounded(0, 256));
+        g = static_cast<int>(QRandomGenerator::global()->bounded(0, 256));
+        b = static_cast<int>(QRandomGenerator::global()->bounded(0, 256));
+    }
+    return new QColor(r, g, b);
+}
+
+void MainWindow::setNameQstring(QString name) {
+    this->_shipNameString = name;
+}
+
+void MainWindow::setNameAndCoordinates(QString name, QString coordinates) {
+    this->_shipNameString = name;
+    this->_coordinates = coordinates;
 }
 
 void MainWindow::setShip(size_t row, size_t column, Ship *ship) {
     size_t n = column * 10 + row;
-    if(field::checkDotsAnd(row, column) && n >= 0 && n < this->_ships.size()) {
+    if (field::checkDotsAnd(row, column) && n >= 0 && n < this->_ships.size()) {
       this->game->getField()->setCell(row, column, ECell::SHIP);
       this->_ships[n] = ship;
     }
@@ -314,32 +355,23 @@ void MainWindow::setShip(size_t row, size_t column, Ship *ship) {
 
     Qt::ItemFlags flags;
 
-    for(int i = 0; i < 4; ++i) {
+    for (int i = 0; i < 4; ++i) {
         ui->commandsTable->setItem(rowComTab, i, new QTableWidgetItem(str[i]));
-        if(i != 2) {
+
+        if (i != 2) {
             flags = ui->commandsTable->item(rowComTab, i)->flags();
             ui->commandsTable->item(rowComTab, i)->setFlags(flags ^ Qt::ItemIsEditable);
         }
     }
-
-//    ui->commandsTable->setItem(ui->commandsTable->rowCount()-1, 0, new QTableWidgetItem(QString::number(ship->getNumber())));
-//    ui->commandsTable->item(ui->commandsTable->rowCount()-1, 0)->setFlags(ui->commandsTable->item(ui->commandsTable->rowCount()-1, 0)->flags() ^ Qt::ItemIsEditable);
-//    ui->commandsTable->setItem(ui->commandsTable->rowCount()-1, 1, new QTableWidgetItem(ship->getName()));
-//    ui->commandsTable->item(ui->commandsTable->rowCount()-1, 1)->setFlags(ui->commandsTable->item(ui->commandsTable->rowCount()-1, 0)->flags());
-//    ui->commandsTable->setItem(ui->commandsTable->rowCount()-1, 2, new QTableWidgetItem(QString::number(ship->getAmountOfLifes())));
-//    ui->commandsTable->setItem(ui->commandsTable->rowCount()-1, 3, new QTableWidgetItem(convertCoordinates(ship->getCoordinats())));
-//    ui->commandsTable->item(ui->commandsTable->rowCount()-1, 3)->setFlags(ui->commandsTable->item(ui->commandsTable->rowCount()-1, 0)->flags());
-
-
 }
 
 Ship *MainWindow::getShip(size_t row, size_t column) {
     size_t n = column * 10 + row;
-    if(field::checkDotsOr(row, column)) {
-      return nullptr;
+    if (field::checkDotsOr(row, column)) {
+        return nullptr;
     }
-    if(n >= 0 && n < this->_ships.size()) {
-      return this->_ships[n];
+    if (n >= 0 && n < this->_ships.size()) {
+        return this->_ships[n];
     }
     return nullptr;
 }
@@ -348,10 +380,24 @@ Ship *MainWindow::getShip(size_t row, size_t column) {
 void MainWindow::on_commandsTable_cellClicked(int row, int column) {
     int rowShip = 0, columnShip = 0;
     std::tie(rowShip, columnShip) = convertCoordinates(this->ui->commandsTable->item(row, 3)->text());
-    qDebug() << rowShip << columnShip;
+
     if (this->getShip(rowShip, columnShip)->getDeadStatus() == false) {
-        //TODO: highlight ship on fieldTable & realize cordinateCoverter
         ui->fieldTable->setCurrentCell(rowShip, columnShip);
     }
+}
+
+
+void MainWindow::on_addShipBut_clicked() {
+    this->_shipForm = new ShipName(true, nullptr);
+    connect(this->_shipForm, &ShipName::sendShipWithCoordinates, this, &MainWindow::setNameAndCoordinates);
+    this->_shipForm->exec();
+    this->_shipForm = nullptr;
+    int row = 0, column = 0;
+    std::tie(row, column) = convertCoordinates(this->_coordinates);
+    Ship *ship = new Ship(this->_shipNameString, row, column, this->getColor());
+    connect(ship, SIGNAL(updateShipInfo(Ship*)), this, SLOT(updateCommandShip(Ship*)));
+    connect(ship, SIGNAL(shipIsDead(Ship*)), this, SLOT(updateDeadShip(Ship*)));
+    setShip(row, column, ship);
+    this->_shipForm = nullptr;
 }
 

@@ -6,6 +6,7 @@
 #include <QTime>
 #include <QTimer>
 #include "game.h"
+#include "shipname.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -13,60 +14,77 @@ QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
 {
-  Q_OBJECT
+    Q_OBJECT
 
 public:
-  MainWindow(QWidget *parent = nullptr);
-  ~MainWindow();
+      MainWindow(QWidget *parent = nullptr);
+      ~MainWindow();
 
 private slots:
-  void on_fieldTable_cellClicked(int row, int column);
+      void on_fieldTable_cellClicked(int row, int column);
 
-  void on_placeBut_clicked();
+      void on_placeBut_clicked();
 
-  void updateTimer();
+      void updateTimer();
 
-  void initializeUI();
+      void initializeUI();
 
-  void initializeFieldTable();
+      void initializeFieldTable();
 
-  void initializeCommandsTable();
+      void initializeCommandsTable();
 
-  void initializeLayout();
+      void initializeLayout();
 
-  void initializeTimers();
+      void initializeTimers();
 
-  void initializePposkLogo();
+      void initializePposkLogo();
 
-  void on_shootBut_clicked();
+      void on_shootBut_clicked();
 
-  void on_timerBut_clicked();
+      void on_timerBut_clicked();
 
-  void updateCommandShip(Ship* ship);
+      void updateCommandShip(Ship* ship);
 
-  void updateDeadShip(Ship* ship);
+      void updateDeadShip(Ship* ship);
 
-  QString convertCoordinates(std::tuple<int, int> pair);
+      void on_commandsTable_cellClicked(int row, int column);
 
-  QPair<int, int> convertCoordinates(QString coordinates);
+      QString convertCoordinates(std::tuple<int, int> pair);
 
-  void on_commandsTable_cellClicked(int row, int column);
+      QPair<int, int> convertCoordinates(QString coordinates);
+
+      QColor* getColor();
+
+      void setNameQstring(QString);
+
+      void setNameAndCoordinates(QString, QString);
+
+
+      void on_addShipBut_clicked();
 
 private:
-  void setShip(size_t row, size_t column, Ship *ship);
+      void setShip(size_t row, size_t column, Ship *ship);
 
-  Ship *getShip(size_t row, size_t column);
+      Ship *getShip(size_t row, size_t column);
 
 private:
-  Ui::MainWindow *ui;
-  Game *game;
-  QPixmap *anchor;
-  QPixmap *pposkLogo;
-  QTime *time;
-  QTimer *timer;
+      Ui::MainWindow *ui;
+      Game *game;
+      QPixmap *anchor;
+      QPixmap *pposkLogo;
+      QTime *time;
+      QTimer *timer;
 
-  QVector<Ship*> _ships;
+      QString _shipNameString;
 
-  QVector<QPair<int, int>> blacklist;
+      QVector<Ship*> _ships;
+
+      QVector<QPair<int, int>> blacklist;
+
+      QVector<QColor*> colorList;
+
+      QString _coordinates;
+
+      ShipName* _shipForm;
 };
 #endif // MAINWINDOW_H
