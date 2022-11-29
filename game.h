@@ -29,7 +29,7 @@ public:
 
   void StartingTimer();
 
-  void RandomShot();
+  QPair<int, int> getRandomValueForXY(QVector<QPair<int, int> > blackList);
 
   void setGameState(EGameState gameState);
 

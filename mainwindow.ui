@@ -222,6 +222,11 @@
            <string>Жизни</string>
           </property>
          </column>
+         <column>
+          <property name="text">
+           <string>Координаты</string>
+          </property>
+         </column>
         </widget>
        </item>
       </layout>

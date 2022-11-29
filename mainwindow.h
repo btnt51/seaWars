@@ -42,7 +42,15 @@ private slots:
 
   void on_timerBut_clicked();
 
-  void updateCommandShip(Ship *ship);
+  void updateCommandShip(Ship* ship);
+
+  void updateDeadShip(Ship* ship);
+
+  QString convertCoordinates(std::tuple<int, int> pair);
+
+  QPair<int, int> convertCoordinates(QString coordinates);
+
+  void on_commandsTable_cellClicked(int row, int column);
 
 private:
   void setShip(size_t row, size_t column, Ship *ship);
@@ -58,5 +66,7 @@ private:
   QTimer *timer;
 
   QVector<Ship*> _ships;
+
+  QVector<QPair<int, int>> blacklist;
 };
 #endif // MAINWINDOW_H

@@ -8,9 +8,11 @@ Ship::Ship(QString name, int row, int column, QColor *clr) :
 {
     _number = amountOfShips;
     amountOfShips++;
-    _lifes = 5;
+    this->_isDead = false;
+    this->_isHitted = false;
+    this->_lifes = 5;
     if(clr)
-        _color = clr;
+        this->_color = clr;
     else
         assert((clr != nullptr) && "columnou must set collor");
 }
@@ -29,7 +31,7 @@ void Ship::setCoordinat(int row, int column) {
     this->_column = column;
 }
 
-void Ship::setDeadCondition(bool isDead) {
+void Ship::setDeadStatus(bool isDead) {
     this->_isDead = isDead;
     //emit shipIsDead();
 }
@@ -49,8 +51,14 @@ void Ship::sendLife(Ship *deadShip) {
 }
 
 void Ship::subLifes(int amountOfSubsLifes) {
+    if(this->_lifes == 0)
+        return;
     this->_lifes -= amountOfSubsLifes;
     emit updateShipInfo(this);
+    if(this->_lifes == 0) {
+        this->setDeadStatus(true);
+        emit shipIsDead(this);
+    }
 }
 
 void Ship::setHitStatus(bool hitStatus) {
@@ -69,7 +77,7 @@ unsigned int Ship::getAmountOfLifes() {
     return this->_lifes;
 }
 
-bool Ship::getAliveStatus() {
+bool Ship::getDeadStatus() {
     return this->_isDead;
 }
 
@@ -79,6 +87,14 @@ bool Ship::getHitStatus() {
 
 int Ship::getNumber() {
     return this->_number;
+}
+
+int Ship::getRow() {
+    return this->_row;
+}
+
+int Ship::getColumn() {
+    return this->_column;
 }
 
 

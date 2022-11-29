@@ -17,7 +17,7 @@ public:
 
     void setCoordinat(int row, int column);
 
-    void setDeadCondition(bool isDead);
+    void setDeadStatus(bool isDead);
 
     void setAmmountOfLifes(unsigned int amountOfLifes);
 
@@ -35,11 +35,15 @@ public:
 
     unsigned int getAmountOfLifes();
 
-    bool getAliveStatus();
+    bool getDeadStatus();
 
     bool getHitStatus();
 
     int getNumber();
+
+    int getRow();
+
+    int getColumn();
 
 signals:
     void shipIsDead(Ship *ship);
