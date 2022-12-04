@@ -9,13 +9,13 @@ enum ECell {
   CLEAR,
   SHIP,
   DEAD_SHIP,
-  SHIP_HITTED
+  SHIP_HITED
 };
 
-class field : public QObject {
+class Field : public QObject {
   Q_OBJECT
 public:
-  field();
+  Field();
 
   void setCell(size_t row, size_t column, ECell cell);
 
@@ -27,8 +27,6 @@ public:
 
 
   QVector<ECell> getField();
-
-
 
 
 private:

@@ -6,10 +6,11 @@ int Ship::amountOfShips = 0;
 Ship::Ship(QString name, int row, int column, QColor *clr) :
     _name(name), _row(row), _column(column)
 {
-    _number = amountOfShips;
-    amountOfShips++;
+    this->_number = amountOfShips;
+    this->amountOfShips++;
+    this->_isRightAnswer = false;
     this->_isDead = false;
-    this->_isHitted = false;
+    this->_isHited = false;
     this->_lifes = 5;
     if(clr)
         this->_color = clr;
@@ -33,11 +34,15 @@ void Ship::setCoordinat(int row, int column) {
 
 void Ship::setDeadStatus(bool isDead) {
     this->_isDead = isDead;
-    //emit shipIsDead();
+    if(isDead)
+        emit shipIsDead(this);
 }
 
 void Ship::setAmmountOfLifes(unsigned int amountOfLifes) {
     this->_lifes = amountOfLifes;
+    if(this->_lifes == 0) {
+        this->setDeadStatus(true);
+    }
 }
 
 void Ship::addLifes(unsigned int amountOfAddedLifes) {
@@ -57,12 +62,15 @@ void Ship::subLifes(int amountOfSubsLifes) {
     emit updateShipInfo(this);
     if(this->_lifes == 0) {
         this->setDeadStatus(true);
-        emit shipIsDead(this);
     }
 }
 
 void Ship::setHitStatus(bool hitStatus) {
-    this->_isHitted = hitStatus;
+    this->_isHited = hitStatus;
+}
+
+void Ship::setAnswerStatus(bool answerStatus) {
+    this->_isRightAnswer = answerStatus;
 }
 
 std::tuple<int, int> Ship::getCoordinats() {
@@ -82,7 +90,11 @@ bool Ship::getDeadStatus() {
 }
 
 bool Ship::getHitStatus() {
-    return this->_isHitted;
+    return this->_isHited;
+}
+
+bool Ship::getAnswerStatus() {
+    return this->_isRightAnswer;
 }
 
 int Ship::getNumber() {
@@ -95,6 +107,10 @@ int Ship::getRow() {
 
 int Ship::getColumn() {
     return this->_column;
+}
+
+QColor *Ship::getColor() {
+    return this->_color;
 }
 
 

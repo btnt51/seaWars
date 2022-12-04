@@ -1,18 +1,8 @@
 #include "game.h"
 
-Game::Game(int shots, QTimer *timer) {
-    this->_Field = new field();
-    if(shots == 0) {
-        this->_shots = 10;
-    } else {
-        this->_shots = shots;
-    }
+Game::Game() {
+    this->_field = new Field();
 
-    if(timer == nullptr) {
-        this->_timer = new QTimer();
-    } else {
-        this->_timer = timer;
-    }
     this->_currentState = EGameState::NOTSTARTED;
 }
 
@@ -27,13 +17,27 @@ void Game::placeShip(Ship *ship) {
 }
 
 
-field* Game::getField() {
-  return this->_Field;
+Field* Game::getField() {
+  return this->_field;
 }
 
 
 void Game::StartingTimer() {
 
+}
+
+QPair<int, int> Game::getRandomValueForXY() {
+    int x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+    int y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+    while(true) {
+        if(this->_field->getCell(x, y) != ECell::SHIP) {
+           break;
+        }
+
+        x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+        y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+    }
+    return qMakePair(x, y);
 }
 
 bool checkPair(QVector<QPair<int, int>> blackList, QPair<int, int> pair) {
@@ -51,7 +55,7 @@ QPair<int, int> Game::getRandomValueForXY(QVector<QPair<int, int> > blackList) {
     int x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
     int y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
     while(true) {
-        if(this->_Field->getCell(x, y) != ECell::SHIP_HITTED && checkPair(blackList, qMakePair(x, y))) {
+        if(this->_field->getCell(x, y) != ECell::SHIP_HITED && checkPair(blackList, qMakePair(x, y))) {
            break;
         }
 

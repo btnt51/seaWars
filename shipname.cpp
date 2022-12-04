@@ -7,12 +7,18 @@ ShipName::ShipName(bool withCoordinates, QWidget *parent) :
     ui(new Ui::ShipName)
 {
     ui->setupUi(this);
-    this->_withCordinates = withCoordinates;
+    this->_withCoordinates = withCoordinates;
+    this->setWindowTitle("Расстановка судов");
+    this->resize(320, 131);
+    //^([1-9]|10)$
+    ui->rowShipLineEdit->setValidator(new QRegularExpressionValidator(QRegularExpression("^([1-9]|10)$"), this));
+    ui->columnShipLineEdit->setValidator(new QRegularExpressionValidator(QRegularExpression("^[а-кА-К]{0,1}$"), this));
     if (!withCoordinates) {
+        this->resize(320, 111);
         ui->rowShipLineEdit->setVisible(false);
         ui->rowShipLabel->setVisible(false);
+        //ui->rowShipLineEdit->setValidator(new QRegularExpressionValidator(QRegularExpression("^[10]"), this));
         ui->columnShipLineEdit->setVisible(false);
-        ui->columnShipLabel->setVisible(false);
     }
 }
 
@@ -21,11 +27,10 @@ ShipName::~ShipName() {
 }
 
 void ShipName::on_buttonBox_accepted() {
-    if (this->_withCordinates) {
+    if (this->_withCoordinates) {
         emit sendShipWithCoordinates(ui->nameShipLineEdit->text(),
                       ui->rowShipLineEdit->text() + ui->columnShipLineEdit->text());
     } else {
-        qDebug() << "I was here";
         emit sendShipName(ui->nameShipLineEdit->text());
     }
     ui->nameShipLineEdit->clear();

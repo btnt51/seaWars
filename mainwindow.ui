@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>851</width>
-    <height>708</height>
+    <height>736</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -84,9 +84,14 @@
      <item row="0" column="0">
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QLabel" name="imageLabel">
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
          <property name="text">
-          <string>Image Label</string>
+          <string>designed by E.Bailov, M.Kalekina, A.Nurgalieva</string>
          </property>
         </widget>
        </item>
@@ -102,6 +107,13 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="imageLabel">
+         <property name="text">
+          <string>Image Label</string>
+         </property>
+        </widget>
        </item>
        <item>
         <spacer name="horizontalSpacer">
@@ -120,7 +132,25 @@
         </spacer>
        </item>
        <item>
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>39</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
         <widget class="QLabel" name="timerLabel">
+         <property name="font">
+          <font>
+           <pointsize>30</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Timer label</string>
          </property>
@@ -141,6 +171,11 @@
        </item>
        <item>
         <widget class="QPushButton" name="placeBut">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Расставить корабли</string>
          </property>
@@ -148,6 +183,11 @@
        </item>
        <item>
         <widget class="QPushButton" name="addShipBut">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Добавить корабль</string>
          </property>
@@ -168,6 +208,11 @@
        </item>
        <item>
         <widget class="QPushButton" name="shootBut">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Выстрел</string>
          </property>
@@ -175,6 +220,11 @@
        </item>
        <item>
         <widget class="QPushButton" name="timerBut">
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
+         </property>
          <property name="text">
           <string>Таймер</string>
          </property>
@@ -206,6 +256,11 @@
            <width>350</width>
            <height>16777215</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>16</pointsize>
+          </font>
          </property>
          <column>
           <property name="text">

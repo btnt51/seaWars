@@ -21,15 +21,17 @@ class Game : public QObject
 {
   Q_OBJECT
 public:
-  Game(int shots = 10, QTimer *timer = nullptr);
+  Game();
 
   void placeShip(Ship *ship);
 
-  field *getField();
+  Field *getField();
 
   void StartingTimer();
 
   QPair<int, int> getRandomValueForXY(QVector<QPair<int, int> > blackList);
+
+  QPair<int, int> getRandomValueForXY();
 
   void setGameState(EGameState gameState);
 
@@ -45,17 +47,10 @@ public slots:
 
 
 private:
-  field *_Field;
+  Field *_field;
 
   EGameState _currentState;
 
-  QTimer *_timer;
-
-  int _shots;
-
-  std::tuple<int, int> getRandomValueForXY();
-
-  QVector<QPair<int, int> > blackListOfCordinates;
 };
 
 #endif // GAME_H

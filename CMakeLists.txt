@@ -28,6 +28,12 @@ set(PROJECT_SOURCES
         shipname.cpp
         shipname.h
         shipname.ui
+        deadship.cpp
+        deadship.h
+        deadship.ui
+        winnerwindow.cpp
+        winnerwindow.h
+        winnerwindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

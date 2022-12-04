@@ -20,6 +20,9 @@ public:
       MainWindow(QWidget *parent = nullptr);
       ~MainWindow();
 
+protected:
+      virtual void resizeEvent(QResizeEvent *) override;
+
 private slots:
       void on_fieldTable_cellClicked(int row, int column);
 
@@ -59,8 +62,11 @@ private slots:
 
       void setNameAndCoordinates(QString, QString);
 
-
       void on_addShipBut_clicked();
+
+      void clearBackgroundFieldsTable();
+
+      void calculateLifes();
 
 private:
       void setShip(size_t row, size_t column, Ship *ship);
@@ -69,22 +75,28 @@ private:
 
 private:
       Ui::MainWindow *ui;
-      Game *game;
-      QPixmap *anchor;
-      QPixmap *pposkLogo;
-      QTime *time;
-      QTimer *timer;
+      Game* _game;
+      QImage* _anchor;
+      QPixmap* _pposkLogo;
+      QTime* _time;
+      QTimer* _timer;
 
       QString _shipNameString;
 
       QVector<Ship*> _ships;
 
-      QVector<QPair<int, int>> blacklist;
+      QVector<QPair<int, int>> _blackList;
 
-      QVector<QColor*> colorList;
+      QVector<QColor*> _colorList;
 
       QString _coordinates;
 
       ShipName* _shipForm;
+
+      int _amountOfShots;
+
+      QSize defSize;
+
+
 };
 #endif // MAINWINDOW_H

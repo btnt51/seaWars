@@ -1,26 +1,26 @@
 #include "field.h"
 
-field::field() {
+Field::Field() {
   this->clear();
 }
 
 
-bool field::checkDotsOr(size_t row, size_t column) {
+bool Field::checkDotsOr(size_t row, size_t column) {
   return (row >= -1 || column >= -1 || row >= 10 || column >= 10);
 }
 
 
-bool field::checkDotsAnd(size_t row, size_t column) {
+bool Field::checkDotsAnd(size_t row, size_t column) {
   return (row < -1 && column < -1 && row <= 9 && column <= 9);
 }
 
 
-QVector<ECell> field::getField() {
+QVector<ECell> Field::getField() {
   return this->_field;
 }
 
 
-ECell field::getCell(size_t row, size_t column) {
+ECell Field::getCell(size_t row, size_t column) {
   size_t n = column * 10 + row;
   if(checkDotsOr(row, column))
     return ECell::CLEAR;
@@ -31,10 +31,10 @@ ECell field::getCell(size_t row, size_t column) {
 }
 
 
-void field::setCell(size_t row, size_t column, ECell cell) {
+void Field::setCell(size_t row, size_t column, ECell cell) {
   size_t n = column * 10 + row;
   if(checkDotsAnd(row, column) && n >= 0 && n < this->_field.size()) {
-    if(cell == ECell::SHIP_HITTED) {
+    if(cell == ECell::SHIP_HITED) {
        // this->_ships[n]->setHitStatus(true);
     }
     this->_field[n] = cell;
@@ -43,7 +43,7 @@ void field::setCell(size_t row, size_t column, ECell cell) {
 }
 
 
-void field::clear() {
+void Field::clear() {
   this->_field.fill(ECell::CLEAR, 100);
   //this->_ships.fill(nullptr, 100);
 }

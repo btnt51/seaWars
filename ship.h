@@ -29,6 +29,8 @@ public:
 
     void setHitStatus(bool hitStatus);
 
+    void setAnswerStatus(bool answerStatus);
+
     std::tuple<int, int> getCoordinats();
 
     QString getName();
@@ -39,11 +41,15 @@ public:
 
     bool getHitStatus();
 
+    bool getAnswerStatus();
+
     int getNumber();
 
     int getRow();
 
     int getColumn();
+
+    QColor *getColor();
 
 signals:
     void shipIsDead(Ship *ship);
@@ -56,11 +62,11 @@ private:
     int _column;
     bool _isDead;
     unsigned int _lifes;
-    bool _isHitted;
+    bool _isRightAnswer;
+    bool _isHited;
     int _number;
     static int amountOfShips;
-    QColor *_color;
-
+    QColor* _color;
 };
 
 #endif // SHIPS_H

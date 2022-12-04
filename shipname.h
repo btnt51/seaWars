@@ -2,6 +2,7 @@
 #define SHIPNAME_H
 
 #include <QDialog>
+#include <QIntValidator>
 
 namespace Ui {
     class ShipName;
@@ -25,7 +26,7 @@ private slots:
 
 private:
     Ui::ShipName *ui;
-    bool _withCordinates;
+    bool _withCoordinates;
 };
 
 #endif // SHIPNAME_H
