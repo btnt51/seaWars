@@ -177,8 +177,19 @@ void MainWindow::on_fieldTable_cellClicked(int row, int column) {
     try {
         switch (_game->getGameState()) {
             case QUESTION:
-                if (_game->getField()->getCell(row, column) == ECell::SHIP && this->getShip(row, column)->getDeadStatus() != true) {
-                    this->getShip(row, column)->setAnswerStatus(true);
+                if (_game->getField()->getCell(row, column) == ECell::SHIP
+                        && this->getShip(row, column)->getDeadStatus() != true) {
+                    if(this->getShip(row, column)->getAnswerStatus() == false) {
+                        this->getShip(row, column)->setAnswerStatus(true);
+                        ui->fieldTable->item(row, column)->setBackgroundColor(Qt::green);
+                    } else {
+                        this->getShip(row, column)->setAnswerStatus(false);
+                        if(this->getShip(row, column)->getHitStatus() == true) {
+                            ui->fieldTable->item(row, column)->setBackgroundColor(Qt::red);
+                        } else {
+                            ui->fieldTable->item(row, column)->setBackgroundColor(Qt::transparent);
+                        }
+                    }
                     ui->commandsTable->selectRow(this->getShip(row, column)->getNumber());
                 }
                 break;
@@ -208,9 +219,8 @@ void MainWindow::on_fieldTable_cellClicked(int row, int column) {
                 }
                 break;
             case GAME:
-                if (_game->getField()->getCell(row, column) == ECell::SHIP && this->getShip(row, column)->getDeadStatus() != true) {
-                    this->getShip(row, column)->subLifes();
-                    ui->fieldTable->item(row, column)->setBackground(Qt::transparent);
+                if ((_game->getField()->getCell(row, column) == ECell::SHIP || _game->getField()->getCell(row, column) == ECell::SHIP_HITED)
+                        && this->getShip(row, column)->getDeadStatus() != true) {
                     ui->commandsTable->selectRow(this->getShip(row, column)->getNumber());
                 }
                 break;
@@ -284,6 +294,7 @@ void MainWindow::updateTimer() {
     ui->timerLabel->setText("00:" + _time->toString("ss"));
     if (_time->toString("ss") == "00") {
         _timer->stop();
+        this->_game->setGameState(EGameState::QUESTION);
         ui->shootBut->setText("Посчитать жизни");
         ui->shootBut->setVisible(true);
     }
@@ -355,7 +366,7 @@ void MainWindow::initializePposkLogo() {
 void MainWindow::on_shootBut_clicked() {
     if (this->_game->getGameState() == EGameState::SHOT) {
         _amountOfShots++;
-        if(_amountOfShots > 50) {
+        if(_amountOfShots > 2) {
             QVector<Ship *> t;
             for(auto &el : this->_ships) {
                 if(el != nullptr) {
@@ -377,12 +388,13 @@ void MainWindow::on_shootBut_clicked() {
 
                 if (this->_game->getField()->getCell(row, column) == ECell::SHIP) {
                     this->getShip(row, column)->setHitStatus(true);
+                    //this->_game->getField()->setCell(row, column, ECell::SHIP_HITED);
                 }
             }
             ui->timerBut->setVisible(true);
             ui->timerLabel->setVisible(true);
             ui->shootBut->setVisible(false);
-            this->_game->setGameState(EGameState::QUESTION);
+
             this->_game->clearThisRoundShots();
         }
         return;
@@ -482,9 +494,9 @@ std::tuple<int, int> MainWindow::convertCoordinates(QString coordinates) {
     int row = 0, column = 0;
     if (!coordinates.isEmpty()) {
         if(coordinates.size() == 3)
-            row = coordinates.mid(1,2).toInt() - 1;
+            row = coordinates.midRef(0, 2).toInt() - 1;
         if (coordinates.size() == 2)
-            row = coordinates.mid(1,1).toInt() - 1;
+            row = coordinates.midRef(0, 1).toInt() - 1;
         switch (coordinates.back().toUpper().unicode()) {
             case u'А':
                 column = 0;
@@ -652,7 +664,6 @@ void MainWindow::clearBackgroundFieldsTable() {
         for (int column = 0; column < ui->fieldTable->columnCount(); ++column) {
             if (this->_game->getField()->getCell(row, column) != ECell::DEAD_SHIP) {
                 ui->fieldTable->item(row, column)->setBackground(Qt::transparent);
-
             }
         }
     }
@@ -661,7 +672,8 @@ void MainWindow::clearBackgroundFieldsTable() {
 void MainWindow::calculateLifes() {
     for (int row = 0; row < ui->fieldTable->rowCount(); ++row) {
         for (int column = 0; column < ui->fieldTable->columnCount(); ++column) {
-            if (this->_game->getField()->getCell(row, column) != ECell::DEAD_SHIP && this->_game->getField()->getCell(row, column) == ECell::SHIP) {
+            if (this->_game->getField()->getCell(row, column) != ECell::DEAD_SHIP &&
+                    this->_game->getField()->getCell(row, column) == ECell::SHIP) {
                 auto ship = this->getShip(row, column);
                 if ((ship->getAnswerStatus() && ship->getHitStatus()) ||
                         (!ship->getAnswerStatus() && ship->getDeadStatus())) {
@@ -682,12 +694,3 @@ void MainWindow::calculateLifes() {
     }
     this->_game->setGameState(EGameState::SHOT);
 }
-
-void MainWindow::on_fieldTable_cellDoubleClicked(int row, int column) {
-    if (_game->getGameState() == EGameState::QUESTION) {
-        if(this->getShip(row, column)->getDeadStatus() != true && this->getShip(row, column)->getAnswerStatus() == true) {
-            this->getShip(row, column)->setAnswerStatus(false);
-        }
-    }
-}
-

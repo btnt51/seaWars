@@ -68,7 +68,6 @@ private slots:
 
       void calculateLifes();
 
-      void on_fieldTable_cellDoubleClicked(int row, int column);
 
 private:
       void setShip(size_t row, size_t column, Ship *ship);
@@ -98,7 +97,5 @@ private:
       int _amountOfShots;
 
       QSize defSize;
-
-
 };
 #endif // MAINWINDOW_H
