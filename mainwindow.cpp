@@ -65,33 +65,33 @@ MainWindow::MainWindow(QWidget *parent)
 
     qApp->setPalette(darkPalette);
 
-    qDebug() << "Applicatione pallete (QPalette::Window): " << QApplication::palette().color(QPalette::Window);
-    qDebug() << "Applicatione pallete (QPalette::WindowText): " << QApplication::palette().color(QPalette::WindowText);
-    qDebug() << "Applicatione pallete (QPalette::Base): " << QApplication::palette().color(QPalette::Base);
-    qDebug() << "Applicatione pallete (QPalette::AlternateBase): " << QApplication::palette().color(QPalette::AlternateBase);
-    qDebug() << "Applicatione pallete (QPalette::ToolTipBase): " << QApplication::palette().color(QPalette::ToolTipBase);
-    qDebug() << "Applicatione pallete (QPalette::ToolTipText): " << QApplication::palette().color(QPalette::ToolTipText);
-    qDebug() << "Applicatione pallete (QPalette::Text): " << QApplication::palette().color(QPalette::Text);
-    qDebug() << "Applicatione pallete (QPalette::ButtonText): " << QApplication::palette().color(QPalette::ButtonText);
-    qDebug() << "Applicatione pallete (QPalette::BrightText): " << QApplication::palette().color(QPalette::BrightText);
-    qDebug() << "Applicatione pallete (QPalette::Link): " << QApplication::palette().color(QPalette::Link);
-    qDebug() << "Applicatione pallete (QPalette::Highlight): " << QApplication::palette().color(QPalette::Highlight);
-    qDebug() << "Applicatione pallete (QPalette::HighlightedText): " << QApplication::palette().color(QPalette::HighlightedText);
-    qDebug() << "Applicatione pallete (QPalette::PlaceholderText): " << QApplication::palette().color(QPalette::PlaceholderText);
-    qDebug() << "Applicatione pallete (QPalette::Mid): " << QApplication::palette().color(QPalette::Mid);
-    qDebug() << "Applicatione pallete (QPalette::Button): " << QApplication::palette().color(QPalette::Button);
-    qDebug() << "Applicatione pallete (QPalette::Dark): " << QApplication::palette().color(QPalette::Dark);
-    qDebug() << "Applicatione pallete (QPalette::Light): " << QApplication::palette().color(QPalette::Light);
-    qDebug() << "Applicatione pallete (QPalette::NoRole): " << QApplication::palette().color(QPalette::NoRole);
-    qDebug() << "Applicatione pallete (QPalette::Midlight): " << QApplication::palette().color(QPalette::Midlight);
-    qDebug() << "Applicatione pallete (QPalette::Shadow): " << QApplication::palette().color(QPalette::Shadow);
+//    qDebug() << "Applicatione pallete (QPalette::Window): " << QApplication::palette().color(QPalette::Window);
+//    qDebug() << "Applicatione pallete (QPalette::WindowText): " << QApplication::palette().color(QPalette::WindowText);
+//    qDebug() << "Applicatione pallete (QPalette::Base): " << QApplication::palette().color(QPalette::Base);
+//    qDebug() << "Applicatione pallete (QPalette::AlternateBase): " << QApplication::palette().color(QPalette::AlternateBase);
+//    qDebug() << "Applicatione pallete (QPalette::ToolTipBase): " << QApplication::palette().color(QPalette::ToolTipBase);
+//    qDebug() << "Applicatione pallete (QPalette::ToolTipText): " << QApplication::palette().color(QPalette::ToolTipText);
+//    qDebug() << "Applicatione pallete (QPalette::Text): " << QApplication::palette().color(QPalette::Text);
+//    qDebug() << "Applicatione pallete (QPalette::ButtonText): " << QApplication::palette().color(QPalette::ButtonText);
+//    qDebug() << "Applicatione pallete (QPalette::BrightText): " << QApplication::palette().color(QPalette::BrightText);
+//    qDebug() << "Applicatione pallete (QPalette::Link): " << QApplication::palette().color(QPalette::Link);
+//    qDebug() << "Applicatione pallete (QPalette::Highlight): " << QApplication::palette().color(QPalette::Highlight);
+//    qDebug() << "Applicatione pallete (QPalette::HighlightedText): " << QApplication::palette().color(QPalette::HighlightedText);
+//    qDebug() << "Applicatione pallete (QPalette::PlaceholderText): " << QApplication::palette().color(QPalette::PlaceholderText);
+//    qDebug() << "Applicatione pallete (QPalette::Mid): " << QApplication::palette().color(QPalette::Mid);
+//    qDebug() << "Applicatione pallete (QPalette::Button): " << QApplication::palette().color(QPalette::Button);
+//    qDebug() << "Applicatione pallete (QPalette::Dark): " << QApplication::palette().color(QPalette::Dark);
+//    qDebug() << "Applicatione pallete (QPalette::Light): " << QApplication::palette().color(QPalette::Light);
+//    qDebug() << "Applicatione pallete (QPalette::NoRole): " << QApplication::palette().color(QPalette::NoRole);
+//    qDebug() << "Applicatione pallete (QPalette::Midlight): " << QApplication::palette().color(QPalette::Midlight);
+//    qDebug() << "Applicatione pallete (QPalette::Shadow): " << QApplication::palette().color(QPalette::Shadow);
 
     ui->fieldTable->setSizeAdjustPolicy(
                 QAbstractScrollArea::SizeAdjustPolicy::AdjustToContents);
 
-    _anchor = new QImage("/Users/btnt51/seaWars/ship.png");
+    _anchor = new QImage(":/img/ship.png");
     _anchor->invertPixels();
-    _pposkLogo = new QPixmap("/Users/btnt51/seaWars/logo2.png");
+    _pposkLogo = new QPixmap(":/img/logo2.png");
     _time = new QTime(0,0,0);
     _timer = new QTimer();
     initializeUI();
@@ -132,11 +132,7 @@ MainWindow::~MainWindow() {
 void MainWindow::resizeEvent(QResizeEvent *e) {
     QMainWindow::resizeEvent(e);
 
-    //if(e->size() == QSize(1920, 1052) || e->size() == QSize(851, 708))
-      //  return;
     qDebug() << e->oldSize();
-
-    qDebug() << "width coef: " << e->size().width()/defSize.width() << "height coef: " << e->size().height()/defSize.height();
     for(int row = 0; row < 10; ++row) {
         for(int column = 0; column < 10; ++column) {
             Ship* ship = getShip(row, column);
@@ -144,7 +140,7 @@ void MainWindow::resizeEvent(QResizeEvent *e) {
                 QImage resImg;
                 ui->fieldTable->setCellWidget(row, column, nullptr);
                 if(e->oldSize() == defSize || e->oldSize() == QSize(851, 764))
-                    resImg = _anchor->scaled((50 * 2/*ceil(e->size().width()/defSize.width())*/), (50 * 2/*ceil(e->size().height()/defSize.height())*/), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+                    resImg = _anchor->scaled((50 * 2), (50 * 2), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
                 else
                     resImg = _anchor->scaled(50, 50, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
                 QLabel *imgLabelCell = new QLabel();
@@ -387,6 +383,7 @@ void MainWindow::on_shootBut_clicked() {
             ui->timerLabel->setVisible(true);
             ui->shootBut->setVisible(false);
             this->_game->setGameState(EGameState::QUESTION);
+            this->_game->clearThisRoundShots();
         }
         return;
     }
@@ -481,13 +478,13 @@ QString MainWindow::convertCoordinates(std::tuple<int, int> pair) {
     return result;
 }
 
-QPair<int, int> MainWindow::convertCoordinates(QString coordinates) {
+std::tuple<int, int> MainWindow::convertCoordinates(QString coordinates) {
     int row = 0, column = 0;
     if (!coordinates.isEmpty()) {
         if(coordinates.size() == 3)
-            row = coordinates.first(2).toInt() - 1;
+            row = coordinates.mid(1,2).toInt() - 1;
         if (coordinates.size() == 2)
-            row = coordinates.first(1).toInt() - 1;
+            row = coordinates.mid(1,1).toInt() - 1;
         switch (coordinates.back().toUpper().unicode()) {
             case u'А':
                 column = 0;
@@ -520,7 +517,7 @@ QPair<int, int> MainWindow::convertCoordinates(QString coordinates) {
                 column = 9;
             break;
         }
-        return qMakePair(row, column);
+        return std::make_tuple(row, column);
     } else {
         return this->_game->getRandomValueForXY();
     }
@@ -570,17 +567,29 @@ void MainWindow::setShip(size_t row, size_t column, Ship *ship) {
       this->_ships[n] = ship;
     }
 
-    QImage resImg = _anchor->scaled(50, 50, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    auto tempSize = defSize;
+    tempSize.setHeight(tempSize.height()+28);
+    QImage resImg;
+    if(this->size() == defSize || this->size()  == tempSize)
+        resImg = _anchor->scaled(50, 50, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    else
+        resImg = _anchor->scaled(50*2, 50*2, Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
     QLabel *imgLabelCell = new QLabel();
 
 
     QPainter *p = new QPainter(&resImg);
 
+    if(this->size() == defSize || this->size()  == tempSize)
+        p->setFont(QFont("Arial", 12));
+    else
+        p->setFont(QFont("Arial", 20));
 
-    p->setFont(QFont("Arial", 12));
     p->setPen(const_cast<const QColor &>(*ship->getColor()));
 
-    p->drawText(5, 10, QString::number(ship->getNumber()+1));
+    if(this->size() == defSize || this->size()  == tempSize)
+        p->drawText(5, 10, QString::number(ship->getNumber()+1));
+    else
+        p->drawText(10, 20, QString::number(ship->getNumber()+1));
 
     imgLabelCell->setPixmap(QPixmap::fromImage(resImg));
     ui->fieldTable->setCellWidget(row, column, imgLabelCell);
@@ -673,3 +682,12 @@ void MainWindow::calculateLifes() {
     }
     this->_game->setGameState(EGameState::SHOT);
 }
+
+void MainWindow::on_fieldTable_cellDoubleClicked(int row, int column) {
+    if (_game->getGameState() == EGameState::QUESTION) {
+        if(this->getShip(row, column)->getDeadStatus() != true && this->getShip(row, column)->getAnswerStatus() == true) {
+            this->getShip(row, column)->setAnswerStatus(false);
+        }
+    }
+}
+

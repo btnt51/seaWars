@@ -54,7 +54,7 @@ private slots:
 
       QString convertCoordinates(std::tuple<int, int> pair);
 
-      QPair<int, int> convertCoordinates(QString coordinates);
+      std::tuple<int, int> convertCoordinates(QString coordinates);
 
       QColor* getColor();
 
@@ -67,6 +67,8 @@ private slots:
       void clearBackgroundFieldsTable();
 
       void calculateLifes();
+
+      void on_fieldTable_cellDoubleClicked(int row, int column);
 
 private:
       void setShip(size_t row, size_t column, Ship *ship);

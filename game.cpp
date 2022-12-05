@@ -10,10 +10,6 @@ Game::Game() {
 void Game::placeShip(Ship *ship) {
     int row = 0;
     int column = 0;
-    //std::tie(row, column) = ship->getCoordinats();
-    //this->_Field->setShip(row, column, ship);
-    //connect(ship, SIGNAL(updateShipInfo(Ship*)), this, SLOT(getUpdatedShip(Ship *ship)));
-    //ship->subLifes();
 }
 
 
@@ -24,20 +20,6 @@ Field* Game::getField() {
 
 void Game::StartingTimer() {
 
-}
-
-QPair<int, int> Game::getRandomValueForXY() {
-    int x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
-    int y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
-    while(true) {
-        if(this->_field->getCell(x, y) != ECell::SHIP) {
-           break;
-        }
-
-        x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
-        y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
-    }
-    return qMakePair(x, y);
 }
 
 bool checkPair(QVector<QPair<int, int>> blackList, QPair<int, int> pair) {
@@ -51,18 +33,37 @@ bool checkPair(QVector<QPair<int, int>> blackList, QPair<int, int> pair) {
     return res;
 }
 
-QPair<int, int> Game::getRandomValueForXY(QVector<QPair<int, int> > blackList) {
+std::tuple<int, int> Game::getRandomValueForXY() {
     int x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
     int y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
     while(true) {
-        if(this->_field->getCell(x, y) != ECell::SHIP_HITED && checkPair(blackList, qMakePair(x, y))) {
+        if(this->_field->getCell(x, y) != ECell::SHIP && checkPair(thisRoundShots, qMakePair(x, y))) {
            break;
         }
 
         x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
         y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
     }
-    return qMakePair(x, y);
+    thisRoundShots.push_back(qMakePair(x, y));
+    return std::make_tuple(x, y);
+}
+
+
+
+std::tuple<int, int> Game::getRandomValueForXY(QVector<QPair<int, int> > blackList) {
+    int x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+    int y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+    while(true) {
+        if (this->_field->getCell(x, y) != ECell::SHIP_HITED && checkPair(blackList, qMakePair(x, y))
+                && checkPair(thisRoundShots, qMakePair(x, y))) {
+           break;
+        }
+
+        x = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+        y = static_cast<int>(QRandomGenerator::global()->bounded(0, 10));
+    }
+    thisRoundShots.push_back(qMakePair(x, y));
+    return std::make_tuple(x, y);
 }
 
 
@@ -88,6 +89,10 @@ void Game::setGameState(EGameState gameState) {
 
 EGameState Game::getGameState() {
     return this->_currentState;
+}
+
+void Game::clearThisRoundShots() {
+    this->thisRoundShots.clear();
 }
 
 void Game::getUpdatedShip(Ship *ship) {

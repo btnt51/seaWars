@@ -29,13 +29,15 @@ public:
 
   void StartingTimer();
 
-  QPair<int, int> getRandomValueForXY(QVector<QPair<int, int> > blackList);
+  std::tuple<int, int> getRandomValueForXY(QVector<QPair<int, int> > blackList);
 
-  QPair<int, int> getRandomValueForXY();
+  std::tuple<int, int> getRandomValueForXY();
 
   void setGameState(EGameState gameState);
 
   EGameState getGameState();
+
+  void clearThisRoundShots();
 
 signals:
   void sendUpdatedShipToTable(Ship *ship);
@@ -50,6 +52,8 @@ private:
   Field *_field;
 
   EGameState _currentState;
+
+  QVector<QPair<int, int> > thisRoundShots;
 
 };
 

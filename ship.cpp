@@ -66,11 +66,15 @@ void Ship::subLifes(int amountOfSubsLifes) {
 }
 
 void Ship::setHitStatus(bool hitStatus) {
+
     this->_isHited = hitStatus;
+
 }
 
 void Ship::setAnswerStatus(bool answerStatus) {
+    qDebug() << this->getName() << " old answer status" << this->getAnswerStatus();
     this->_isRightAnswer = answerStatus;
+    qDebug() << this->getName() << " new answer status" << this->getAnswerStatus();
 }
 
 std::tuple<int, int> Ship::getCoordinats() {
