@@ -4,6 +4,7 @@
 #include "ship.h"
 
 #include <QDialog>
+#include <QStandardItemModel>
 
 namespace Ui {
     class deadShip;

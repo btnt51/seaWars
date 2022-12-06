@@ -5,8 +5,15 @@
 #include <QDebug>
 #include <QTime>
 #include <QTimer>
+#include <QPainter>
+#include <QResizeEvent>
+
+
 #include "game.h"
 #include "shipname.h"
+#include "deadship.h"
+#include "winnerwindow.h"
+#include "editcomtablewindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -68,6 +75,9 @@ private slots:
 
       void calculateLifes();
 
+      void on_editShipsBut_clicked();
+
+      void on_endBut_clicked();
 
 private:
       void setShip(size_t row, size_t column, Ship *ship);
@@ -97,5 +107,9 @@ private:
       int _amountOfShots;
 
       QSize defSize;
+
+
+      void initializeButtons();
+      void setDarkTheme();
 };
 #endif // MAINWINDOW_H

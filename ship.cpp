@@ -25,6 +25,7 @@ Ship::~Ship() {
 
 void Ship::setName(QString name) {
     this->_name = name;
+    emit updateShipInfo(this);
 }
 
 void Ship::setCoordinat(int row, int column) {
@@ -40,6 +41,7 @@ void Ship::setDeadStatus(bool isDead) {
 
 void Ship::setAmmountOfLifes(unsigned int amountOfLifes) {
     this->_lifes = amountOfLifes;
+    emit updateShipInfo(this);
     if(this->_lifes == 0) {
         this->setDeadStatus(true);
     }

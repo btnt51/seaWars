@@ -10,6 +10,7 @@ deadShip::deadShip(QVector<Ship *> shipList, Ship *deadShip,
     ui(new Ui::deadShip)
 {
     ui->setupUi(this);
+    this->setWindowTitle("Последний шанс");
     QString text = "Команда " + this->_deadShip->getName() + " терпит крушение,"
                                                              "\nкто-нибудь хочет им помочь?";
     ui->msg->setText(text);
