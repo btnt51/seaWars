@@ -34,6 +34,9 @@ set(PROJECT_SOURCES
         winnerwindow.cpp
         winnerwindow.h
         winnerwindow.ui
+        editcomtablewindow.cpp
+        editcomtablewindow.h
+        editcomtablewindow.ui
 )
 
 qt_add_resources(PROJECT_SOURCES src.qrc)
