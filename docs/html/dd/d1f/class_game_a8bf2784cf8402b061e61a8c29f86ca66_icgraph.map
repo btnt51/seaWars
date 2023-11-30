@@ -1,0 +1,9 @@
+<map id="Game::setGameState" name="Game::setGameState">
+<area shape="rect" id="node1" title="функция&#45;сеттер текущего состояния/стадии игры" alt="" coords="467,136,616,161"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#af3bcf24a3fa3f0305f62e55b1ffbe1e2" title="функция подсчета жизней" alt="" coords="233,5,419,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="6,23,185,63"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="конструктор главного экрана" alt="" coords="5,173,185,199"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#a6865908102f77692f29ef39dd4d9ee96" title="функция обработки нажатия на кнопку конца игры" alt="" coords="243,157,409,197"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="237,221,415,261"/>
+<area shape="rect" id="node7" href="$d9/dc6/class_main_window.html#ad449f47f919c88fd16c55fd6a311b548" title="функция обновления таймера" alt="" coords="237,285,415,311"/>
+</map>

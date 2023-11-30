@@ -1,0 +1,65 @@
+\hypertarget{editcomtablewindow_8h_source}{}\doxysection{editcomtablewindow.\+h}
+\mbox{\hyperlink{editcomtablewindow_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ EDITCOMTABLEWINDOW\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ EDITCOMTABLEWINDOW\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QStandardItemModel>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QKeyEvent>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QVector>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ship_8h}{ship.h}}"{}}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_edit_com_table_window}{EditComTableWindow}};}
+\DoxyCodeLine{00025\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_edit_com_table_window}{EditComTableWindow}}\ :\ \textcolor{keyword}{public}\ QDialog\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_edit_com_table_window}{EditComTableWindow}}(QVector<Ship*>\ shiplist,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_edit_com_table_window_ae2d77cb79255b668a9716ac25d4c1c67}{\string~EditComTableWindow}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc}{addItem}}(\mbox{\hyperlink{class_ship}{Ship}}\ *ship);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_ship}{Ship}}*\ \mbox{\hyperlink{class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705}{getShip}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_a086192b3443b2ecf4bcfa9273054359e}{keyPressEvent}}(QKeyEvent\ *evt);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00054\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_aef34bdc73dc2bebaa05105b8395eb92e}{on\_aliveShipsBox\_currentIndexChanged}}(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020}{on\_nameLineEdit\_returnPressed}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4}{on\_nameLineEdit\_editingFinished}}();}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b}{updateLifeLineEdit}}(\mbox{\hyperlink{class_ship}{Ship}}*\ ship);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df}{on\_lifeLineEdit\_editingFinished}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83}{on\_lifeLineEdit\_returnPressed}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0}{on\_addLifeBut\_clicked}}();}
+\DoxyCodeLine{00081\ \ \ \ \ }
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18}{on\_subLifeBut\_clicked}}();}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23}{updateDisplayName}}(QString\ name);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \ \ \ \ Ui::EditComTableWindow\ *\mbox{\hyperlink{class_edit_com_table_window_a76ec75210396fca1a11ea6c09c64aad0}{ui}};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00094\ \ \ \ \ QVector<Ship\ *>\ \mbox{\hyperlink{class_edit_com_table_window_ac9f0295c42dc4dd81d04128acb755a67}{\_ships}};}
+\DoxyCodeLine{00095\ \};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EDITCOMTABLEWINDOW\_H}}
+
+\end{DoxyCode}

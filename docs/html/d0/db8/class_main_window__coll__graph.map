@@ -1,0 +1,9 @@
+<map id="MainWindow" name="MainWindow">
+<area shape="rect" id="node1" title="класс, отвечающий за главный экран приложения" alt="" coords="133,617,318,1105"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,419,112,496"/>
+<area shape="rect" id="node3" href="$dd/d1f/class_game.html" title="класс отвечающий за состояние и управление ходом игры" alt="" coords="136,360,315,555"/>
+<area shape="rect" id="node4" title=" " alt="" coords="159,5,230,83"/>
+<area shape="rect" id="node5" href="$dc/d67/class_field.html" title="класс&#45;обёртка над массивом клеток игрового поля" alt="" coords="216,132,344,297"/>
+<area shape="rect" id="node6" href="$d1/d75/class_ship_name.html" title="класс, отвечающий за окно добавления нового судна" alt="" coords="339,397,517,518"/>
+<area shape="rect" id="node7" title=" " alt="" coords="393,176,463,253"/>
+</map>

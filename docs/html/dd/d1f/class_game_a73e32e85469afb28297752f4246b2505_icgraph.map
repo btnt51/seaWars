@@ -1,0 +1,8 @@
+<map id="Game::getGameState" name="Game::getGameState">
+<area shape="rect" id="node1" title="функция&#45;геттер текущего состояния/стадии игры" alt="" coords="463,108,612,133"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="конструктор главного экрана" alt="" coords="5,108,185,133"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="233,37,415,77"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="235,101,413,141"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="235,165,413,205"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#ad449f47f919c88fd16c55fd6a311b548" title="функция обновления таймера" alt="" coords="235,229,413,255"/>
+</map>

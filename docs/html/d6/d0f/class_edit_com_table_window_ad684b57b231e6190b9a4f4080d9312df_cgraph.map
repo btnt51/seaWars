@@ -1,0 +1,6 @@
+<map id="EditComTableWindow::on_lifeLineEdit_editingFinished" name="EditComTableWindow::on_lifeLineEdit_editingFinished">
+<area shape="rect" id="node1" title="функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна" alt="" coords="5,35,215,75"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="273,5,424,45"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#a69978093c1ee8dd862fe20666eae6dac" title="функция&#45;сеттер количества жизней судна" alt="" coords="263,70,435,95"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="483,70,625,95"/>
+</map>

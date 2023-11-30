@@ -1,0 +1,9 @@
+<map id="EditComTableWindow::getShip" name="EditComTableWindow::getShip">
+<area shape="rect" id="node1" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="277,165,428,205"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#a8731d252a3c20864acb62dde86536bc0" title="функция обработки нажатия на графическую кнопку добавления одной жизни судну" alt="" coords="37,5,198,45"/>
+<area shape="rect" id="node3" href="$d6/d0f/class_edit_com_table_window.html#ad684b57b231e6190b9a4f4080d9312df" title="функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна" alt="" coords="13,69,222,109"/>
+<area shape="rect" id="node4" href="$d6/d0f/class_edit_com_table_window.html#ad63d13d9e27a2703cf70f83b403e9f83" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="16,133,219,173"/>
+<area shape="rect" id="node5" href="$d6/d0f/class_edit_com_table_window.html#afbb6028a9090959c13a8abfc573e05c4" title="функция обработки окончания однострочного текстового блока, отвечающее за названия судна" alt="" coords="5,197,229,237"/>
+<area shape="rect" id="node6" href="$d6/d0f/class_edit_com_table_window.html#adb7e30147cd7dbb8a62f16b7afb98020" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="8,261,227,301"/>
+<area shape="rect" id="node7" href="$d6/d0f/class_edit_com_table_window.html#a2c6ee958dddacb1ec9a9ee81810bde18" title="функция обработки нажатия на графическую кнопку удаление одной жизни судну" alt="" coords="37,325,198,365"/>
+</map>

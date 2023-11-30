@@ -1,0 +1,207 @@
+\hypertarget{classdead_ship_window}{}\doxysection{Класс dead\+Ship\+Window}
+\label{classdead_ship_window}\index{deadShipWindow@{deadShipWindow}}
+
+
+класс, отвечающий за окно-\/уведомление о том, что участник выбывает из игры с возможностью возвращаения в игру при помощи других игроков  
+
+
+
+
+{\ttfamily \#include $<$deadshipwindow.\+h$>$}
+
+
+
+Граф наследования\+:dead\+Ship\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{db/d55/classdead_ship_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса dead\+Ship\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d9/d3e/classdead_ship_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdead_ship_window_a457f717e55df2e0b29b5612eda682867}{dead\+Ship\+Window}} (QVector$<$ \mbox{\hyperlink{class_ship}{Ship}} $\ast$ $>$ ship\+List, \mbox{\hyperlink{class_ship}{Ship}} $\ast$dead\+Ship=nullptr, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em Конструктор окна \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdead_ship_window_a12786cf373d9c1792ffc7ad262f6ea23}{$\sim$dead\+Ship\+Window}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classdead_ship_window_a8d8a1738f9714213c7f4399e5143bb0d}{on\+\_\+button\+Box\+\_\+accepted}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на кнопку \char`\"{}\+OK\char`\"{} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdead_ship_window_aa72e270374b22dc609f5e71fa4e8f5c9}{add\+Item}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em вспомогательная функция, использующаяся для заполнения QCombo\+Box живых судов \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ship}{Ship}} $\ast$ \mbox{\hyperlink{classdead_ship_window_ad782d4e42263d49e666702c205875d2e}{get\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция, использующаяся для получения выбраного судна в QCombo\+Box живых судов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::dead\+Ship\+Window $\ast$ \mbox{\hyperlink{classdead_ship_window_a530a4da2c22dba11b4d2c5ff5f88c6cb}{ui}}
+\begin{DoxyCompactList}\small\item\em указатель на графический интерфейс \end{DoxyCompactList}\item 
+QVector$<$ \mbox{\hyperlink{class_ship}{Ship}} $\ast$ $>$ \mbox{\hyperlink{classdead_ship_window_a0869d6ccba2f168441e392dc7b9e13f9}{\+\_\+ships\+List}}
+\begin{DoxyCompactList}\small\item\em список живых судов \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ship}{Ship}} $\ast$ \mbox{\hyperlink{classdead_ship_window_a47f65c3feaa0bc0d3a6777c00cc7bbe6}{\+\_\+dead\+Ship}}
+\begin{DoxyCompactList}\small\item\em указатель на судно выбывшего участника \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+класс, отвечающий за окно-\/уведомление о том, что участник выбывает из игры с возможностью возвращаения в игру при помощи других игроков 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classdead_ship_window_a457f717e55df2e0b29b5612eda682867}\label{classdead_ship_window_a457f717e55df2e0b29b5612eda682867}} 
+\index{deadShipWindow@{deadShipWindow}!deadShipWindow@{deadShipWindow}}
+\index{deadShipWindow@{deadShipWindow}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{deadShipWindow()}{deadShipWindow()}}
+{\footnotesize\ttfamily dead\+Ship\+Window\+::dead\+Ship\+Window (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{class_ship}{Ship}} $\ast$ $>$}]{ship\+List,  }\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{dead\+Ship = {\ttfamily nullptr},  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Конструктор окна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ship\+List} & список живых судов \\
+\hline
+{\em dead\+Ship} & указатель на судно выбывшего участника \\
+\hline
+{\em parent} & указатель на родительский виджет (окно), используется для управления памятью и контроле в модальных окнах \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df0/classdead_ship_window_a457f717e55df2e0b29b5612eda682867_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classdead_ship_window_a12786cf373d9c1792ffc7ad262f6ea23}\label{classdead_ship_window_a12786cf373d9c1792ffc7ad262f6ea23}} 
+\index{deadShipWindow@{deadShipWindow}!````~deadShipWindow@{$\sim$deadShipWindow}}
+\index{````~deadShipWindow@{$\sim$deadShipWindow}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$deadShipWindow()}{~deadShipWindow()}}
+{\footnotesize\ttfamily dead\+Ship\+Window\+::$\sim$dead\+Ship\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classdead_ship_window_aa72e270374b22dc609f5e71fa4e8f5c9}\label{classdead_ship_window_aa72e270374b22dc609f5e71fa4e8f5c9}} 
+\index{deadShipWindow@{deadShipWindow}!addItem@{addItem}}
+\index{addItem@{addItem}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{addItem}{addItem}}
+{\footnotesize\ttfamily void dead\+Ship\+Window\+::add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция, использующаяся для заполнения QCombo\+Box живых судов 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ship} & указатель на судно, которое будет помещено в QCombo\+Box живых судов \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{dd/df0/classdead_ship_window_aa72e270374b22dc609f5e71fa4e8f5c9_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df0/classdead_ship_window_aa72e270374b22dc609f5e71fa4e8f5c9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classdead_ship_window_ad782d4e42263d49e666702c205875d2e}\label{classdead_ship_window_ad782d4e42263d49e666702c205875d2e}} 
+\index{deadShipWindow@{deadShipWindow}!getShip@{getShip}}
+\index{getShip@{getShip}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{getShip}{getShip}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ship}{Ship}} $\ast$ dead\+Ship\+Window\+::get\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция, использующаяся для получения выбраного судна в QCombo\+Box живых судов 
+
+\begin{DoxyReturn}{Возвращает}
+указатель на судно, которое было выбрано в QCombo\+Box 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df0/classdead_ship_window_ad782d4e42263d49e666702c205875d2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classdead_ship_window_a8d8a1738f9714213c7f4399e5143bb0d}\label{classdead_ship_window_a8d8a1738f9714213c7f4399e5143bb0d}} 
+\index{deadShipWindow@{deadShipWindow}!on\_buttonBox\_accepted@{on\_buttonBox\_accepted}}
+\index{on\_buttonBox\_accepted@{on\_buttonBox\_accepted}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{on\_buttonBox\_accepted}{on\_buttonBox\_accepted}}
+{\footnotesize\ttfamily void dead\+Ship\+Window\+::on\+\_\+button\+Box\+\_\+accepted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на кнопку \char`\"{}\+OK\char`\"{} 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/df0/classdead_ship_window_a8d8a1738f9714213c7f4399e5143bb0d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classdead_ship_window_a47f65c3feaa0bc0d3a6777c00cc7bbe6}\label{classdead_ship_window_a47f65c3feaa0bc0d3a6777c00cc7bbe6}} 
+\index{deadShipWindow@{deadShipWindow}!\_deadShip@{\_deadShip}}
+\index{\_deadShip@{\_deadShip}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{\_deadShip}{\_deadShip}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ship}{Ship}}$\ast$ dead\+Ship\+Window\+::\+\_\+dead\+Ship\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на судно выбывшего участника 
+
+\mbox{\Hypertarget{classdead_ship_window_a0869d6ccba2f168441e392dc7b9e13f9}\label{classdead_ship_window_a0869d6ccba2f168441e392dc7b9e13f9}} 
+\index{deadShipWindow@{deadShipWindow}!\_shipsList@{\_shipsList}}
+\index{\_shipsList@{\_shipsList}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{\_shipsList}{\_shipsList}}
+{\footnotesize\ttfamily QVector$<$\mbox{\hyperlink{class_ship}{Ship}}$\ast$ $>$ dead\+Ship\+Window\+::\+\_\+ships\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+список живых судов 
+
+\mbox{\Hypertarget{classdead_ship_window_a530a4da2c22dba11b4d2c5ff5f88c6cb}\label{classdead_ship_window_a530a4da2c22dba11b4d2c5ff5f88c6cb}} 
+\index{deadShipWindow@{deadShipWindow}!ui@{ui}}
+\index{ui@{ui}!deadShipWindow@{deadShipWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::dead\+Ship\+Window$\ast$ dead\+Ship\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на графический интерфейс 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{deadshipwindow_8h}{deadshipwindow.\+h}}\item 
+\mbox{\hyperlink{deadshipwindow_8cpp}{deadshipwindow.\+cpp}}\end{DoxyCompactItemize}

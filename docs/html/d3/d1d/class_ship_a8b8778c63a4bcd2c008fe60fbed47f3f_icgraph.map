@@ -1,0 +1,10 @@
+<map id="Ship::getAmountOfLifes" name="Ship::getAmountOfLifes">
+<area shape="rect" id="node1" title="функция&#45;геттер количества жизней судна" alt="" coords="525,126,687,151"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#afc1c046a5974c9a1a68e0dc94cd9b30d" title="функция добавления судна на таблицу игрового поля" alt="" coords="287,126,437,151"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#a1110beccc4c985846923f837c82ca7b8" title="функция обновления судна" alt="" coords="247,77,477,102"/>
+<area shape="rect" id="node7" href="$d6/d0f/class_edit_com_table_window.html#af9cdc43038af1b742b41cc73c9af517b" title="функция обновления однострочного текстового блока, отвечающее за количество жизней у судна" alt="" coords="287,187,437,227"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#a7326befac70806a0ef7854cd0300cf57" title="функция обработки нажаия на кнопку добавления судна" alt="" coords="5,5,199,45"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="11,69,193,109"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="13,133,191,173"/>
+<area shape="rect" id="node8" href="$d6/d0f/class_edit_com_table_window.html#a9d3a878bc1bba9879ee20c82437591f8" title="конструктор окна" alt="" coords="23,197,181,237"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,76,80"/>
+<area shape="rect" id="node2" href="$dc/d67/class_field.html" title="класс&#45;обёртка над массивом клеток игрового поля" alt="" coords="127,5,178,31"/>
+<area shape="rect" id="node3" href="$dd/d1f/class_game.html" title="класс отвечающий за состояние и управление ходом игры" alt="" coords="124,55,181,80"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html" title="класс, отвечающий за работу и обработку сущности судна" alt="" coords="129,104,177,129"/>
+</map>

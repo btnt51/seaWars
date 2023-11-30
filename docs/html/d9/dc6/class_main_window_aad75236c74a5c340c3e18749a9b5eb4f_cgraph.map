@@ -1,0 +1,7 @@
+<map id="MainWindow::resizeEvent" name="MainWindow::resizeEvent">
+<area shape="rect" id="node1" title="перегруженная функция изменения окна" alt="" coords="5,55,180,80"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#a8dcd2fc8a985fb084dbb6f030baa7cc8" title="функция&#45;геттер цвета судна" alt="" coords="250,5,355,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#a3875e4c774c5b39f740ed2b9a0bb7f0b" title="функция&#45;геттер порядкового номера судна" alt="" coords="243,55,363,80"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a06188c2b90c5af2387273fde1ca4e699" title="функция получения указателя на судно" alt="" coords="228,104,377,129"/>
+<area shape="rect" id="node5" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="425,104,560,129"/>
+</map>

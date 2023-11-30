@@ -1,0 +1,6 @@
+<map id="MainWindow::updateCommandShip" name="MainWindow::updateCommandShip">
+<area shape="rect" id="node1" title="функция обновления судна" alt="" coords="247,77,477,102"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#a7326befac70806a0ef7854cd0300cf57" title="функция обработки нажаия на кнопку добавления судна" alt="" coords="5,5,199,45"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="11,69,193,109"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="13,133,191,173"/>
+</map>

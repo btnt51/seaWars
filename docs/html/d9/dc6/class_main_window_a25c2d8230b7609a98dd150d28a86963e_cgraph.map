@@ -1,0 +1,6 @@
+<map id="MainWindow::on_commandsTable_cellClicked" name="MainWindow::on_commandsTable_cellClicked">
+<area shape="rect" id="node1" title="функция обработки нажатия на клетку в таблице комманд" alt="" coords="5,23,227,63"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#af651aa0bac796089d80deb9a9fa97243" title="вспомогательная функция конвертации координат из кортежа с целыми числами в строку" alt="" coords="275,5,493,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#a06188c2b90c5af2387273fde1ca4e699" title="функция получения указателя на судно" alt="" coords="309,55,459,80"/>
+<area shape="rect" id="node4" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="541,55,676,80"/>
+</map>

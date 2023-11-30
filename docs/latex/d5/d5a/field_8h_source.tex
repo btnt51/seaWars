@@ -1,0 +1,43 @@
+\hypertarget{field_8h_source}{}\doxysection{field.\+h}
+\mbox{\hyperlink{field_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ FIELD\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ FIELD\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ship_8h}{ship.h}}"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}}\ \{}
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7}{CLEAR}},}
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa}{SHIP}},}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb}{DEAD\_SHIP}},}
+\DoxyCodeLine{00025\ \ \ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d}{SHIP\_HITED}}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_field}{Field}}\ :\ \textcolor{keyword}{public}\ QObject\ \{}
+\DoxyCodeLine{00030\ \ \ Q\_OBJECT}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{class_field_a3e804c92273d9159f413f227b535c672}{Field}}();}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_field_a01a426e6cdef543658d8b9ba5bc96477}{setCell}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ column,\ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}}\ cell);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}}\ \mbox{\hyperlink{class_field_aa176b943f299aff7645721c0aea868af}{getCell}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ column);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{bool}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_field_a6ac30ecc650ecb2be9d277d4cf73053b}{checkDotsOr}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ column);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordtype}{bool}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_field_ad7cb2c1ca78483dc1ee45425337c4b6b}{checkDotsAnd}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ column);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00061\ \ \ QVector<ECell>\ \mbox{\hyperlink{class_field_a4bf2a1137a925fe3770eabbb9e356dbd}{getField}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_field_abd5b876cdb484d678c20b0c03ba2536a}{clear}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00069\ \ \ QVector<ECell>\ \mbox{\hyperlink{class_field_a59f36b690570f1f24ded3a37e332da88}{\_field}};}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FIELD\_H}}
+
+\end{DoxyCode}

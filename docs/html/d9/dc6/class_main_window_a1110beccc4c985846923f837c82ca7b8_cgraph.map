@@ -1,0 +1,6 @@
+<map id="MainWindow::updateCommandShip" name="MainWindow::updateCommandShip">
+<area shape="rect" id="node1" title="функция обновления судна" alt="" coords="5,55,236,80"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f" title="функция&#45;геттер количества жизней судна" alt="" coords="284,5,445,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="310,55,419,80"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#a3875e4c774c5b39f740ed2b9a0bb7f0b" title="функция&#45;геттер порядкового номера судна" alt="" coords="305,104,425,129"/>
+</map>

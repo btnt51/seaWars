@@ -1,0 +1,5 @@
+<map id="Game::getRandomValueForXY" name="Game::getRandomValueForXY">
+<area shape="rect" id="node1" title="функция генерации кортежа координат" alt="" coords="272,35,473,60"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#aa036463f226a257eb518ad029eb0ad9d" title="вспомогательная функция конвертации координат из строки в кортеж с целыми числами" alt="" coords="5,5,224,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="25,55,204,95"/>
+</map>

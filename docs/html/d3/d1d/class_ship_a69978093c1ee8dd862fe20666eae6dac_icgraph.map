@@ -1,0 +1,5 @@
+<map id="Ship::setAmmountOfLifes" name="Ship::setAmmountOfLifes">
+<area shape="rect" id="node1" title="функция&#45;сеттер количества жизней судна" alt="" coords="263,45,435,70"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#ad684b57b231e6190b9a4f4080d9312df" title="функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна" alt="" coords="5,5,215,45"/>
+<area shape="rect" id="node3" href="$d6/d0f/class_edit_com_table_window.html#ad63d13d9e27a2703cf70f83b403e9f83" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="9,69,211,109"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Ship::addLifes" name="Ship::addLifes">
+<area shape="rect" id="node1" title="функция добавления жизней судну" alt="" coords="427,77,532,102"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#a8731d252a3c20864acb62dde86536bc0" title="функция обработки нажатия на графическую кнопку добавления одной жизни судну" alt="" coords="209,5,371,45"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="201,69,379,109"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#aab8b4af926606b39f635b1f39c5772ac" title="функция отправки жизней уничтоженному судну ( отнимает 5 жизни у отпровителя и добавляет 5 жизней уни..." alt="" coords="237,134,343,159"/>
+<area shape="rect" id="node5" href="$dd/df0/classdead_ship_window.html#a8d8a1738f9714213c7f4399e5143bb0d" title="функция обработки нажатия на кнопку &quot;OK&quot;" alt="" coords="5,127,153,167"/>
+</map>

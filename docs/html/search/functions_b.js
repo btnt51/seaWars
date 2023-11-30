@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['sendlife_0',['sendLife',['../d3/d1d/class_ship.html#aab8b4af926606b39f635b1f39c5772ac',1,'Ship']]],
+  ['sendshipname_1',['sendShipName',['../d1/d75/class_ship_name.html#a5868c4679765f4cfdcac64ff1fa75a93',1,'ShipName']]],
+  ['sendshipwithcoordinates_2',['sendShipWithCoordinates',['../d1/d75/class_ship_name.html#a04c9b3cd3258777779a86d0cf1fdf29e',1,'ShipName']]],
+  ['sendupdatedshiptotable_3',['sendUpdatedShipToTable',['../dd/d1f/class_game.html#ac9f4eacc2fcd7c362700f7d4f1a49216',1,'Game']]],
+  ['setammountoflifes_4',['setAmmountOfLifes',['../d3/d1d/class_ship.html#a69978093c1ee8dd862fe20666eae6dac',1,'Ship']]],
+  ['setanswerstatus_5',['setAnswerStatus',['../d3/d1d/class_ship.html#a8fc233a064429097429fa1f24fd65460',1,'Ship']]],
+  ['setcell_6',['setCell',['../dc/d67/class_field.html#a01a426e6cdef543658d8b9ba5bc96477',1,'Field']]],
+  ['setcoordinat_7',['setCoordinat',['../d3/d1d/class_ship.html#a395c39e9d53f0a3d0f721d1956b0b928',1,'Ship']]],
+  ['setdarktheme_8',['setDarkTheme',['../d9/dc6/class_main_window.html#acc57d86037d0e7babbd0370c07092ab9',1,'MainWindow']]],
+  ['setdeadstatus_9',['setDeadStatus',['../d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297',1,'Ship']]],
+  ['setgamestate_10',['setGameState',['../dd/d1f/class_game.html#a8bf2784cf8402b061e61a8c29f86ca66',1,'Game']]],
+  ['sethitstatus_11',['setHitStatus',['../d3/d1d/class_ship.html#a9aa06161da7ad367ae13f553eda8f91b',1,'Ship']]],
+  ['setname_12',['setName',['../d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba',1,'Ship']]],
+  ['setnameandcoordinates_13',['setNameAndCoordinates',['../d9/dc6/class_main_window.html#ad5f434debe673c33bdf3a5f955507972',1,'MainWindow']]],
+  ['setnameqstring_14',['setNameQstring',['../d9/dc6/class_main_window.html#ad4f6e4b62d408f6d9162b3bad3c2113f',1,'MainWindow']]],
+  ['setship_15',['setShip',['../d9/dc6/class_main_window.html#afc1c046a5974c9a1a68e0dc94cd9b30d',1,'MainWindow']]],
+  ['ship_16',['Ship',['../d3/d1d/class_ship.html#aca015da17a09375ecb044b758dda3523',1,'Ship']]],
+  ['shipisdead_17',['shipIsDead',['../d3/d1d/class_ship.html#a7b07b013ae4373ab39d65a53b63895b0',1,'Ship']]],
+  ['shipname_18',['ShipName',['../d1/d75/class_ship_name.html#aaa87d5623315fe7b1f025ab5cc10ea3d',1,'ShipName']]],
+  ['sublifes_19',['subLifes',['../d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1',1,'Ship']]]
+];

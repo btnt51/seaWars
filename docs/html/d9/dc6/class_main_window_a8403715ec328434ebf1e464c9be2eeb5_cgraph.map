@@ -1,0 +1,5 @@
+<map id="MainWindow::on_editShipsBut_clicked" name="MainWindow::on_editShipsBut_clicked">
+<area shape="rect" id="node1" title="функция обработки нажатия на кнопку редактирования судов" alt="" coords="5,5,185,45"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#a06188c2b90c5af2387273fde1ca4e699" title="функция получения указателя на судно" alt="" coords="233,13,383,38"/>
+<area shape="rect" id="node3" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="431,13,565,38"/>
+</map>

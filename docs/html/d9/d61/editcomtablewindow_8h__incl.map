@@ -1,0 +1,11 @@
+<map id="editcomtablewindow.h" name="editcomtablewindow.h">
+<area shape="rect" id="node1" title="Файл который содержит класс, отвечающий за окно редактирования информации участников в процессе игры ..." alt="" coords="249,5,398,31"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,79,151,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="175,79,264,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="289,79,358,104"/>
+<area shape="rect" id="node5" title=" " alt="" coords="383,79,453,104"/>
+<area shape="rect" id="node6" href="$d7/daf/ship_8h.html" title="файл содержащий класс, отвечающий за работу и обработку сущности судна" alt="" coords="477,79,535,104"/>
+<area shape="rect" id="node7" title=" " alt="" coords="380,152,451,177"/>
+<area shape="rect" id="node8" title=" " alt="" coords="475,152,537,177"/>
+<area shape="rect" id="node9" title=" " alt="" coords="562,152,613,177"/>
+</map>

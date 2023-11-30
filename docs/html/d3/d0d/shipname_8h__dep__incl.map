@@ -1,0 +1,7 @@
+<map id="shipname.h" name="shipname.h">
+<area shape="rect" id="node1" title="файл содержащий класс, отвечающий за окно добавления нового судна" alt="" coords="121,5,210,31"/>
+<area shape="rect" id="node2" href="$d9/d53/mainwindow_8h.html" title="Файл который содержит класс, отвечающий за главный экран приложения" alt="" coords="51,79,154,104"/>
+<area shape="rect" id="node5" href="$d4/de2/shipname_8cpp.html" title=" " alt="" coords="178,79,281,104"/>
+<area shape="rect" id="node3" href="$df/d0a/main_8cpp.html" title=" " alt="" coords="5,152,80,177"/>
+<area shape="rect" id="node4" href="$d8/dd9/mainwindow_8cpp.html" title=" " alt="" coords="104,152,221,177"/>
+</map>

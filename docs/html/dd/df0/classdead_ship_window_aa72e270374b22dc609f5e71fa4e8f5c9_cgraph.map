@@ -1,0 +1,4 @@
+<map id="deadShipWindow::addItem" name="deadShipWindow::addItem">
+<area shape="rect" id="node1" title="вспомогательная функция, использующаяся для заполнения QComboBox живых судов" alt="" coords="5,5,184,31"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="232,5,341,31"/>
+</map>

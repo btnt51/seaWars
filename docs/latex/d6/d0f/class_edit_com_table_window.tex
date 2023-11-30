@@ -1,0 +1,383 @@
+\hypertarget{class_edit_com_table_window}{}\doxysection{Класс Edit\+Com\+Table\+Window}
+\label{class_edit_com_table_window}\index{EditComTableWindow@{EditComTableWindow}}
+
+
+класс, отвечающий за окно редактирования информации участников в процессе игры в ручном режиме  
+
+
+
+
+{\ttfamily \#include $<$editcomtablewindow.\+h$>$}
+
+
+
+Граф наследования\+:Edit\+Com\+Table\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{da/df5/class_edit_com_table_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Edit\+Com\+Table\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{d3/d72/class_edit_com_table_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8}{Edit\+Com\+Table\+Window}} (QVector$<$ \mbox{\hyperlink{class_ship}{Ship}} $\ast$ $>$ shiplist, QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em конструктор окна \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edit_com_table_window_ae2d77cb79255b668a9716ac25d4c1c67}{$\sim$\+Edit\+Com\+Table\+Window}} ()
+\item 
+void \mbox{\hyperlink{class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc}{add\+Item}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em вспомогательная функция, использующаяся для заполнения QCombo\+Box живых судов \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ship}{Ship}} $\ast$ \mbox{\hyperlink{class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705}{get\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция, использующаяся для получения выбраного судна в QCombo\+Box живых судов \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_edit_com_table_window_a086192b3443b2ecf4bcfa9273054359e}{key\+Press\+Event}} (QKey\+Event $\ast$evt)
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на клавиши, пока окно активно \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_edit_com_table_window_aef34bdc73dc2bebaa05105b8395eb92e}{on\+\_\+alive\+Ships\+Box\+\_\+current\+Index\+Changed}} (int index)
+\begin{DoxyCompactList}\small\item\em впомогательная функция обновления графического интерфейса пользователя, при выборе другого судна в QCombo\+Box живых судов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020}{on\+\_\+name\+Line\+Edit\+\_\+return\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на кнопку \char`\"{}Возврата\char`\"{} (Return) однострочного текстового блока, отвечающее за названия судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4}{on\+\_\+name\+Line\+Edit\+\_\+editing\+Finished}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки окончания однострочного текстового блока, отвечающее за названия судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b}{update\+Life\+Line\+Edit}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em функция обновления однострочного текстового блока, отвечающее за количество жизней у судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df}{on\+\_\+life\+Line\+Edit\+\_\+editing\+Finished}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83}{on\+\_\+life\+Line\+Edit\+\_\+return\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на кнопку \char`\"{}Возврата\char`\"{} (Return) однострочного текстового блока, отвечающее за количество жизней судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0}{on\+\_\+add\+Life\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на графическую кнопку добавления одной жизни судну \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18}{on\+\_\+sub\+Life\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на графическую кнопку удаление одной жизни судну \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23}{update\+Display\+Name}} (QString name)
+\begin{DoxyCompactList}\small\item\em функция обновления отображаемого имени судна в QCombo\+Box \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Edit\+Com\+Table\+Window $\ast$ \mbox{\hyperlink{class_edit_com_table_window_a76ec75210396fca1a11ea6c09c64aad0}{ui}}
+\begin{DoxyCompactList}\small\item\em указатель на графический интерфейс \end{DoxyCompactList}\item 
+QVector$<$ \mbox{\hyperlink{class_ship}{Ship}} $\ast$ $>$ \mbox{\hyperlink{class_edit_com_table_window_ac9f0295c42dc4dd81d04128acb755a67}{\+\_\+ships}}
+\begin{DoxyCompactList}\small\item\em список живых судов \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+класс, отвечающий за окно редактирования информации участников в процессе игры в ручном режиме 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8}\label{class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8}} 
+\index{EditComTableWindow@{EditComTableWindow}!EditComTableWindow@{EditComTableWindow}}
+\index{EditComTableWindow@{EditComTableWindow}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{EditComTableWindow()}{EditComTableWindow()}}
+{\footnotesize\ttfamily Edit\+Com\+Table\+Window\+::\+Edit\+Com\+Table\+Window (\begin{DoxyParamCaption}\item[{QVector$<$ \mbox{\hyperlink{class_ship}{Ship}} $\ast$ $>$}]{shiplist,  }\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+конструктор окна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em shiplist} & список живых судов \\
+\hline
+{\em parent} & указатель на родительский виджет (окно), используется для управления памятью и контроле в модальных окнах \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_ae2d77cb79255b668a9716ac25d4c1c67}\label{class_edit_com_table_window_ae2d77cb79255b668a9716ac25d4c1c67}} 
+\index{EditComTableWindow@{EditComTableWindow}!````~EditComTableWindow@{$\sim$EditComTableWindow}}
+\index{````~EditComTableWindow@{$\sim$EditComTableWindow}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$EditComTableWindow()}{~EditComTableWindow()}}
+{\footnotesize\ttfamily Edit\+Com\+Table\+Window\+::$\sim$\+Edit\+Com\+Table\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc}\label{class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc}} 
+\index{EditComTableWindow@{EditComTableWindow}!addItem@{addItem}}
+\index{addItem@{addItem}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{addItem()}{addItem()}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::add\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})}
+
+
+
+вспомогательная функция, использующаяся для заполнения QCombo\+Box живых судов 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ship} & указатель на судно, которое будет помещено в QCombo\+Box живых судов \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{d6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705}\label{class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705}} 
+\index{EditComTableWindow@{EditComTableWindow}!getShip@{getShip}}
+\index{getShip@{getShip}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{getShip()}{getShip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ship}{Ship}} $\ast$ Edit\+Com\+Table\+Window\+::get\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+вспомогательная функция, использующаяся для получения выбраного судна в QCombo\+Box живых судов 
+
+\begin{DoxyReturn}{Возвращает}
+указатель на судно, которое было выбрано в QCombo\+Box 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_a086192b3443b2ecf4bcfa9273054359e}\label{class_edit_com_table_window_a086192b3443b2ecf4bcfa9273054359e}} 
+\index{EditComTableWindow@{EditComTableWindow}!keyPressEvent@{keyPressEvent}}
+\index{keyPressEvent@{keyPressEvent}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{keyPressEvent()}{keyPressEvent()}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::key\+Press\+Event (\begin{DoxyParamCaption}\item[{QKey\+Event $\ast$}]{evt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+функция обработки нажатия на клавиши, пока окно активно 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em evt} & указтаель на событие нажатие на клавиши \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0}\label{class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0}} 
+\index{EditComTableWindow@{EditComTableWindow}!on\_addLifeBut\_clicked@{on\_addLifeBut\_clicked}}
+\index{on\_addLifeBut\_clicked@{on\_addLifeBut\_clicked}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{on\_addLifeBut\_clicked}{on\_addLifeBut\_clicked}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::on\+\_\+add\+Life\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на графическую кнопку добавления одной жизни судну 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_aef34bdc73dc2bebaa05105b8395eb92e}\label{class_edit_com_table_window_aef34bdc73dc2bebaa05105b8395eb92e}} 
+\index{EditComTableWindow@{EditComTableWindow}!on\_aliveShipsBox\_currentIndexChanged@{on\_aliveShipsBox\_currentIndexChanged}}
+\index{on\_aliveShipsBox\_currentIndexChanged@{on\_aliveShipsBox\_currentIndexChanged}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{on\_aliveShipsBox\_currentIndexChanged}{on\_aliveShipsBox\_currentIndexChanged}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::on\+\_\+alive\+Ships\+Box\+\_\+current\+Index\+Changed (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+впомогательная функция обновления графического интерфейса пользователя, при выборе другого судна в QCombo\+Box живых судов 
+
+\mbox{\Hypertarget{class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df}\label{class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df}} 
+\index{EditComTableWindow@{EditComTableWindow}!on\_lifeLineEdit\_editingFinished@{on\_lifeLineEdit\_editingFinished}}
+\index{on\_lifeLineEdit\_editingFinished@{on\_lifeLineEdit\_editingFinished}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{on\_lifeLineEdit\_editingFinished}{on\_lifeLineEdit\_editingFinished}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::on\+\_\+life\+Line\+Edit\+\_\+editing\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83}\label{class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83}} 
+\index{EditComTableWindow@{EditComTableWindow}!on\_lifeLineEdit\_returnPressed@{on\_lifeLineEdit\_returnPressed}}
+\index{on\_lifeLineEdit\_returnPressed@{on\_lifeLineEdit\_returnPressed}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{on\_lifeLineEdit\_returnPressed}{on\_lifeLineEdit\_returnPressed}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::on\+\_\+life\+Line\+Edit\+\_\+return\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на кнопку \char`\"{}Возврата\char`\"{} (Return) однострочного текстового блока, отвечающее за количество жизней судна 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4}\label{class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4}} 
+\index{EditComTableWindow@{EditComTableWindow}!on\_nameLineEdit\_editingFinished@{on\_nameLineEdit\_editingFinished}}
+\index{on\_nameLineEdit\_editingFinished@{on\_nameLineEdit\_editingFinished}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{on\_nameLineEdit\_editingFinished}{on\_nameLineEdit\_editingFinished}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::on\+\_\+name\+Line\+Edit\+\_\+editing\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки окончания однострочного текстового блока, отвечающее за названия судна 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020}\label{class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020}} 
+\index{EditComTableWindow@{EditComTableWindow}!on\_nameLineEdit\_returnPressed@{on\_nameLineEdit\_returnPressed}}
+\index{on\_nameLineEdit\_returnPressed@{on\_nameLineEdit\_returnPressed}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{on\_nameLineEdit\_returnPressed}{on\_nameLineEdit\_returnPressed}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::on\+\_\+name\+Line\+Edit\+\_\+return\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на кнопку \char`\"{}Возврата\char`\"{} (Return) однострочного текстового блока, отвечающее за названия судна 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18}\label{class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18}} 
+\index{EditComTableWindow@{EditComTableWindow}!on\_subLifeBut\_clicked@{on\_subLifeBut\_clicked}}
+\index{on\_subLifeBut\_clicked@{on\_subLifeBut\_clicked}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{on\_subLifeBut\_clicked}{on\_subLifeBut\_clicked}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::on\+\_\+sub\+Life\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на графическую кнопку удаление одной жизни судну 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23}\label{class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23}} 
+\index{EditComTableWindow@{EditComTableWindow}!updateDisplayName@{updateDisplayName}}
+\index{updateDisplayName@{updateDisplayName}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{updateDisplayName}{updateDisplayName}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::update\+Display\+Name (\begin{DoxyParamCaption}\item[{QString}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обновления отображаемого имени судна в QCombo\+Box 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & новое имя \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b}\label{class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b}} 
+\index{EditComTableWindow@{EditComTableWindow}!updateLifeLineEdit@{updateLifeLineEdit}}
+\index{updateLifeLineEdit@{updateLifeLineEdit}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{updateLifeLineEdit}{updateLifeLineEdit}}
+{\footnotesize\ttfamily void Edit\+Com\+Table\+Window\+::update\+Life\+Line\+Edit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обновления однострочного текстового блока, отвечающее за количество жизней у судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em указатель} & на судно, у которой обновилось количество жизней \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{d6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_edit_com_table_window_ac9f0295c42dc4dd81d04128acb755a67}\label{class_edit_com_table_window_ac9f0295c42dc4dd81d04128acb755a67}} 
+\index{EditComTableWindow@{EditComTableWindow}!\_ships@{\_ships}}
+\index{\_ships@{\_ships}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{\_ships}{\_ships}}
+{\footnotesize\ttfamily QVector$<$\mbox{\hyperlink{class_ship}{Ship}} $\ast$$>$ Edit\+Com\+Table\+Window\+::\+\_\+ships\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+список живых судов 
+
+\mbox{\Hypertarget{class_edit_com_table_window_a76ec75210396fca1a11ea6c09c64aad0}\label{class_edit_com_table_window_a76ec75210396fca1a11ea6c09c64aad0}} 
+\index{EditComTableWindow@{EditComTableWindow}!ui@{ui}}
+\index{ui@{ui}!EditComTableWindow@{EditComTableWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Edit\+Com\+Table\+Window$\ast$ Edit\+Com\+Table\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на графический интерфейс 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{editcomtablewindow_8h}{editcomtablewindow.\+h}}\item 
+\mbox{\hyperlink{editcomtablewindow_8cpp}{editcomtablewindow.\+cpp}}\end{DoxyCompactItemize}

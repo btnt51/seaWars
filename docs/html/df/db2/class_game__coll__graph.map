@@ -1,0 +1,5 @@
+<map id="Game" name="Game">
+<area shape="rect" id="node1" title="класс отвечающий за состояние и управление ходом игры" alt="" coords="5,360,184,555"/>
+<area shape="rect" id="node2" title=" " alt="" coords="54,5,125,83"/>
+<area shape="rect" id="node3" href="$dc/d67/class_field.html" title="класс&#45;обёртка над массивом клеток игрового поля" alt="" coords="111,132,239,297"/>
+</map>

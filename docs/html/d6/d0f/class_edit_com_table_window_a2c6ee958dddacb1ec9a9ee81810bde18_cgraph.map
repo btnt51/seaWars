@@ -1,0 +1,6 @@
+<map id="EditComTableWindow::on_subLifeBut_clicked" name="EditComTableWindow::on_subLifeBut_clicked">
+<area shape="rect" id="node1" title="функция обработки нажатия на графическую кнопку удаление одной жизни судну" alt="" coords="5,35,167,75"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="215,5,365,45"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1" title="функция отнимания жизней у судна" alt="" coords="237,70,343,95"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="413,70,556,95"/>
+</map>

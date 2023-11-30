@@ -1,0 +1,5 @@
+<map id="deadShipWindow::deadShipWindow" name="deadShipWindow::deadShipWindow">
+<area shape="rect" id="node1" title="Конструктор окна" alt="" coords="5,23,191,63"/>
+<area shape="rect" id="node2" href="$dd/df0/classdead_ship_window.html#aa72e270374b22dc609f5e71fa4e8f5c9" title="вспомогательная функция, использующаяся для заполнения QComboBox живых судов" alt="" coords="239,5,417,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="465,31,575,56"/>
+</map>

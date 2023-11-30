@@ -1,0 +1,88 @@
+\hypertarget{field_8h}{}\doxysection{Файл field.\+h}
+\label{field_8h}\index{field.h@{field.h}}
+
+
+Файл который содержит перечисление ECell и класс \mbox{\hyperlink{class_field}{Field}}, отвечающий за игровое поле.  
+
+
+{\ttfamily \#include \char`\"{}ship.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$QObject$>$}\newline
+{\ttfamily \#include $<$QDebug$>$}\newline
+Граф включаемых заголовочных файлов для field.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{d7/d64/field_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{d6/d8f/field_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_field}{Field}}
+\begin{DoxyCompactList}\small\item\em класс-\/обёртка над массивом клеток игрового поля \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}} \{ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7}{CLEAR}}
+, \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa}{SHIP}}
+, \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb}{DEAD\+\_\+\+SHIP}}
+, \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d}{SHIP\+\_\+\+HITED}}
+ \}
+\begin{DoxyCompactList}\small\item\em Перечисление отвечающее за тип клетки. Может принимать значения, CLEAR -\/ пустая клетка, SHIP -\/ в клетке судно, DEAD\+\_\+\+SHIP -\/ в клетке уничтоженное судно, SHIP\+\_\+\+HITED -\/ в клетке подбитое судно \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл который содержит перечисление ECell и класс \mbox{\hyperlink{class_field}{Field}}, отвечающий за игровое поле. 
+
+\begin{DoxyAuthor}{Автор}
+Evgeniy btnt51 (\href{mailto:prog@btnt51.ru}{\texttt{ prog@btnt51.\+ru}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2023-\/02-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}\label{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}} 
+\index{field.h@{field.h}!ECell@{ECell}}
+\index{ECell@{ECell}!field.h@{field.h}}
+\doxysubsubsection{\texorpdfstring{ECell}{ECell}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}}}
+
+
+
+Перечисление отвечающее за тип клетки. Может принимать значения, CLEAR -\/ пустая клетка, SHIP -\/ в клетке судно, DEAD\+\_\+\+SHIP -\/ в клетке уничтоженное судно, SHIP\+\_\+\+HITED -\/ в клетке подбитое судно 
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CLEAR@{CLEAR}!field.h@{field.h}}\index{field.h@{field.h}!CLEAR@{CLEAR}}}\mbox{\Hypertarget{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7}\label{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7}} 
+CLEAR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHIP@{SHIP}!field.h@{field.h}}\index{field.h@{field.h}!SHIP@{SHIP}}}\mbox{\Hypertarget{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa}\label{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa}} 
+SHIP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEAD\_SHIP@{DEAD\_SHIP}!field.h@{field.h}}\index{field.h@{field.h}!DEAD\_SHIP@{DEAD\_SHIP}}}\mbox{\Hypertarget{field_8h_a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb}\label{field_8h_a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb}} 
+DEAD\+\_\+\+SHIP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHIP\_HITED@{SHIP\_HITED}!field.h@{field.h}}\index{field.h@{field.h}!SHIP\_HITED@{SHIP\_HITED}}}\mbox{\Hypertarget{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d}\label{field_8h_a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d}} 
+SHIP\+\_\+\+HITED&\\
+\hline
+
+\end{DoxyEnumFields}

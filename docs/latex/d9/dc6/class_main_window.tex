@@ -1,0 +1,992 @@
+\hypertarget{class_main_window}{}\doxysection{Класс Main\+Window}
+\label{class_main_window}\index{MainWindow@{MainWindow}}
+
+
+класс, отвечающий за главный экран приложения  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\+h$>$}
+
+
+
+Граф наследования\+:Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{de/d4b/class_main_window__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Main\+Window\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{d0/db8/class_main_window__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_window_a996c5a2b6f77944776856f08ec30858d}{Main\+Window}} (QWidget $\ast$parent=nullptr)
+\begin{DoxyCompactList}\small\item\em конструктор главного экрана \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\+Main\+Window}} ()
+\begin{DoxyCompactList}\small\item\em деструктор главного экрана \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Защищенные члены}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_main_window_aad75236c74a5c340c3e18749a9b5eb4f}{resize\+Event}} (QResize\+Event $\ast$event) override
+\begin{DoxyCompactList}\small\item\em перегруженная функция изменения окна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_ab30e2df74cd3c1778bc546da3d9b3efb}{on\+\_\+field\+Table\+\_\+cell\+Clicked}} (int row, int column)
+\begin{DoxyCompactList}\small\item\em функция обработка нажатия на таблицу \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a1af75eca1df7b05f330959eb187ab93a}{on\+\_\+place\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обраобки нажатия на кнопку добавления судна на таблицу \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ad449f47f919c88fd16c55fd6a311b548}{update\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em функция обновления таймера \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a8bc70626215bfbe408ea664ea91ba758}{initialize\+UI}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция инициализации графического интерфейса пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a9e56e724c70851a62c0294ecfec15934}{initialize\+Field\+Table}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция инциализации таблицы игрового поля \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a00f01f0b3d87a69a698093e1b54be59e}{initialize\+Commands\+Table}} ()
+\begin{DoxyCompactList}\small\item\em вспомогталельная функция инциализации таблицы команд-\/участников \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a5098bd70995dedcc0c0f021ee9609217}{initialize\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция инициализации макета \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a20ad0eb454422be4413c81e079b5913a}{initialize\+Timers}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция инициализации таймера \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a0904d1962a7182b0cdf8f6177ae3ad18}{initialize\+Pposk\+Logo}} ()
+\begin{DoxyCompactList}\small\item\em вспомогтаельная функции иницилзации изображения-\/логотипа ППОСК \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_add1236fd226b73f0d9e352f5cb044f1d}{on\+\_\+shoot\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на кнопку выстрела \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a7778d2179a8c89de890ee3aff82e708f}{on\+\_\+timer\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на кнопку таймера \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a1110beccc4c985846923f837c82ca7b8}{update\+Command\+Ship}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em функция обновления судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af01910751d176af9410fa3633474f192}{update\+Dead\+Ship}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em функция обновления уничтоженного судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a25c2d8230b7609a98dd150d28a86963e}{on\+\_\+commands\+Table\+\_\+cell\+Clicked}} (int row, int column)
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на клетку в таблице комманд \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_main_window_af651aa0bac796089d80deb9a9fa97243}{convert\+Coordinates}} (std\+::tuple$<$ int, int $>$ pair)
+\begin{DoxyCompactList}\small\item\em вспомогательная функция конвертации координат из кортежа с целыми числами в строку \end{DoxyCompactList}\item 
+std\+::tuple$<$ int, int $>$ \mbox{\hyperlink{class_main_window_aa036463f226a257eb518ad029eb0ad9d}{convert\+Coordinates}} (QString coordinates)
+\begin{DoxyCompactList}\small\item\em вспомогательная функция конвертации координат из строки в кортеж с целыми числами \end{DoxyCompactList}\item 
+QColor $\ast$ \mbox{\hyperlink{class_main_window_a2111434723e3181d0470638a0c92c934}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em функция генерации цвета \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ad4f6e4b62d408f6d9162b3bad3c2113f}{set\+Name\+Qstring}} (QString name)
+\begin{DoxyCompactList}\small\item\em вспомогтаельная функция для получения названия судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_ad5f434debe673c33bdf3a5f955507972}{set\+Name\+And\+Coordinates}} (QString name, QString coordinates)
+\begin{DoxyCompactList}\small\item\em вспомогтаельная функция для получения названия и координат судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a7326befac70806a0ef7854cd0300cf57}{on\+\_\+add\+Ship\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажаия на кнопку добавления судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_aaf9e8654153aa29b2de127aa7d1a9d1c}{clear\+Background\+Fields\+Table}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция очистки заднего фона клеток таблиц игрового поля \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_af3bcf24a3fa3f0305f62e55b1ffbe1e2}{calculate\+Lifes}} ()
+\begin{DoxyCompactList}\small\item\em функция подсчета жизней \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a8403715ec328434ebf1e464c9be2eeb5}{on\+\_\+edit\+Ships\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на кнопку редактирования судов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a6865908102f77692f29ef39dd4d9ee96}{on\+\_\+end\+But\+\_\+clicked}} ()
+\begin{DoxyCompactList}\small\item\em функция обработки нажатия на кнопку конца игры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_main_window_afc1c046a5974c9a1a68e0dc94cd9b30d}{set\+Ship}} (size\+\_\+t row, size\+\_\+t column, \mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em функция добавления судна на таблицу игрового поля \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ship}{Ship}} $\ast$ \mbox{\hyperlink{class_main_window_a06188c2b90c5af2387273fde1ca4e699}{get\+Ship}} (size\+\_\+t row, size\+\_\+t column)
+\begin{DoxyCompactList}\small\item\em функция получения указателя на судно \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_a8fc364f7411f32a9ffaaef6045c6db28}{initialize\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em функция инициализации кнопок графического интерфейса \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_main_window_acc57d86037d0e7babbd0370c07092ab9}{set\+Dark\+Theme}} ()
+\begin{DoxyCompactList}\small\item\em функция установки темной темы графического интерфейса \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+Ui\+::\+Main\+Window $\ast$ \mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}}
+\begin{DoxyCompactList}\small\item\em указатель на графический интерфейс \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game}{Game}} $\ast$ \mbox{\hyperlink{class_main_window_a2895bc0d4a64ed42dfb8080cb7264a3c}{\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em указатель на контроллер игры \end{DoxyCompactList}\item 
+QImage $\ast$ \mbox{\hyperlink{class_main_window_ab8b100386521d1f2fcf8cac7d7b07cbc}{\+\_\+anchor}}
+\begin{DoxyCompactList}\small\item\em указатель на изображение судна в виде якоря \end{DoxyCompactList}\item 
+QPixmap $\ast$ \mbox{\hyperlink{class_main_window_aec04fb254587f8fd8cf5f03f074393ca}{\+\_\+pposk\+Logo}}
+\begin{DoxyCompactList}\small\item\em указатель на изображение логотипа ППОСК \end{DoxyCompactList}\item 
+QTime $\ast$ \mbox{\hyperlink{class_main_window_af94eb71eb5184f93ff912c77dec70416}{\+\_\+time}}
+\begin{DoxyCompactList}\small\item\em указатель на \end{DoxyCompactList}\item 
+QTimer $\ast$ \mbox{\hyperlink{class_main_window_abce32dfbf36b68e286221cb26672dbe1}{\+\_\+timer}}
+\begin{DoxyCompactList}\small\item\em указатель на таймер \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_main_window_a9ec0315567bc791b3d3a61f3f50c7407}{\+\_\+ship\+Name\+String}}
+\begin{DoxyCompactList}\small\item\em вспомогательная переменная для получения названия судна из окна добавления судна \end{DoxyCompactList}\item 
+QVector$<$ \mbox{\hyperlink{class_ship}{Ship}} $\ast$ $>$ \mbox{\hyperlink{class_main_window_a60f010694879780ccc709a1c87fa4168}{\+\_\+ships}}
+\begin{DoxyCompactList}\small\item\em массив судов \end{DoxyCompactList}\item 
+QVector$<$ QPair$<$ int, int $>$ $>$ \mbox{\hyperlink{class_main_window_af84a834297a9e9899cf1f52bf3b73e2a}{\+\_\+black\+List}}
+\begin{DoxyCompactList}\small\item\em массив координата по которым нельзя стрелять \end{DoxyCompactList}\item 
+QVector$<$ QColor $\ast$ $>$ \mbox{\hyperlink{class_main_window_a80e6388577c7611b44a6d899b950733f}{\+\_\+color\+List}}
+\begin{DoxyCompactList}\small\item\em массив используемых цветов \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_main_window_a3316691eb1af12457a3399b2cf1d9387}{\+\_\+coordinates}}
+\begin{DoxyCompactList}\small\item\em вспомогателдья переменная для получения координат судна из окна добавления судна \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ship_name}{Ship\+Name}} $\ast$ \mbox{\hyperlink{class_main_window_acfc4f0994e1b1bccb66f9a6e2a88b733}{\+\_\+ship\+Form}}
+\begin{DoxyCompactList}\small\item\em указатель на окно добавления судна \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_main_window_a0bbc77b7ba21b0d2cb4ef51695c77a96}{\+\_\+amount\+Of\+Shots}}
+\begin{DoxyCompactList}\small\item\em количество выстрелов за раунд \end{DoxyCompactList}\item 
+QSize \mbox{\hyperlink{class_main_window_a56d1991b761d9b420ca12349c496e7b2}{def\+Size}}
+\begin{DoxyCompactList}\small\item\em стандартный размер онка при запуске \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+класс, отвечающий за главный экран приложения 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_main_window_a996c5a2b6f77944776856f08ec30858d}\label{class_main_window_a996c5a2b6f77944776856f08ec30858d}} 
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\index{MainWindow@{MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{MainWindow()}{MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::\+Main\+Window (\begin{DoxyParamCaption}\item[{QWidget $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+конструктор главного экрана 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em parent} & указатель на родительский виджет (окно), используется для управления памятью и контроле в модальных окнах \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a996c5a2b6f77944776856f08ec30858d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}} 
+\index{MainWindow@{MainWindow}!````~MainWindow@{$\sim$MainWindow}}
+\index{````~MainWindow@{$\sim$MainWindow}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MainWindow()}{~MainWindow()}}
+{\footnotesize\ttfamily Main\+Window\+::$\sim$\+Main\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+деструктор главного экрана 
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_main_window_af3bcf24a3fa3f0305f62e55b1ffbe1e2}\label{class_main_window_af3bcf24a3fa3f0305f62e55b1ffbe1e2}} 
+\index{MainWindow@{MainWindow}!calculateLifes@{calculateLifes}}
+\index{calculateLifes@{calculateLifes}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{calculateLifes}{calculateLifes}}
+{\footnotesize\ttfamily void Main\+Window\+::calculate\+Lifes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция подсчета жизней 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_af3bcf24a3fa3f0305f62e55b1ffbe1e2_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_af3bcf24a3fa3f0305f62e55b1ffbe1e2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_aaf9e8654153aa29b2de127aa7d1a9d1c}\label{class_main_window_aaf9e8654153aa29b2de127aa7d1a9d1c}} 
+\index{MainWindow@{MainWindow}!clearBackgroundFieldsTable@{clearBackgroundFieldsTable}}
+\index{clearBackgroundFieldsTable@{clearBackgroundFieldsTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{clearBackgroundFieldsTable}{clearBackgroundFieldsTable}}
+{\footnotesize\ttfamily void Main\+Window\+::clear\+Background\+Fields\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция очистки заднего фона клеток таблиц игрового поля 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_aaf9e8654153aa29b2de127aa7d1a9d1c_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_aaf9e8654153aa29b2de127aa7d1a9d1c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_aa036463f226a257eb518ad029eb0ad9d}\label{class_main_window_aa036463f226a257eb518ad029eb0ad9d}} 
+\index{MainWindow@{MainWindow}!convertCoordinates@{convertCoordinates}}
+\index{convertCoordinates@{convertCoordinates}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{convertCoordinates}{convertCoordinates}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::tuple$<$ int, int $>$ Main\+Window\+::convert\+Coordinates (\begin{DoxyParamCaption}\item[{QString}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция конвертации координат из строки в кортеж с целыми числами 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em coordinates} & строка содержащая координаты \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+кортеж координат, первое -\/ Х, второе -\/ Y 
+\end{DoxyReturn}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_aa036463f226a257eb518ad029eb0ad9d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_af651aa0bac796089d80deb9a9fa97243}\label{class_main_window_af651aa0bac796089d80deb9a9fa97243}} 
+\index{MainWindow@{MainWindow}!convertCoordinates@{convertCoordinates}}
+\index{convertCoordinates@{convertCoordinates}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{convertCoordinates}{convertCoordinates}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily QString Main\+Window\+::convert\+Coordinates (\begin{DoxyParamCaption}\item[{std\+::tuple$<$ int, int $>$}]{pair }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция конвертации координат из кортежа с целыми числами в строку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em pair} & кортеж координат, первое -\/ Х, второе -\/ Y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+координаты в формате строки 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_af651aa0bac796089d80deb9a9fa97243_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a2111434723e3181d0470638a0c92c934}\label{class_main_window_a2111434723e3181d0470638a0c92c934}} 
+\index{MainWindow@{MainWindow}!getColor@{getColor}}
+\index{getColor@{getColor}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getColor}{getColor}}
+{\footnotesize\ttfamily QColor $\ast$ Main\+Window\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция генерации цвета 
+
+\begin{DoxyReturn}{Возвращает}
+указатель на цвет 
+\end{DoxyReturn}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{d9/dc6/class_main_window_a2111434723e3181d0470638a0c92c934_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a2111434723e3181d0470638a0c92c934_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a06188c2b90c5af2387273fde1ca4e699}\label{class_main_window_a06188c2b90c5af2387273fde1ca4e699}} 
+\index{MainWindow@{MainWindow}!getShip@{getShip}}
+\index{getShip@{getShip}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{getShip()}{getShip()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ship}{Ship}} $\ast$ Main\+Window\+::get\+Ship (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+функция получения указателя на судно 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд судна \\
+\hline
+{\em column} & столбец судна \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+указатель на судно 
+\end{DoxyReturn}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{d9/dc6/class_main_window_a06188c2b90c5af2387273fde1ca4e699_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a06188c2b90c5af2387273fde1ca4e699_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a8fc364f7411f32a9ffaaef6045c6db28}\label{class_main_window_a8fc364f7411f32a9ffaaef6045c6db28}} 
+\index{MainWindow@{MainWindow}!initializeButtons@{initializeButtons}}
+\index{initializeButtons@{initializeButtons}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{initializeButtons()}{initializeButtons()}}
+{\footnotesize\ttfamily void Main\+Window\+::initialize\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+функция инициализации кнопок графического интерфейса 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a8fc364f7411f32a9ffaaef6045c6db28_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a00f01f0b3d87a69a698093e1b54be59e}\label{class_main_window_a00f01f0b3d87a69a698093e1b54be59e}} 
+\index{MainWindow@{MainWindow}!initializeCommandsTable@{initializeCommandsTable}}
+\index{initializeCommandsTable@{initializeCommandsTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{initializeCommandsTable}{initializeCommandsTable}}
+{\footnotesize\ttfamily void Main\+Window\+::initialize\+Commands\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогталельная функция инциализации таблицы команд-\/участников 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a00f01f0b3d87a69a698093e1b54be59e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a9e56e724c70851a62c0294ecfec15934}\label{class_main_window_a9e56e724c70851a62c0294ecfec15934}} 
+\index{MainWindow@{MainWindow}!initializeFieldTable@{initializeFieldTable}}
+\index{initializeFieldTable@{initializeFieldTable}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{initializeFieldTable}{initializeFieldTable}}
+{\footnotesize\ttfamily void Main\+Window\+::initialize\+Field\+Table (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция инциализации таблицы игрового поля 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a9e56e724c70851a62c0294ecfec15934_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a5098bd70995dedcc0c0f021ee9609217}\label{class_main_window_a5098bd70995dedcc0c0f021ee9609217}} 
+\index{MainWindow@{MainWindow}!initializeLayout@{initializeLayout}}
+\index{initializeLayout@{initializeLayout}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{initializeLayout}{initializeLayout}}
+{\footnotesize\ttfamily void Main\+Window\+::initialize\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция инициализации макета 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a5098bd70995dedcc0c0f021ee9609217_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a0904d1962a7182b0cdf8f6177ae3ad18}\label{class_main_window_a0904d1962a7182b0cdf8f6177ae3ad18}} 
+\index{MainWindow@{MainWindow}!initializePposkLogo@{initializePposkLogo}}
+\index{initializePposkLogo@{initializePposkLogo}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{initializePposkLogo}{initializePposkLogo}}
+{\footnotesize\ttfamily void Main\+Window\+::initialize\+Pposk\+Logo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогтаельная функции иницилзации изображения-\/логотипа ППОСК 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a0904d1962a7182b0cdf8f6177ae3ad18_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a20ad0eb454422be4413c81e079b5913a}\label{class_main_window_a20ad0eb454422be4413c81e079b5913a}} 
+\index{MainWindow@{MainWindow}!initializeTimers@{initializeTimers}}
+\index{initializeTimers@{initializeTimers}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{initializeTimers}{initializeTimers}}
+{\footnotesize\ttfamily void Main\+Window\+::initialize\+Timers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция инициализации таймера 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a20ad0eb454422be4413c81e079b5913a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a8bc70626215bfbe408ea664ea91ba758}\label{class_main_window_a8bc70626215bfbe408ea664ea91ba758}} 
+\index{MainWindow@{MainWindow}!initializeUI@{initializeUI}}
+\index{initializeUI@{initializeUI}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{initializeUI}{initializeUI}}
+{\footnotesize\ttfamily void Main\+Window\+::initialize\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогательная функция инициализации графического интерфейса пользователя 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a8bc70626215bfbe408ea664ea91ba758_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a8bc70626215bfbe408ea664ea91ba758_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a7326befac70806a0ef7854cd0300cf57}\label{class_main_window_a7326befac70806a0ef7854cd0300cf57}} 
+\index{MainWindow@{MainWindow}!on\_addShipBut\_clicked@{on\_addShipBut\_clicked}}
+\index{on\_addShipBut\_clicked@{on\_addShipBut\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_addShipBut\_clicked}{on\_addShipBut\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+add\+Ship\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажаия на кнопку добавления судна 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a7326befac70806a0ef7854cd0300cf57_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a25c2d8230b7609a98dd150d28a86963e}\label{class_main_window_a25c2d8230b7609a98dd150d28a86963e}} 
+\index{MainWindow@{MainWindow}!on\_commandsTable\_cellClicked@{on\_commandsTable\_cellClicked}}
+\index{on\_commandsTable\_cellClicked@{on\_commandsTable\_cellClicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_commandsTable\_cellClicked}{on\_commandsTable\_cellClicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+commands\+Table\+\_\+cell\+Clicked (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на клетку в таблице комманд 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд клетки \\
+\hline
+{\em column} & столбец клетки \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a25c2d8230b7609a98dd150d28a86963e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a8403715ec328434ebf1e464c9be2eeb5}\label{class_main_window_a8403715ec328434ebf1e464c9be2eeb5}} 
+\index{MainWindow@{MainWindow}!on\_editShipsBut\_clicked@{on\_editShipsBut\_clicked}}
+\index{on\_editShipsBut\_clicked@{on\_editShipsBut\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_editShipsBut\_clicked}{on\_editShipsBut\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+edit\+Ships\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на кнопку редактирования судов 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a8403715ec328434ebf1e464c9be2eeb5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a6865908102f77692f29ef39dd4d9ee96}\label{class_main_window_a6865908102f77692f29ef39dd4d9ee96}} 
+\index{MainWindow@{MainWindow}!on\_endBut\_clicked@{on\_endBut\_clicked}}
+\index{on\_endBut\_clicked@{on\_endBut\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_endBut\_clicked}{on\_endBut\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+end\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на кнопку конца игры 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a6865908102f77692f29ef39dd4d9ee96_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ab30e2df74cd3c1778bc546da3d9b3efb}\label{class_main_window_ab30e2df74cd3c1778bc546da3d9b3efb}} 
+\index{MainWindow@{MainWindow}!on\_fieldTable\_cellClicked@{on\_fieldTable\_cellClicked}}
+\index{on\_fieldTable\_cellClicked@{on\_fieldTable\_cellClicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_fieldTable\_cellClicked}{on\_fieldTable\_cellClicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+field\+Table\+\_\+cell\+Clicked (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработка нажатия на таблицу 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд клетки \\
+\hline
+{\em column} & столбец клетки \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_ab30e2df74cd3c1778bc546da3d9b3efb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a1af75eca1df7b05f330959eb187ab93a}\label{class_main_window_a1af75eca1df7b05f330959eb187ab93a}} 
+\index{MainWindow@{MainWindow}!on\_placeBut\_clicked@{on\_placeBut\_clicked}}
+\index{on\_placeBut\_clicked@{on\_placeBut\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_placeBut\_clicked}{on\_placeBut\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+place\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обраобки нажатия на кнопку добавления судна на таблицу 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a1af75eca1df7b05f330959eb187ab93a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_add1236fd226b73f0d9e352f5cb044f1d}\label{class_main_window_add1236fd226b73f0d9e352f5cb044f1d}} 
+\index{MainWindow@{MainWindow}!on\_shootBut\_clicked@{on\_shootBut\_clicked}}
+\index{on\_shootBut\_clicked@{on\_shootBut\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_shootBut\_clicked}{on\_shootBut\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+shoot\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на кнопку выстрела 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_add1236fd226b73f0d9e352f5cb044f1d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a7778d2179a8c89de890ee3aff82e708f}\label{class_main_window_a7778d2179a8c89de890ee3aff82e708f}} 
+\index{MainWindow@{MainWindow}!on\_timerBut\_clicked@{on\_timerBut\_clicked}}
+\index{on\_timerBut\_clicked@{on\_timerBut\_clicked}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{on\_timerBut\_clicked}{on\_timerBut\_clicked}}
+{\footnotesize\ttfamily void Main\+Window\+::on\+\_\+timer\+But\+\_\+clicked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обработки нажатия на кнопку таймера 
+
+\mbox{\Hypertarget{class_main_window_aad75236c74a5c340c3e18749a9b5eb4f}\label{class_main_window_aad75236c74a5c340c3e18749a9b5eb4f}} 
+\index{MainWindow@{MainWindow}!resizeEvent@{resizeEvent}}
+\index{resizeEvent@{resizeEvent}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{resizeEvent()}{resizeEvent()}}
+{\footnotesize\ttfamily void Main\+Window\+::resize\+Event (\begin{DoxyParamCaption}\item[{QResize\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+перегруженная функция изменения окна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em event} & событие изменения экрана \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_aad75236c74a5c340c3e18749a9b5eb4f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_acc57d86037d0e7babbd0370c07092ab9}\label{class_main_window_acc57d86037d0e7babbd0370c07092ab9}} 
+\index{MainWindow@{MainWindow}!setDarkTheme@{setDarkTheme}}
+\index{setDarkTheme@{setDarkTheme}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setDarkTheme()}{setDarkTheme()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Dark\+Theme (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+функция установки темной темы графического интерфейса 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_acc57d86037d0e7babbd0370c07092ab9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ad5f434debe673c33bdf3a5f955507972}\label{class_main_window_ad5f434debe673c33bdf3a5f955507972}} 
+\index{MainWindow@{MainWindow}!setNameAndCoordinates@{setNameAndCoordinates}}
+\index{setNameAndCoordinates@{setNameAndCoordinates}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setNameAndCoordinates}{setNameAndCoordinates}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Name\+And\+Coordinates (\begin{DoxyParamCaption}\item[{QString}]{name,  }\item[{QString}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогтаельная функция для получения названия и координат судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & название судна \\
+\hline
+{\em coordinates} & координаты судна \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_ad5f434debe673c33bdf3a5f955507972_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ad4f6e4b62d408f6d9162b3bad3c2113f}\label{class_main_window_ad4f6e4b62d408f6d9162b3bad3c2113f}} 
+\index{MainWindow@{MainWindow}!setNameQstring@{setNameQstring}}
+\index{setNameQstring@{setNameQstring}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setNameQstring}{setNameQstring}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Name\+Qstring (\begin{DoxyParamCaption}\item[{QString}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+вспомогтаельная функция для получения названия судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & название судна \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_ad4f6e4b62d408f6d9162b3bad3c2113f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_afc1c046a5974c9a1a68e0dc94cd9b30d}\label{class_main_window_afc1c046a5974c9a1a68e0dc94cd9b30d}} 
+\index{MainWindow@{MainWindow}!setShip@{setShip}}
+\index{setShip@{setShip}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{setShip()}{setShip()}}
+{\footnotesize\ttfamily void Main\+Window\+::set\+Ship (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{column,  }\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+функция добавления судна на таблицу игрового поля 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд судна \\
+\hline
+{\em column} & столбец судна \\
+\hline
+{\em ship} & указатель на добавляемое судно \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_afc1c046a5974c9a1a68e0dc94cd9b30d_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_afc1c046a5974c9a1a68e0dc94cd9b30d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_a1110beccc4c985846923f837c82ca7b8}\label{class_main_window_a1110beccc4c985846923f837c82ca7b8}} 
+\index{MainWindow@{MainWindow}!updateCommandShip@{updateCommandShip}}
+\index{updateCommandShip@{updateCommandShip}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateCommandShip}{updateCommandShip}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Command\+Ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обновления судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ship} & указатель на судно, которое необходимо обновить \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a1110beccc4c985846923f837c82ca7b8_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_a1110beccc4c985846923f837c82ca7b8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_af01910751d176af9410fa3633474f192}\label{class_main_window_af01910751d176af9410fa3633474f192}} 
+\index{MainWindow@{MainWindow}!updateDeadShip@{updateDeadShip}}
+\index{updateDeadShip@{updateDeadShip}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateDeadShip}{updateDeadShip}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Dead\+Ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обновления уничтоженного судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ship} & указатель на уничтоженное судно, которое необходимо обновить \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_af01910751d176af9410fa3633474f192_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_af01910751d176af9410fa3633474f192_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_main_window_ad449f47f919c88fd16c55fd6a311b548}\label{class_main_window_ad449f47f919c88fd16c55fd6a311b548}} 
+\index{MainWindow@{MainWindow}!updateTimer@{updateTimer}}
+\index{updateTimer@{updateTimer}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{updateTimer}{updateTimer}}
+{\footnotesize\ttfamily void Main\+Window\+::update\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}
+
+
+
+функция обновления таймера 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_ad449f47f919c88fd16c55fd6a311b548_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d9/dc6/class_main_window_ad449f47f919c88fd16c55fd6a311b548_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_main_window_a0bbc77b7ba21b0d2cb4ef51695c77a96}\label{class_main_window_a0bbc77b7ba21b0d2cb4ef51695c77a96}} 
+\index{MainWindow@{MainWindow}!\_amountOfShots@{\_amountOfShots}}
+\index{\_amountOfShots@{\_amountOfShots}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_amountOfShots}{\_amountOfShots}}
+{\footnotesize\ttfamily int Main\+Window\+::\+\_\+amount\+Of\+Shots\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+количество выстрелов за раунд 
+
+\mbox{\Hypertarget{class_main_window_ab8b100386521d1f2fcf8cac7d7b07cbc}\label{class_main_window_ab8b100386521d1f2fcf8cac7d7b07cbc}} 
+\index{MainWindow@{MainWindow}!\_anchor@{\_anchor}}
+\index{\_anchor@{\_anchor}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_anchor}{\_anchor}}
+{\footnotesize\ttfamily QImage$\ast$ Main\+Window\+::\+\_\+anchor\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на изображение судна в виде якоря 
+
+\mbox{\Hypertarget{class_main_window_af84a834297a9e9899cf1f52bf3b73e2a}\label{class_main_window_af84a834297a9e9899cf1f52bf3b73e2a}} 
+\index{MainWindow@{MainWindow}!\_blackList@{\_blackList}}
+\index{\_blackList@{\_blackList}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_blackList}{\_blackList}}
+{\footnotesize\ttfamily QVector$<$QPair$<$int, int$>$ $>$ Main\+Window\+::\+\_\+black\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+массив координата по которым нельзя стрелять 
+
+\mbox{\Hypertarget{class_main_window_a80e6388577c7611b44a6d899b950733f}\label{class_main_window_a80e6388577c7611b44a6d899b950733f}} 
+\index{MainWindow@{MainWindow}!\_colorList@{\_colorList}}
+\index{\_colorList@{\_colorList}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_colorList}{\_colorList}}
+{\footnotesize\ttfamily QVector$<$QColor$\ast$$>$ Main\+Window\+::\+\_\+color\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+массив используемых цветов 
+
+\mbox{\Hypertarget{class_main_window_a3316691eb1af12457a3399b2cf1d9387}\label{class_main_window_a3316691eb1af12457a3399b2cf1d9387}} 
+\index{MainWindow@{MainWindow}!\_coordinates@{\_coordinates}}
+\index{\_coordinates@{\_coordinates}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_coordinates}{\_coordinates}}
+{\footnotesize\ttfamily QString Main\+Window\+::\+\_\+coordinates\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+вспомогателдья переменная для получения координат судна из окна добавления судна 
+
+\mbox{\Hypertarget{class_main_window_a2895bc0d4a64ed42dfb8080cb7264a3c}\label{class_main_window_a2895bc0d4a64ed42dfb8080cb7264a3c}} 
+\index{MainWindow@{MainWindow}!\_game@{\_game}}
+\index{\_game@{\_game}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_game}{\_game}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game}{Game}}$\ast$ Main\+Window\+::\+\_\+game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на контроллер игры 
+
+\mbox{\Hypertarget{class_main_window_aec04fb254587f8fd8cf5f03f074393ca}\label{class_main_window_aec04fb254587f8fd8cf5f03f074393ca}} 
+\index{MainWindow@{MainWindow}!\_pposkLogo@{\_pposkLogo}}
+\index{\_pposkLogo@{\_pposkLogo}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_pposkLogo}{\_pposkLogo}}
+{\footnotesize\ttfamily QPixmap$\ast$ Main\+Window\+::\+\_\+pposk\+Logo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на изображение логотипа ППОСК 
+
+\mbox{\Hypertarget{class_main_window_acfc4f0994e1b1bccb66f9a6e2a88b733}\label{class_main_window_acfc4f0994e1b1bccb66f9a6e2a88b733}} 
+\index{MainWindow@{MainWindow}!\_shipForm@{\_shipForm}}
+\index{\_shipForm@{\_shipForm}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_shipForm}{\_shipForm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_ship_name}{Ship\+Name}}$\ast$ Main\+Window\+::\+\_\+ship\+Form\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на окно добавления судна 
+
+\mbox{\Hypertarget{class_main_window_a9ec0315567bc791b3d3a61f3f50c7407}\label{class_main_window_a9ec0315567bc791b3d3a61f3f50c7407}} 
+\index{MainWindow@{MainWindow}!\_shipNameString@{\_shipNameString}}
+\index{\_shipNameString@{\_shipNameString}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_shipNameString}{\_shipNameString}}
+{\footnotesize\ttfamily QString Main\+Window\+::\+\_\+ship\+Name\+String\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+вспомогательная переменная для получения названия судна из окна добавления судна 
+
+\mbox{\Hypertarget{class_main_window_a60f010694879780ccc709a1c87fa4168}\label{class_main_window_a60f010694879780ccc709a1c87fa4168}} 
+\index{MainWindow@{MainWindow}!\_ships@{\_ships}}
+\index{\_ships@{\_ships}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_ships}{\_ships}}
+{\footnotesize\ttfamily QVector$<$\mbox{\hyperlink{class_ship}{Ship}}$\ast$$>$ Main\+Window\+::\+\_\+ships\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+массив судов 
+
+\mbox{\Hypertarget{class_main_window_af94eb71eb5184f93ff912c77dec70416}\label{class_main_window_af94eb71eb5184f93ff912c77dec70416}} 
+\index{MainWindow@{MainWindow}!\_time@{\_time}}
+\index{\_time@{\_time}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_time}{\_time}}
+{\footnotesize\ttfamily QTime$\ast$ Main\+Window\+::\+\_\+time\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на 
+
+\mbox{\Hypertarget{class_main_window_abce32dfbf36b68e286221cb26672dbe1}\label{class_main_window_abce32dfbf36b68e286221cb26672dbe1}} 
+\index{MainWindow@{MainWindow}!\_timer@{\_timer}}
+\index{\_timer@{\_timer}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
+{\footnotesize\ttfamily QTimer$\ast$ Main\+Window\+::\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на таймер 
+
+\mbox{\Hypertarget{class_main_window_a56d1991b761d9b420ca12349c496e7b2}\label{class_main_window_a56d1991b761d9b420ca12349c496e7b2}} 
+\index{MainWindow@{MainWindow}!defSize@{defSize}}
+\index{defSize@{defSize}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{defSize}{defSize}}
+{\footnotesize\ttfamily QSize Main\+Window\+::def\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+стандартный размер онка при запуске 
+
+\mbox{\Hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}\label{class_main_window_a35466a70ed47252a0191168126a352a5}} 
+\index{MainWindow@{MainWindow}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{MainWindow}}
+\doxysubsubsection{\texorpdfstring{ui}{ui}}
+{\footnotesize\ttfamily Ui\+::\+Main\+Window$\ast$ Main\+Window\+::ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на графический интерфейс 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mainwindow_8h}{mainwindow.\+h}}\item 
+\mbox{\hyperlink{mainwindow_8cpp}{mainwindow.\+cpp}}\end{DoxyCompactItemize}

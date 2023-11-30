@@ -1,0 +1,16 @@
+<map id="Ship::updateShipInfo" name="Ship::updateShipInfo">
+<area shape="rect" id="node1" title="сигнал обновления судна" alt="" coords="693,223,836,249"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#abdbd6ad47c00da77a4745a812a2162d1" title="функция добавления жизней судну" alt="" coords="507,106,612,131"/>
+<area shape="rect" id="node7" href="$d3/d1d/class_ship.html#a69978093c1ee8dd862fe20666eae6dac" title="функция&#45;сеттер количества жизней судна" alt="" coords="473,255,645,281"/>
+<area shape="rect" id="node10" href="$d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba" title="функция&#45;сеттер нового название судна" alt="" coords="505,383,614,409"/>
+<area shape="rect" id="node13" href="$d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1" title="функция отнимания жизней у судна" alt="" coords="507,174,612,199"/>
+<area shape="rect" id="node3" href="$d6/d0f/class_edit_com_table_window.html#a8731d252a3c20864acb62dde86536bc0" title="функция обработки нажатия на графическую кнопку добавления одной жизни судну" alt="" coords="233,5,394,45"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="225,69,402,109"/>
+<area shape="rect" id="node5" href="$d3/d1d/class_ship.html#aab8b4af926606b39f635b1f39c5772ac" title="функция отправки жизней уничтоженному судну ( отнимает 5 жизни у отпровителя и добавляет 5 жизней уни..." alt="" coords="261,134,366,159"/>
+<area shape="rect" id="node6" href="$dd/df0/classdead_ship_window.html#a8d8a1738f9714213c7f4399e5143bb0d" title="функция обработки нажатия на кнопку &quot;OK&quot;" alt="" coords="5,127,153,167"/>
+<area shape="rect" id="node8" href="$d6/d0f/class_edit_com_table_window.html#ad684b57b231e6190b9a4f4080d9312df" title="функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна" alt="" coords="209,248,418,288"/>
+<area shape="rect" id="node9" href="$d6/d0f/class_edit_com_table_window.html#ad63d13d9e27a2703cf70f83b403e9f83" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="212,312,415,352"/>
+<area shape="rect" id="node11" href="$d6/d0f/class_edit_com_table_window.html#afbb6028a9090959c13a8abfc573e05c4" title="функция обработки окончания однострочного текстового блока, отвечающее за названия судна" alt="" coords="201,376,425,416"/>
+<area shape="rect" id="node12" href="$d6/d0f/class_edit_com_table_window.html#adb7e30147cd7dbb8a62f16b7afb98020" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="204,440,423,480"/>
+<area shape="rect" id="node14" href="$d6/d0f/class_edit_com_table_window.html#a2c6ee958dddacb1ec9a9ee81810bde18" title="функция обработки нажатия на графическую кнопку удаление одной жизни судну" alt="" coords="233,184,394,224"/>
+</map>

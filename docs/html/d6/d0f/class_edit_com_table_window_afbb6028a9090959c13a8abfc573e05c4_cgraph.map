@@ -1,0 +1,6 @@
+<map id="EditComTableWindow::on_nameLineEdit_editingFinished" name="EditComTableWindow::on_nameLineEdit_editingFinished">
+<area shape="rect" id="node1" title="функция обработки окончания однострочного текстового блока, отвечающее за названия судна" alt="" coords="5,63,229,103"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="277,5,428,45"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba" title="функция&#45;сеттер нового название судна" alt="" coords="298,70,407,95"/>
+<area shape="rect" id="node4" href="$d6/d0f/class_edit_com_table_window.html#aad855d683c6899cf5bd6fc2b4ae50b23" title="функция обновления отображаемого имени судна в QComboBox" alt="" coords="277,120,428,160"/>
+</map>

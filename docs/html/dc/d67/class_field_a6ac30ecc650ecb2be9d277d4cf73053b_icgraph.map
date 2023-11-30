@@ -1,0 +1,15 @@
+<map id="Field::checkDotsOr" name="Field::checkDotsOr">
+<area shape="rect" id="node1" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="739,256,873,281"/>
+<area shape="rect" id="node2" href="$dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af" title="функция&#45;геттер типа клетки" alt="" coords="567,143,665,168"/>
+<area shape="rect" id="node9" href="$d9/dc6/class_main_window.html#a06188c2b90c5af2387273fde1ca4e699" title="функция получения указателя на судно" alt="" coords="541,313,691,339"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#af3bcf24a3fa3f0305f62e55b1ffbe1e2" title="функция подсчета жизней" alt="" coords="290,171,475,196"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="25,106,204,146"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#aaf9e8654153aa29b2de127aa7d1a9d1c" title="вспомогательная функция очистки заднего фона клеток таблиц игрового поля" alt="" coords="281,106,484,146"/>
+<area shape="rect" id="node6" href="$dd/d1f/class_game.html#a3a80bdbd9caccffddc1dd29f26fe8f1e" title="функция генерации кортежа координат" alt="" coords="282,5,483,31"/>
+<area shape="rect" id="node8" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="292,221,473,261"/>
+<area shape="rect" id="node7" href="$d9/dc6/class_main_window.html#aa036463f226a257eb518ad029eb0ad9d" title="вспомогательная функция конвертации координат из строки в кортеж с целыми числами" alt="" coords="5,5,224,31"/>
+<area shape="rect" id="node10" href="$d9/dc6/class_main_window.html#a25c2d8230b7609a98dd150d28a86963e" title="функция обработки нажатия на клетку в таблице комманд" alt="" coords="272,335,493,375"/>
+<area shape="rect" id="node11" href="$d9/dc6/class_main_window.html#a8403715ec328434ebf1e464c9be2eeb5" title="функция обработки нажатия на кнопку редактирования судов" alt="" coords="293,399,473,439"/>
+<area shape="rect" id="node12" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="294,463,471,503"/>
+<area shape="rect" id="node13" href="$d9/dc6/class_main_window.html#aad75236c74a5c340c3e18749a9b5eb4f" title="перегруженная функция изменения окна" alt="" coords="295,528,470,553"/>
+</map>

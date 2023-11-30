@@ -1,0 +1,4 @@
+<map id="MainWindow::on_endBut_clicked" name="MainWindow::on_endBut_clicked">
+<area shape="rect" id="node1" title="функция обработки нажатия на кнопку конца игры" alt="" coords="5,5,172,45"/>
+<area shape="rect" id="node2" href="$dd/d1f/class_game.html#a8bf2784cf8402b061e61a8c29f86ca66" title="функция&#45;сеттер текущего состояния/стадии игры" alt="" coords="220,13,369,38"/>
+</map>

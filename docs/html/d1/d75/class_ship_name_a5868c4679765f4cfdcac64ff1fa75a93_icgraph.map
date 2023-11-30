@@ -1,0 +1,4 @@
+<map id="ShipName::sendShipName" name="ShipName::sendShipName">
+<area shape="rect" id="node1" title="сигнал добавления судна" alt="" coords="224,13,404,38"/>
+<area shape="rect" id="node2" href="$d1/d75/class_ship_name.html#a8b6a96260886abdc0a96a6c119666c6b" title="функция обработки нажатия на кнопку" alt="" coords="5,5,176,45"/>
+</map>

@@ -28,9 +28,9 @@ set(PROJECT_SOURCES
         shipname.cpp
         shipname.h
         shipname.ui
-        deadship.cpp
-        deadship.h
-        deadship.ui
+        deadshipwindow.cpp
+        deadshipwindow.h
+        deadshipwindow.ui
         winnerwindow.cpp
         winnerwindow.h
         winnerwindow.ui

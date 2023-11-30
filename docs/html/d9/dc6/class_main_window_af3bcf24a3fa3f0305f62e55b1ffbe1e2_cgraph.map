@@ -1,0 +1,8 @@
+<map id="MainWindow::calculateLifes" name="MainWindow::calculateLifes">
+<area shape="rect" id="node1" title="функция подсчета жизней" alt="" coords="5,80,191,105"/>
+<area shape="rect" id="node2" href="$dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af" title="функция&#45;геттер типа клетки" alt="" coords="264,5,363,31"/>
+<area shape="rect" id="node4" href="$dd/d1f/class_game.html#ace4df0b7a9e827efe27dc31c37b7f462" title="функция&#45;геттер игрового поля" alt="" coords="258,55,369,80"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#a06188c2b90c5af2387273fde1ca4e699" title="функция получения указателя на судно" alt="" coords="239,104,388,129"/>
+<area shape="rect" id="node6" href="$dd/d1f/class_game.html#a8bf2784cf8402b061e61a8c29f86ca66" title="функция&#45;сеттер текущего состояния/стадии игры" alt="" coords="239,153,388,179"/>
+<area shape="rect" id="node3" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="436,55,571,80"/>
+</map>

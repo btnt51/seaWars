@@ -1,0 +1,5 @@
+<map id="EditComTableWindow::updateLifeLineEdit" name="EditComTableWindow::updateLifeLineEdit">
+<area shape="rect" id="node1" title="функция обновления однострочного текстового блока, отвечающее за количество жизней у судна" alt="" coords="5,23,156,63"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f" title="функция&#45;геттер количества жизней судна" alt="" coords="204,5,365,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="230,55,339,80"/>
+</map>

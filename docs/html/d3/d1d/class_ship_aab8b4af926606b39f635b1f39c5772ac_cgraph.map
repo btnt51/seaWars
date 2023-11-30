@@ -1,0 +1,6 @@
+<map id="Ship::sendLife" name="Ship::sendLife">
+<area shape="rect" id="node1" title="функция отправки жизней уничтоженному судну ( отнимает 5 жизни у отпровителя и добавляет 5 жизней уни..." alt="" coords="5,31,111,56"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#abdbd6ad47c00da77a4745a812a2162d1" title="функция добавления жизней судну" alt="" coords="159,5,264,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1" title="функция отнимания жизней у судна" alt="" coords="159,55,264,80"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="312,55,455,80"/>
+</map>

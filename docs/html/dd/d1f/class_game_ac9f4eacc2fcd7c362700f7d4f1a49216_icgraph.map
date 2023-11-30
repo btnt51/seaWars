@@ -1,0 +1,4 @@
+<map id="Game::sendUpdatedShipToTable" name="Game::sendUpdatedShipToTable">
+<area shape="rect" id="node1" title="сигнал обновления судна" alt="" coords="212,5,425,31"/>
+<area shape="rect" id="node2" href="$dd/d1f/class_game.html#af5735cfcdcabb02b707406fb5a15601f" title="функция пересылки сигнала обновления судна" alt="" coords="5,5,164,31"/>
+</map>

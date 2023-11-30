@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Seawars: Исходный файл field.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Seawars
+   </div>
+   <div id="projectbrief">Интелектуальная quiz игра</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d5/d5a/field_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">field.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d5a/field_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef FIELD_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define FIELD_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/daf/ship_8h.html">ship.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89f">   21</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89f">ECell</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7">   22</a></span>  <a class="code hl_enumvalue" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7">CLEAR</a>,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa">   23</a></span>  <a class="code hl_enumvalue" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa">SHIP</a>,</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb">   24</a></span>  <a class="code hl_enumvalue" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb">DEAD_SHIP</a>,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <a class="code hl_enumvalue" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d">SHIP_HITED</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d">   26</a></span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../dc/d67/class_field.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="../../dc/d67/class_field.html">Field</a> : <span class="keyword">public</span> QObject {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  Q_OBJECT</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_function" href="../../dc/d67/class_field.html#a3e804c92273d9159f413f227b535c672">Field</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d67/class_field.html#a01a426e6cdef543658d8b9ba5bc96477">setCell</a>(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> column, <a class="code hl_enumeration" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89f">ECell</a> cell);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_enumeration" href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89f">ECell</a> <a class="code hl_function" href="../../dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af">getCell</a>(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> column);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">bool</span> <span class="keyword">static</span> <a class="code hl_function" href="../../dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b">checkDotsOr</a>(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> column);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">bool</span> <span class="keyword">static</span> <a class="code hl_function" href="../../dc/d67/class_field.html#ad7cb2c1ca78483dc1ee45425337c4b6b">checkDotsAnd</a>(<span class="keywordtype">size_t</span> row, <span class="keywordtype">size_t</span> column);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  QVector&lt;ECell&gt; <a class="code hl_function" href="../../dc/d67/class_field.html#a4bf2a1137a925fe3770eabbb9e356dbd">getField</a>();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d67/class_field.html#abd5b876cdb484d678c20b0c03ba2536a">clear</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../dc/d67/class_field.html#a59f36b690570f1f24ded3a37e332da88">   69</a></span>  QVector&lt;ECell&gt; <a class="code hl_variable" href="../../dc/d67/class_field.html#a59f36b690570f1f24ded3a37e332da88">_field</a>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="preprocessor">#endif </span><span class="comment">// FIELD_H</span></div>
+<div class="ttc" id="aclass_field_html"><div class="ttname"><a href="../../dc/d67/class_field.html">Field</a></div><div class="ttdoc">класс-обёртка над массивом клеток игрового поля</div><div class="ttdef"><b>Definition:</b> field.h:29</div></div>
+<div class="ttc" id="aclass_field_html_a01a426e6cdef543658d8b9ba5bc96477"><div class="ttname"><a href="../../dc/d67/class_field.html#a01a426e6cdef543658d8b9ba5bc96477">Field::setCell</a></div><div class="ttdeci">void setCell(size_t row, size_t column, ECell cell)</div><div class="ttdoc">функция-сеттер типа клетки</div><div class="ttdef"><b>Definition:</b> field.cpp:34</div></div>
+<div class="ttc" id="aclass_field_html_a3e804c92273d9159f413f227b535c672"><div class="ttname"><a href="../../dc/d67/class_field.html#a3e804c92273d9159f413f227b535c672">Field::Field</a></div><div class="ttdeci">Field()</div><div class="ttdoc">конструктор поля</div><div class="ttdef"><b>Definition:</b> field.cpp:3</div></div>
+<div class="ttc" id="aclass_field_html_a4bf2a1137a925fe3770eabbb9e356dbd"><div class="ttname"><a href="../../dc/d67/class_field.html#a4bf2a1137a925fe3770eabbb9e356dbd">Field::getField</a></div><div class="ttdeci">QVector&lt; ECell &gt; getField()</div><div class="ttdoc">функция-геттер массива клеток</div><div class="ttdef"><b>Definition:</b> field.cpp:18</div></div>
+<div class="ttc" id="aclass_field_html_a59f36b690570f1f24ded3a37e332da88"><div class="ttname"><a href="../../dc/d67/class_field.html#a59f36b690570f1f24ded3a37e332da88">Field::_field</a></div><div class="ttdeci">QVector&lt; ECell &gt; _field</div><div class="ttdoc">массив клеток</div><div class="ttdef"><b>Definition:</b> field.h:69</div></div>
+<div class="ttc" id="aclass_field_html_a6ac30ecc650ecb2be9d277d4cf73053b"><div class="ttname"><a href="../../dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b">Field::checkDotsOr</a></div><div class="ttdeci">static bool checkDotsOr(size_t row, size_t column)</div><div class="ttdoc">вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;</div><div class="ttdef"><b>Definition:</b> field.cpp:8</div></div>
+<div class="ttc" id="aclass_field_html_aa176b943f299aff7645721c0aea868af"><div class="ttname"><a href="../../dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af">Field::getCell</a></div><div class="ttdeci">ECell getCell(size_t row, size_t column)</div><div class="ttdoc">функция-геттер типа клетки</div><div class="ttdef"><b>Definition:</b> field.cpp:23</div></div>
+<div class="ttc" id="aclass_field_html_abd5b876cdb484d678c20b0c03ba2536a"><div class="ttname"><a href="../../dc/d67/class_field.html#abd5b876cdb484d678c20b0c03ba2536a">Field::clear</a></div><div class="ttdeci">void clear()</div><div class="ttdoc">вспомогательная функция очистки массива клеток</div><div class="ttdef"><b>Definition:</b> field.cpp:46</div></div>
+<div class="ttc" id="aclass_field_html_ad7cb2c1ca78483dc1ee45425337c4b6b"><div class="ttname"><a href="../../dc/d67/class_field.html#ad7cb2c1ca78483dc1ee45425337c4b6b">Field::checkDotsAnd</a></div><div class="ttdeci">static bool checkDotsAnd(size_t row, size_t column)</div><div class="ttdoc">вспомогательная функция проверки клетки с использованием логического &quot;И&quot;</div><div class="ttdef"><b>Definition:</b> field.cpp:13</div></div>
+<div class="ttc" id="afield_8h_html_a350b40b6b50e61b5933378d5ff9bd89f"><div class="ttname"><a href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89f">ECell</a></div><div class="ttdeci">ECell</div><div class="ttdoc">Перечисление отвечающее за тип клетки. Может принимать значения, CLEAR - пустая клетка,...</div><div class="ttdef"><b>Definition:</b> field.h:21</div></div>
+<div class="ttc" id="afield_8h_html_a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7"><div class="ttname"><a href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa1e1a4aba20a5a009e616cbc8fad33ac7">CLEAR</a></div><div class="ttdeci">@ CLEAR</div><div class="ttdef"><b>Definition:</b> field.h:22</div></div>
+<div class="ttc" id="afield_8h_html_a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d"><div class="ttname"><a href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa26b72a970faec9db8f05496007442c4d">SHIP_HITED</a></div><div class="ttdeci">@ SHIP_HITED</div><div class="ttdef"><b>Definition:</b> field.h:25</div></div>
+<div class="ttc" id="afield_8h_html_a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa"><div class="ttname"><a href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89fa5e69962f7be201703b58f4fdb5b326fa">SHIP</a></div><div class="ttdeci">@ SHIP</div><div class="ttdef"><b>Definition:</b> field.h:23</div></div>
+<div class="ttc" id="afield_8h_html_a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb"><div class="ttname"><a href="../../d5/d5a/field_8h.html#a350b40b6b50e61b5933378d5ff9bd89faf813af8d8950e2ff9a3c398e2d32ecdb">DEAD_SHIP</a></div><div class="ttdeci">@ DEAD_SHIP</div><div class="ttdef"><b>Definition:</b> field.h:24</div></div>
+<div class="ttc" id="aship_8h_html"><div class="ttname"><a href="../../d7/daf/ship_8h.html">ship.h</a></div><div class="ttdoc">файл содержащий класс, отвечающий за работу и обработку сущности судна</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d5/d5a/field_8h.html">field.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

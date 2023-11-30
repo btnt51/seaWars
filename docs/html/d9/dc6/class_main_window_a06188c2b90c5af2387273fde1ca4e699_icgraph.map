@@ -1,0 +1,10 @@
+<map id="MainWindow::getShip" name="MainWindow::getShip">
+<area shape="rect" id="node1" title="функция получения указателя на судно" alt="" coords="501,177,651,203"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#af3bcf24a3fa3f0305f62e55b1ffbe1e2" title="функция подсчета жизней" alt="" coords="250,5,435,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="5,23,184,63"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a25c2d8230b7609a98dd150d28a86963e" title="функция обработки нажатия на клетку в таблице комманд" alt="" coords="232,106,453,146"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#a8403715ec328434ebf1e464c9be2eeb5" title="функция обработки нажатия на кнопку редактирования судов" alt="" coords="253,170,433,210"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="252,234,433,274"/>
+<area shape="rect" id="node7" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="254,298,431,338"/>
+<area shape="rect" id="node8" href="$d9/dc6/class_main_window.html#aad75236c74a5c340c3e18749a9b5eb4f" title="перегруженная функция изменения окна" alt="" coords="255,363,430,388"/>
+</map>

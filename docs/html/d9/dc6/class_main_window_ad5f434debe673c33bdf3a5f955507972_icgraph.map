@@ -1,0 +1,4 @@
+<map id="MainWindow::setNameAndCoordinates" name="MainWindow::setNameAndCoordinates">
+<area shape="rect" id="node1" title="вспомогтаельная функция для получения названия и координат судна" alt="" coords="247,13,497,38"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#a7326befac70806a0ef7854cd0300cf57" title="функция обработки нажаия на кнопку добавления судна" alt="" coords="5,5,199,45"/>
+</map>

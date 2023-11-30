@@ -1,0 +1,4 @@
+<map id="Game::clearThisRoundShots" name="Game::clearThisRoundShots">
+<area shape="rect" id="node1" title="вспомогательная функция очистики массива координат выстрелов в текущем раунде" alt="" coords="232,13,423,38"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="5,5,184,45"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="MainWindow::updateDeadShip" name="MainWindow::updateDeadShip">
+<area shape="rect" id="node1" title="функция обновления уничтоженного судна" alt="" coords="5,80,207,105"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#a256d1ca51a6d16a0db97f0bf6733ce29" title="функция&#45;геттер столбца судна" alt="" coords="267,5,385,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#a3875e4c774c5b39f740ed2b9a0bb7f0b" title="функция&#45;геттер порядкового номера судна" alt="" coords="266,55,386,80"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#a1d45fed8cebb6c0d5d776083558ad5fb" title="функция&#45;геттер ряда судна" alt="" coords="275,104,377,129"/>
+<area shape="rect" id="node5" href="$d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="255,153,397,179"/>
+</map>

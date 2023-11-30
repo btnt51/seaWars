@@ -1,0 +1,6 @@
+<map id="EditComTableWindow::on_nameLineEdit_returnPressed" name="EditComTableWindow::on_nameLineEdit_returnPressed">
+<area shape="rect" id="node1" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="5,63,224,103"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="272,5,423,45"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba" title="функция&#45;сеттер нового название судна" alt="" coords="293,70,402,95"/>
+<area shape="rect" id="node4" href="$d6/d0f/class_edit_com_table_window.html#aad855d683c6899cf5bd6fc2b4ae50b23" title="функция обновления отображаемого имени судна в QComboBox" alt="" coords="272,120,423,160"/>
+</map>

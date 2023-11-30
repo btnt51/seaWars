@@ -1,0 +1,9 @@
+<map id="Field::getCell" name="Field::getCell">
+<area shape="rect" id="node1" title="функция&#45;геттер типа клетки" alt="" coords="523,113,621,139"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#af3bcf24a3fa3f0305f62e55b1ffbe1e2" title="функция подсчета жизней" alt="" coords="281,5,466,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="25,78,204,118"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#aaf9e8654153aa29b2de127aa7d1a9d1c" title="вспомогательная функция очистки заднего фона клеток таблиц игрового поля" alt="" coords="272,106,475,146"/>
+<area shape="rect" id="node5" href="$dd/d1f/class_game.html#a3a80bdbd9caccffddc1dd29f26fe8f1e" title="функция генерации кортежа координат" alt="" coords="273,171,474,196"/>
+<area shape="rect" id="node7" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="283,221,464,261"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#aa036463f226a257eb518ad029eb0ad9d" title="вспомогательная функция конвертации координат из строки в кортеж с целыми числами" alt="" coords="5,171,224,196"/>
+</map>

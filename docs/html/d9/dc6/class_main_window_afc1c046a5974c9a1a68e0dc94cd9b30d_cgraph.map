@@ -1,0 +1,12 @@
+<map id="MainWindow::setShip" name="MainWindow::setShip">
+<area shape="rect" id="node1" title="функция добавления судна на таблицу игрового поля" alt="" coords="5,200,155,225"/>
+<area shape="rect" id="node2" href="$dc/d67/class_field.html#ad7cb2c1ca78483dc1ee45425337c4b6b" title="вспомогательная функция проверки клетки с использованием логического &quot;И&quot;" alt="" coords="469,200,613,225"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#af651aa0bac796089d80deb9a9fa97243" title="вспомогательная функция конвертации координат из кортежа с целыми числами в строку" alt="" coords="203,52,421,77"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f" title="функция&#45;геттер количества жизней судна" alt="" coords="231,101,393,127"/>
+<area shape="rect" id="node5" href="$d3/d1d/class_ship.html#a8dcd2fc8a985fb084dbb6f030baa7cc8" title="функция&#45;геттер цвета судна" alt="" coords="259,151,365,176"/>
+<area shape="rect" id="node6" href="$d3/d1d/class_ship.html#a314f0f26111dc825e7b825e58c9eed87" title="функция&#45;геттер коориданат судна" alt="" coords="243,200,381,225"/>
+<area shape="rect" id="node7" href="$dd/d1f/class_game.html#ace4df0b7a9e827efe27dc31c37b7f462" title="функция&#45;геттер игрового поля" alt="" coords="257,249,367,275"/>
+<area shape="rect" id="node8" href="$d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="257,299,367,324"/>
+<area shape="rect" id="node9" href="$d3/d1d/class_ship.html#a3875e4c774c5b39f740ed2b9a0bb7f0b" title="функция&#45;геттер порядкового номера судна" alt="" coords="252,348,372,373"/>
+<area shape="rect" id="node10" href="$dc/d67/class_field.html#a01a426e6cdef543658d8b9ba5bc96477" title="функция&#45;сеттер типа клетки" alt="" coords="263,397,361,423"/>
+</map>

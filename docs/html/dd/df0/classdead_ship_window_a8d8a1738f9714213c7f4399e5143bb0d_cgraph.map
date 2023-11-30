@@ -1,0 +1,8 @@
+<map id="deadShipWindow::on_buttonBox_accepted" name="deadShipWindow::on_buttonBox_accepted">
+<area shape="rect" id="node1" title="функция обработки нажатия на кнопку &quot;OK&quot;" alt="" coords="5,23,153,63"/>
+<area shape="rect" id="node2" href="$dd/df0/classdead_ship_window.html#ad782d4e42263d49e666702c205875d2e" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="201,5,376,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#aab8b4af926606b39f635b1f39c5772ac" title="функция отправки жизней уничтоженному судну ( отнимает 5 жизни у отпровителя и добавляет 5 жизней уни..." alt="" coords="236,55,341,80"/>
+<area shape="rect" id="node4" href="$d3/d1d/class_ship.html#abdbd6ad47c00da77a4745a812a2162d1" title="функция добавления жизней судну" alt="" coords="424,29,529,55"/>
+<area shape="rect" id="node5" href="$d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1" title="функция отнимания жизней у судна" alt="" coords="424,79,529,104"/>
+<area shape="rect" id="node6" href="$d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="577,79,720,104"/>
+</map>

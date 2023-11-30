@@ -1,0 +1,10 @@
+<map id="Ship::getNumber" name="Ship::getNumber">
+<area shape="rect" id="node1" title="функция&#45;геттер порядкового номера судна" alt="" coords="525,80,645,105"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#aad75236c74a5c340c3e18749a9b5eb4f" title="перегруженная функция изменения окна" alt="" coords="275,5,449,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#afc1c046a5974c9a1a68e0dc94cd9b30d" title="функция добавления судна на таблицу игрового поля" alt="" coords="287,55,437,80"/>
+<area shape="rect" id="node7" href="$d9/dc6/class_main_window.html#a1110beccc4c985846923f837c82ca7b8" title="функция обновления судна" alt="" coords="247,104,477,129"/>
+<area shape="rect" id="node8" href="$d9/dc6/class_main_window.html#af01910751d176af9410fa3633474f192" title="функция обновления уничтоженного судна" alt="" coords="261,153,463,179"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a7326befac70806a0ef7854cd0300cf57" title="функция обработки нажаия на кнопку добавления судна" alt="" coords="5,33,199,73"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="11,97,193,137"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="13,161,191,201"/>
+</map>

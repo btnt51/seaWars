@@ -1,0 +1,10 @@
+<map id="Game::getField" name="Game::getField">
+<area shape="rect" id="node1" title="функция&#45;геттер игрового поля" alt="" coords="497,113,608,139"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#af3bcf24a3fa3f0305f62e55b1ffbe1e2" title="функция подсчета жизней" alt="" coords="255,5,441,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#add1236fd226b73f0d9e352f5cb044f1d" title="функция обработки нажатия на кнопку выстрела" alt="" coords="13,49,191,89"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#aaf9e8654153aa29b2de127aa7d1a9d1c" title="вспомогательная функция очистки заднего фона клеток таблиц игрового поля" alt="" coords="247,106,449,146"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="11,159,193,199"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#afc1c046a5974c9a1a68e0dc94cd9b30d" title="функция добавления судна на таблицу игрового поля" alt="" coords="273,224,423,249"/>
+<area shape="rect" id="node7" href="$d9/dc6/class_main_window.html#a7326befac70806a0ef7854cd0300cf57" title="функция обработки нажаия на кнопку добавления судна" alt="" coords="5,223,199,263"/>
+<area shape="rect" id="node8" href="$d9/dc6/class_main_window.html#a1af75eca1df7b05f330959eb187ab93a" title="функция обраобки нажатия на кнопку добавления судна на таблицу" alt="" coords="13,287,191,327"/>
+</map>

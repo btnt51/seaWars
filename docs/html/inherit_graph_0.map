@@ -1,0 +1,7 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,75,105"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html" title="класс, отвечающий за окно редактирования информации участников в процессе игры в ручном режиме" alt="" coords="123,5,273,31"/>
+<area shape="rect" id="node3" href="$d1/d75/class_ship_name.html" title="класс, отвечающий за окно добавления нового судна" alt="" coords="157,55,239,80"/>
+<area shape="rect" id="node4" href="$d1/df0/class_winner_window.html" title="класс, отвечающий за окно с итоговой таблицей судов" alt="" coords="143,104,253,129"/>
+<area shape="rect" id="node5" href="$dd/df0/classdead_ship_window.html" title="класс, отвечающий за окно&#45;уведомление о том, что участник выбывает из игры с возможностью возвращаени..." alt="" coords="137,153,259,179"/>
+</map>

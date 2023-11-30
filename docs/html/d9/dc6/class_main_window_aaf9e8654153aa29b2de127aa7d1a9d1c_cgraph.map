@@ -1,0 +1,6 @@
+<map id="MainWindow::clearBackgroundFieldsTable" name="MainWindow::clearBackgroundFieldsTable">
+<area shape="rect" id="node1" title="вспомогательная функция очистки заднего фона клеток таблиц игрового поля" alt="" coords="5,23,208,63"/>
+<area shape="rect" id="node2" href="$dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af" title="функция&#45;геттер типа клетки" alt="" coords="262,5,361,31"/>
+<area shape="rect" id="node4" href="$dd/d1f/class_game.html#ace4df0b7a9e827efe27dc31c37b7f462" title="функция&#45;геттер игрового поля" alt="" coords="256,55,367,80"/>
+<area shape="rect" id="node3" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="415,5,549,31"/>
+</map>

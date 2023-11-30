@@ -1,7 +1,7 @@
 #include "editcomtablewindow.h"
 #include "ui_editcomtablewindow.h"
 
-#include <QKeyEvent>
+
 
 EditComTableWindow::EditComTableWindow(QVector<Ship*> shiplist, QWidget *parent) :
     QDialog(parent),

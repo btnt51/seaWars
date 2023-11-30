@@ -1,0 +1,291 @@
+\hypertarget{class_game}{}\doxysection{Класс Game}
+\label{class_game}\index{Game@{Game}}
+
+
+класс отвечающий за состояние и управление ходом игры  
+
+
+
+
+{\ttfamily \#include $<$game.\+h$>$}
+
+
+
+Граф наследования\+:Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{d5/d6a/class_game__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{df/db2/class_game__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые слоты}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_af5735cfcdcabb02b707406fb5a15601f}{get\+Updated\+Ship}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em функция пересылки сигнала обновления судна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_game_ac9f4eacc2fcd7c362700f7d4f1a49216}{send\+Updated\+Ship\+To\+Table}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em сигнал обновления судна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em конструктор контролера игры \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_field}{Field}} $\ast$ \mbox{\hyperlink{class_game_ace4df0b7a9e827efe27dc31c37b7f462}{get\+Field}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер игрового поля \end{DoxyCompactList}\item 
+std\+::tuple$<$ int, int $>$ \mbox{\hyperlink{class_game_a3a80bdbd9caccffddc1dd29f26fe8f1e}{get\+Random\+Value\+For\+XY}} ()
+\begin{DoxyCompactList}\small\item\em функция генерации кортежа координат \end{DoxyCompactList}\item 
+std\+::tuple$<$ int, int $>$ \mbox{\hyperlink{class_game_aa86e7d3972252df48bb4930eb8606b13}{get\+Random\+Value\+For\+XY}} (QVector$<$ QPair$<$ int, int $>$ $>$ black\+List)
+\begin{DoxyCompactList}\small\item\em функция генерации коориданат для выстрелов \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a8bf2784cf8402b061e61a8c29f86ca66}{set\+Game\+State}} (\mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}} game\+State)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер текущего состояния/стадии игры \end{DoxyCompactList}\item 
+\mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}} \mbox{\hyperlink{class_game_a73e32e85469afb28297752f4246b2505}{get\+Game\+State}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер текущего состояния/стадии игры \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a3ee78adbf253678b6c00e391b30f10fe}{clear\+This\+Round\+Shots}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция очистики массива координат выстрелов в текущем раунде \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_field}{Field}} $\ast$ \mbox{\hyperlink{class_game_a75f29334acabb1fc3450b43ee04481e7}{\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em указатель на игровое поле \end{DoxyCompactList}\item 
+\mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}} \mbox{\hyperlink{class_game_a45a146dd1f47a462e5b7ab962f872865}{\+\_\+current\+State}}
+\begin{DoxyCompactList}\small\item\em текущее состояние игры \end{DoxyCompactList}\item 
+QVector$<$ QPair$<$ int, int $>$ $>$ \mbox{\hyperlink{class_game_ae3db165815a39a7582fea6eb137a00f0}{this\+Round\+Shots}}
+\begin{DoxyCompactList}\small\item\em массив координат выстрелов в текущем раунде \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+класс отвечающий за состояние и управление ходом игры 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+конструктор контролера игры 
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_game_a3ee78adbf253678b6c00e391b30f10fe}\label{class_game_a3ee78adbf253678b6c00e391b30f10fe}} 
+\index{Game@{Game}!clearThisRoundShots@{clearThisRoundShots}}
+\index{clearThisRoundShots@{clearThisRoundShots}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{clearThisRoundShots()}{clearThisRoundShots()}}
+{\footnotesize\ttfamily void Game\+::clear\+This\+Round\+Shots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+вспомогательная функция очистики массива координат выстрелов в текущем раунде 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_a3ee78adbf253678b6c00e391b30f10fe_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_ace4df0b7a9e827efe27dc31c37b7f462}\label{class_game_ace4df0b7a9e827efe27dc31c37b7f462}} 
+\index{Game@{Game}!getField@{getField}}
+\index{getField@{getField}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getField()}{getField()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_field}{Field}} $\ast$ Game\+::get\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер игрового поля 
+
+\begin{DoxyReturn}{Возвращает}
+указатель на игровое поле 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_ace4df0b7a9e827efe27dc31c37b7f462_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_a73e32e85469afb28297752f4246b2505}\label{class_game_a73e32e85469afb28297752f4246b2505}} 
+\index{Game@{Game}!getGameState@{getGameState}}
+\index{getGameState@{getGameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getGameState()}{getGameState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}} Game\+::get\+Game\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер текущего состояния/стадии игры 
+
+\begin{DoxyReturn}{Возвращает}
+текущее состояние игры 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_a73e32e85469afb28297752f4246b2505_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_a3a80bdbd9caccffddc1dd29f26fe8f1e}\label{class_game_a3a80bdbd9caccffddc1dd29f26fe8f1e}} 
+\index{Game@{Game}!getRandomValueForXY@{getRandomValueForXY}}
+\index{getRandomValueForXY@{getRandomValueForXY}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getRandomValueForXY()}{getRandomValueForXY()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::tuple$<$ int, int $>$ Game\+::get\+Random\+Value\+For\+XY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция генерации кортежа координат 
+
+\begin{DoxyReturn}{Возвращает}
+кортеж коориднат, первое -\/ Х, второе -\/ Y 
+\end{DoxyReturn}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_a3a80bdbd9caccffddc1dd29f26fe8f1e_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_a3a80bdbd9caccffddc1dd29f26fe8f1e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_aa86e7d3972252df48bb4930eb8606b13}\label{class_game_aa86e7d3972252df48bb4930eb8606b13}} 
+\index{Game@{Game}!getRandomValueForXY@{getRandomValueForXY}}
+\index{getRandomValueForXY@{getRandomValueForXY}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getRandomValueForXY()}{getRandomValueForXY()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::tuple$<$ int, int $>$ Game\+::get\+Random\+Value\+For\+XY (\begin{DoxyParamCaption}\item[{QVector$<$ QPair$<$ int, int $>$ $>$}]{black\+List }\end{DoxyParamCaption})}
+
+
+
+функция генерации коориданат для выстрелов 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em black\+List} & массив координат, по которым нельзя стрелять \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+кортеж коориднат, первое -\/ Х, второе -\/ Y 
+\end{DoxyReturn}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_aa86e7d3972252df48bb4930eb8606b13_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_af5735cfcdcabb02b707406fb5a15601f}\label{class_game_af5735cfcdcabb02b707406fb5a15601f}} 
+\index{Game@{Game}!getUpdatedShip@{getUpdatedShip}}
+\index{getUpdatedShip@{getUpdatedShip}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getUpdatedShip}{getUpdatedShip}}
+{\footnotesize\ttfamily void Game\+::get\+Updated\+Ship (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+функция пересылки сигнала обновления судна 
+
+\mbox{\Hypertarget{class_game_ac9f4eacc2fcd7c362700f7d4f1a49216}\label{class_game_ac9f4eacc2fcd7c362700f7d4f1a49216}} 
+\index{Game@{Game}!sendUpdatedShipToTable@{sendUpdatedShipToTable}}
+\index{sendUpdatedShipToTable@{sendUpdatedShipToTable}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{sendUpdatedShipToTable}{sendUpdatedShipToTable}}
+{\footnotesize\ttfamily void Game\+::send\+Updated\+Ship\+To\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+сигнал обновления судна 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_ac9f4eacc2fcd7c362700f7d4f1a49216_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_game_a8bf2784cf8402b061e61a8c29f86ca66}\label{class_game_a8bf2784cf8402b061e61a8c29f86ca66}} 
+\index{Game@{Game}!setGameState@{setGameState}}
+\index{setGameState@{setGameState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setGameState()}{setGameState()}}
+{\footnotesize\ttfamily void Game\+::set\+Game\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}}}]{game\+State }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер текущего состояния/стадии игры 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em game\+State} & новое состояние/стадии игры \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dd/d1f/class_game_a8bf2784cf8402b061e61a8c29f86ca66_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_game_a45a146dd1f47a462e5b7ab962f872865}\label{class_game_a45a146dd1f47a462e5b7ab962f872865}} 
+\index{Game@{Game}!\_currentState@{\_currentState}}
+\index{\_currentState@{\_currentState}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{\_currentState}{\_currentState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}} Game\+::\+\_\+current\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+текущее состояние игры 
+
+\mbox{\Hypertarget{class_game_a75f29334acabb1fc3450b43ee04481e7}\label{class_game_a75f29334acabb1fc3450b43ee04481e7}} 
+\index{Game@{Game}!\_field@{\_field}}
+\index{\_field@{\_field}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{\_field}{\_field}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_field}{Field}}$\ast$ Game\+::\+\_\+field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на игровое поле 
+
+\mbox{\Hypertarget{class_game_ae3db165815a39a7582fea6eb137a00f0}\label{class_game_ae3db165815a39a7582fea6eb137a00f0}} 
+\index{Game@{Game}!thisRoundShots@{thisRoundShots}}
+\index{thisRoundShots@{thisRoundShots}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{thisRoundShots}{thisRoundShots}}
+{\footnotesize\ttfamily QVector$<$QPair$<$int, int$>$ $>$ Game\+::this\+Round\+Shots\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+массив координат выстрелов в текущем раунде 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{game_8h}{game.\+h}}\item 
+\mbox{\hyperlink{game_8cpp}{game.\+cpp}}\end{DoxyCompactItemize}

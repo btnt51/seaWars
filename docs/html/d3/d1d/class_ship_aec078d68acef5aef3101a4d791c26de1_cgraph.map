@@ -1,0 +1,4 @@
+<map id="Ship::subLifes" name="Ship::subLifes">
+<area shape="rect" id="node1" title="функция отнимания жизней у судна" alt="" coords="5,5,111,31"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="159,5,301,31"/>
+</map>

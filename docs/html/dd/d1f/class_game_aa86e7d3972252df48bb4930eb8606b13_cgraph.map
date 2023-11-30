@@ -1,0 +1,6 @@
+<map id="Game::getRandomValueForXY" name="Game::getRandomValueForXY">
+<area shape="rect" id="node1" title="функция генерации коориданат для выстрелов" alt="" coords="5,31,207,56"/>
+<area shape="rect" id="node2" href="$df/dd9/game_8cpp.html#a43c5d50f121fb4d27c5561d61d4d45f3" title=" " alt="" coords="264,5,344,31"/>
+<area shape="rect" id="node3" href="$dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af" title="функция&#45;геттер типа клетки" alt="" coords="255,55,353,80"/>
+<area shape="rect" id="node4" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="401,55,536,80"/>
+</map>

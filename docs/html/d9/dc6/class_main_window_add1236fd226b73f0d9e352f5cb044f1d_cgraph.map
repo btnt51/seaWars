@@ -1,0 +1,15 @@
+<map id="MainWindow::on_shootBut_clicked" name="MainWindow::on_shootBut_clicked">
+<area shape="rect" id="node1" title="функция обработки нажатия на кнопку выстрела" alt="" coords="5,239,184,279"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#af3bcf24a3fa3f0305f62e55b1ffbe1e2" title="функция подсчета жизней" alt="" coords="241,221,426,247"/>
+<area shape="rect" id="node3" href="$dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af" title="функция&#45;геттер типа клетки" alt="" coords="508,113,607,139"/>
+<area shape="rect" id="node5" href="$dd/d1f/class_game.html#ace4df0b7a9e827efe27dc31c37b7f462" title="функция&#45;геттер игрового поля" alt="" coords="502,171,613,196"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#a06188c2b90c5af2387273fde1ca4e699" title="функция получения указателя на судно" alt="" coords="483,221,632,247"/>
+<area shape="rect" id="node7" href="$dd/d1f/class_game.html#a8bf2784cf8402b061e61a8c29f86ca66" title="функция&#45;сеттер текущего состояния/стадии игры" alt="" coords="483,296,632,321"/>
+<area shape="rect" id="node8" href="$d9/dc6/class_main_window.html#aaf9e8654153aa29b2de127aa7d1a9d1c" title="вспомогательная функция очистки заднего фона клеток таблиц игрового поля" alt="" coords="232,106,435,146"/>
+<area shape="rect" id="node9" href="$dd/d1f/class_game.html#a3ee78adbf253678b6c00e391b30f10fe" title="вспомогательная функция очистики массива координат выстрелов в текущем раунде" alt="" coords="238,373,429,399"/>
+<area shape="rect" id="node10" href="$dd/d1f/class_game.html#a73e32e85469afb28297752f4246b2505" title="функция&#45;геттер текущего состояния/стадии игры" alt="" coords="259,423,408,448"/>
+<area shape="rect" id="node11" href="$dd/d1f/class_game.html#a3a80bdbd9caccffddc1dd29f26fe8f1e" title="функция генерации кортежа координат" alt="" coords="233,5,434,31"/>
+<area shape="rect" id="node13" href="$d3/d1d/class_ship.html#a9aa06161da7ad367ae13f553eda8f91b" title="функция&#45;сеттер статуса раненния судна" alt="" coords="269,472,398,497"/>
+<area shape="rect" id="node4" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="680,168,815,193"/>
+<area shape="rect" id="node12" href="$df/dd9/game_8cpp.html#a43c5d50f121fb4d27c5561d61d4d45f3" title=" " alt="" coords="517,5,597,31"/>
+</map>

@@ -1,0 +1,41 @@
+\hypertarget{shipname_8h_source}{}\doxysection{shipname.\+h}
+\mbox{\hyperlink{shipname_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ SHIPNAME\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ SHIPNAME\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QIntValidator>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ship_name}{ShipName}};}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ship_name}{ShipName}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_ship_name}{ShipName}}(\textcolor{keywordtype}{bool}\ withCoordinates\ =\ \textcolor{keyword}{false},\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_ship_name_ad994a98e4adc4baef01f52521297e633}{\string~ShipName}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ signals:}
+\DoxyCodeLine{00037\ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ship_name_a5868c4679765f4cfdcac64ff1fa75a93}{sendShipName}}(QString\ name);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ship_name_a04c9b3cd3258777779a86d0cf1fdf29e}{sendShipWithCoordinates}}(QString\ name,\ QString\ coordinates);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_ship_name_a8b6a96260886abdc0a96a6c119666c6b}{on\_buttonBox\_accepted}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ Ui::ShipName\ *\mbox{\hyperlink{class_ship_name_a09566980500a356a438832fd4d752f7d}{ui}};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_ship_name_a6e5f99c80c75428acb5e3d6bee579f03}{\_withCoordinates}};}
+\DoxyCodeLine{00057\ \};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ SHIPNAME\_H}}
+
+\end{DoxyCode}

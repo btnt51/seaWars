@@ -1,0 +1,796 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Seawars: Класс EditComTableWindow</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Seawars
+   </div>
+   <div id="projectbrief">Интелектуальная quiz игра</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d6/d0f/class_edit_com_table_window.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pri-slots">Закрытые слоты</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="../../de/d9e/class_edit_com_table_window-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс EditComTableWindow</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>класс, отвечающий за окно редактирования информации участников в процессе игры в ручном режиме  
+ <a href="../../d6/d0f/class_edit_com_table_window.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/d22/editcomtablewindow_8h_source.html">editcomtablewindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:EditComTableWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/df5/class_edit_com_table_window__inherit__graph.png" border="0" usemap="#a_edit_com_table_window_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_edit_com_table_window_inherit__map" id="a_edit_com_table_window_inherit__map">
+<area shape="rect" title="класс, отвечающий за окно редактирования информации участников в процессе игры в ручном режиме" alt="" coords="5,131,237,428"/>
+<area shape="rect" title=" " alt="" coords="87,5,156,83"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса EditComTableWindow:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d72/class_edit_com_table_window__coll__graph.png" border="0" usemap="#a_edit_com_table_window_coll__map" alt="Collaboration graph"/></div>
+<map name="a_edit_com_table_window_coll__map" id="a_edit_com_table_window_coll__map">
+<area shape="rect" title="класс, отвечающий за окно редактирования информации участников в процессе игры в ручном режиме" alt="" coords="5,131,237,428"/>
+<area shape="rect" title=" " alt="" coords="87,5,156,83"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9d3a878bc1bba9879ee20c82437591f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#a9d3a878bc1bba9879ee20c82437591f8">EditComTableWindow</a> (QVector&lt; <a class="el" href="../../d3/d1d/class_ship.html">Ship</a> * &gt; shiplist, QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:a9d3a878bc1bba9879ee20c82437591f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">конструктор окна  <br /></td></tr>
+<tr class="separator:a9d3a878bc1bba9879ee20c82437591f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2d77cb79255b668a9716ac25d4c1c67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#ae2d77cb79255b668a9716ac25d4c1c67">~EditComTableWindow</a> ()</td></tr>
+<tr class="separator:ae2d77cb79255b668a9716ac25d4c1c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b1f146fd4ad5519500c76fcae6f7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#a53b1f146fd4ad5519500c76fcae6f7fc">addItem</a> (<a class="el" href="../../d3/d1d/class_ship.html">Ship</a> *ship)</td></tr>
+<tr class="memdesc:a53b1f146fd4ad5519500c76fcae6f7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">вспомогательная функция, использующаяся для заполнения QComboBox живых судов  <br /></td></tr>
+<tr class="separator:a53b1f146fd4ad5519500c76fcae6f7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad717d97998e3cbd2b19efa3a1f41d705"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d1d/class_ship.html">Ship</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705">getShip</a> ()</td></tr>
+<tr class="memdesc:ad717d97998e3cbd2b19efa3a1f41d705"><td class="mdescLeft">&#160;</td><td class="mdescRight">вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов  <br /></td></tr>
+<tr class="separator:ad717d97998e3cbd2b19efa3a1f41d705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a086192b3443b2ecf4bcfa9273054359e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#a086192b3443b2ecf4bcfa9273054359e">keyPressEvent</a> (QKeyEvent *evt)</td></tr>
+<tr class="memdesc:a086192b3443b2ecf4bcfa9273054359e"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обработки нажатия на клавиши, пока окно активно  <br /></td></tr>
+<tr class="separator:a086192b3443b2ecf4bcfa9273054359e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-slots" name="pri-slots"></a>
+Закрытые слоты</h2></td></tr>
+<tr class="memitem:aef34bdc73dc2bebaa05105b8395eb92e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#aef34bdc73dc2bebaa05105b8395eb92e">on_aliveShipsBox_currentIndexChanged</a> (int index)</td></tr>
+<tr class="memdesc:aef34bdc73dc2bebaa05105b8395eb92e"><td class="mdescLeft">&#160;</td><td class="mdescRight">впомогательная функция обновления графического интерфейса пользователя, при выборе другого судна в QComboBox живых судов  <br /></td></tr>
+<tr class="separator:aef34bdc73dc2bebaa05105b8395eb92e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb7e30147cd7dbb8a62f16b7afb98020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#adb7e30147cd7dbb8a62f16b7afb98020">on_nameLineEdit_returnPressed</a> ()</td></tr>
+<tr class="memdesc:adb7e30147cd7dbb8a62f16b7afb98020"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обработки нажатия на кнопку "Возврата" (Return) однострочного текстового блока, отвечающее за названия судна  <br /></td></tr>
+<tr class="separator:adb7e30147cd7dbb8a62f16b7afb98020"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb6028a9090959c13a8abfc573e05c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#afbb6028a9090959c13a8abfc573e05c4">on_nameLineEdit_editingFinished</a> ()</td></tr>
+<tr class="memdesc:afbb6028a9090959c13a8abfc573e05c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обработки окончания однострочного текстового блока, отвечающее за названия судна  <br /></td></tr>
+<tr class="separator:afbb6028a9090959c13a8abfc573e05c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cdc43038af1b742b41cc73c9af517b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#af9cdc43038af1b742b41cc73c9af517b">updateLifeLineEdit</a> (<a class="el" href="../../d3/d1d/class_ship.html">Ship</a> *ship)</td></tr>
+<tr class="memdesc:af9cdc43038af1b742b41cc73c9af517b"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обновления однострочного текстового блока, отвечающее за количество жизней у судна  <br /></td></tr>
+<tr class="separator:af9cdc43038af1b742b41cc73c9af517b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad684b57b231e6190b9a4f4080d9312df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#ad684b57b231e6190b9a4f4080d9312df">on_lifeLineEdit_editingFinished</a> ()</td></tr>
+<tr class="memdesc:ad684b57b231e6190b9a4f4080d9312df"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна  <br /></td></tr>
+<tr class="separator:ad684b57b231e6190b9a4f4080d9312df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63d13d9e27a2703cf70f83b403e9f83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#ad63d13d9e27a2703cf70f83b403e9f83">on_lifeLineEdit_returnPressed</a> ()</td></tr>
+<tr class="memdesc:ad63d13d9e27a2703cf70f83b403e9f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обработки нажатия на кнопку "Возврата" (Return) однострочного текстового блока, отвечающее за количество жизней судна  <br /></td></tr>
+<tr class="separator:ad63d13d9e27a2703cf70f83b403e9f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8731d252a3c20864acb62dde86536bc0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#a8731d252a3c20864acb62dde86536bc0">on_addLifeBut_clicked</a> ()</td></tr>
+<tr class="memdesc:a8731d252a3c20864acb62dde86536bc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обработки нажатия на графическую кнопку добавления одной жизни судну  <br /></td></tr>
+<tr class="separator:a8731d252a3c20864acb62dde86536bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c6ee958dddacb1ec9a9ee81810bde18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#a2c6ee958dddacb1ec9a9ee81810bde18">on_subLifeBut_clicked</a> ()</td></tr>
+<tr class="memdesc:a2c6ee958dddacb1ec9a9ee81810bde18"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обработки нажатия на графическую кнопку удаление одной жизни судну  <br /></td></tr>
+<tr class="separator:a2c6ee958dddacb1ec9a9ee81810bde18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad855d683c6899cf5bd6fc2b4ae50b23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#aad855d683c6899cf5bd6fc2b4ae50b23">updateDisplayName</a> (QString name)</td></tr>
+<tr class="memdesc:aad855d683c6899cf5bd6fc2b4ae50b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция обновления отображаемого имени судна в QComboBox  <br /></td></tr>
+<tr class="separator:aad855d683c6899cf5bd6fc2b4ae50b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a76ec75210396fca1a11ea6c09c64aad0"><td class="memItemLeft" align="right" valign="top">Ui::EditComTableWindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#a76ec75210396fca1a11ea6c09c64aad0">ui</a></td></tr>
+<tr class="memdesc:a76ec75210396fca1a11ea6c09c64aad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">указатель на графический интерфейс  <br /></td></tr>
+<tr class="separator:a76ec75210396fca1a11ea6c09c64aad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9f0295c42dc4dd81d04128acb755a67"><td class="memItemLeft" align="right" valign="top">QVector&lt; <a class="el" href="../../d3/d1d/class_ship.html">Ship</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html#ac9f0295c42dc4dd81d04128acb755a67">_ships</a></td></tr>
+<tr class="memdesc:ac9f0295c42dc4dd81d04128acb755a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">список живых судов  <br /></td></tr>
+<tr class="separator:ac9f0295c42dc4dd81d04128acb755a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>класс, отвечающий за окно редактирования информации участников в процессе игры в ручном режиме </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a9d3a878bc1bba9879ee20c82437591f8" name="a9d3a878bc1bba9879ee20c82437591f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d3a878bc1bba9879ee20c82437591f8">&#9670;&#160;</a></span>EditComTableWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EditComTableWindow::EditComTableWindow </td>
+          <td>(</td>
+          <td class="paramtype">QVector&lt; <a class="el" href="../../d3/d1d/class_ship.html">Ship</a> * &gt;&#160;</td>
+          <td class="paramname"><em>shiplist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>конструктор окна </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">shiplist</td><td>список живых судов </td></tr>
+    <tr><td class="paramname">parent</td><td>указатель на родительский виджет (окно), используется для управления памятью и контроле в модальных окнах </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8_cgraph" id="ad6/d0f/class_edit_com_table_window_a9d3a878bc1bba9879ee20c82437591f8_cgraph">
+<area shape="rect" title="конструктор окна" alt="" coords="5,37,164,77"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#a53b1f146fd4ad5519500c76fcae6f7fc" title="вспомогательная функция, использующаяся для заполнения QComboBox живых судов" alt="" coords="212,5,363,45"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#af9cdc43038af1b742b41cc73c9af517b" title="функция обновления однострочного текстового блока, отвечающее за количество жизней у судна" alt="" coords="212,69,363,109"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="437,21,546,46"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f" title="функция&#45;геттер количества жизней судна" alt="" coords="411,77,572,102"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae2d77cb79255b668a9716ac25d4c1c67" name="ae2d77cb79255b668a9716ac25d4c1c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2d77cb79255b668a9716ac25d4c1c67">&#9670;&#160;</a></span>~EditComTableWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EditComTableWindow::~EditComTableWindow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a53b1f146fd4ad5519500c76fcae6f7fc" name="a53b1f146fd4ad5519500c76fcae6f7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b1f146fd4ad5519500c76fcae6f7fc">&#9670;&#160;</a></span>addItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::addItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d1d/class_ship.html">Ship</a> *&#160;</td>
+          <td class="paramname"><em>ship</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>вспомогательная функция, использующаяся для заполнения QComboBox живых судов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ship</td><td>указатель на судно, которое будет помещено в QComboBox живых судов </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_cgraph" id="ad6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_cgraph">
+<area shape="rect" title="вспомогательная функция, использующаяся для заполнения QComboBox живых судов" alt="" coords="5,5,156,45"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="204,13,313,38"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_icgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_icgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_icgraph" id="ad6/d0f/class_edit_com_table_window_a53b1f146fd4ad5519500c76fcae6f7fc_icgraph">
+<area shape="rect" title="вспомогательная функция, использующаяся для заполнения QComboBox живых судов" alt="" coords="212,5,363,45"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#a9d3a878bc1bba9879ee20c82437591f8" title="конструктор окна" alt="" coords="5,5,164,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad717d97998e3cbd2b19efa3a1f41d705" name="ad717d97998e3cbd2b19efa3a1f41d705"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad717d97998e3cbd2b19efa3a1f41d705">&#9670;&#160;</a></span>getShip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d1d/class_ship.html">Ship</a> * EditComTableWindow::getShip </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов </p>
+<dl class="section return"><dt>Возвращает</dt><dd>указатель на судно, которое было выбрано в QComboBox </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705_icgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705_icgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705_icgraph" id="ad6/d0f/class_edit_com_table_window_ad717d97998e3cbd2b19efa3a1f41d705_icgraph">
+<area shape="rect" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="277,165,428,205"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#a8731d252a3c20864acb62dde86536bc0" title="функция обработки нажатия на графическую кнопку добавления одной жизни судну" alt="" coords="37,5,198,45"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad684b57b231e6190b9a4f4080d9312df" title="функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна" alt="" coords="13,69,222,109"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad63d13d9e27a2703cf70f83b403e9f83" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="16,133,219,173"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#afbb6028a9090959c13a8abfc573e05c4" title="функция обработки окончания однострочного текстового блока, отвечающее за названия судна" alt="" coords="5,197,229,237"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#adb7e30147cd7dbb8a62f16b7afb98020" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="8,261,227,301"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#a2c6ee958dddacb1ec9a9ee81810bde18" title="функция обработки нажатия на графическую кнопку удаление одной жизни судну" alt="" coords="37,325,198,365"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a086192b3443b2ecf4bcfa9273054359e" name="a086192b3443b2ecf4bcfa9273054359e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086192b3443b2ecf4bcfa9273054359e">&#9670;&#160;</a></span>keyPressEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::keyPressEvent </td>
+          <td>(</td>
+          <td class="paramtype">QKeyEvent *&#160;</td>
+          <td class="paramname"><em>evt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обработки нажатия на клавиши, пока окно активно </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">evt</td><td>указтаель на событие нажатие на клавиши </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8731d252a3c20864acb62dde86536bc0" name="a8731d252a3c20864acb62dde86536bc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8731d252a3c20864acb62dde86536bc0">&#9670;&#160;</a></span>on_addLifeBut_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::on_addLifeBut_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обработки нажатия на графическую кнопку добавления одной жизни судну </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0_cgraph" id="ad6/d0f/class_edit_com_table_window_a8731d252a3c20864acb62dde86536bc0_cgraph">
+<area shape="rect" title="функция обработки нажатия на графическую кнопку добавления одной жизни судну" alt="" coords="5,27,167,67"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#abdbd6ad47c00da77a4745a812a2162d1" title="функция добавления жизней судну" alt="" coords="237,5,343,31"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="215,55,365,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aef34bdc73dc2bebaa05105b8395eb92e" name="aef34bdc73dc2bebaa05105b8395eb92e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef34bdc73dc2bebaa05105b8395eb92e">&#9670;&#160;</a></span>on_aliveShipsBox_currentIndexChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::on_aliveShipsBox_currentIndexChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>впомогательная функция обновления графического интерфейса пользователя, при выборе другого судна в QComboBox живых судов </p>
+
+</div>
+</div>
+<a id="ad684b57b231e6190b9a4f4080d9312df" name="ad684b57b231e6190b9a4f4080d9312df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad684b57b231e6190b9a4f4080d9312df">&#9670;&#160;</a></span>on_lifeLineEdit_editingFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::on_lifeLineEdit_editingFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df_cgraph" id="ad6/d0f/class_edit_com_table_window_ad684b57b231e6190b9a4f4080d9312df_cgraph">
+<area shape="rect" title="функция обработки окончания однострочного текстового блока, отвечающее за количество жизней судна" alt="" coords="5,35,215,75"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="273,5,424,45"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a69978093c1ee8dd862fe20666eae6dac" title="функция&#45;сеттер количества жизней судна" alt="" coords="263,70,435,95"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="483,70,625,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad63d13d9e27a2703cf70f83b403e9f83" name="ad63d13d9e27a2703cf70f83b403e9f83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad63d13d9e27a2703cf70f83b403e9f83">&#9670;&#160;</a></span>on_lifeLineEdit_returnPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::on_lifeLineEdit_returnPressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обработки нажатия на кнопку "Возврата" (Return) однострочного текстового блока, отвечающее за количество жизней судна </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83_cgraph" id="ad6/d0f/class_edit_com_table_window_ad63d13d9e27a2703cf70f83b403e9f83_cgraph">
+<area shape="rect" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="5,35,208,75"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="267,5,417,45"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a69978093c1ee8dd862fe20666eae6dac" title="функция&#45;сеттер количества жизней судна" alt="" coords="256,70,428,95"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="476,70,619,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afbb6028a9090959c13a8abfc573e05c4" name="afbb6028a9090959c13a8abfc573e05c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb6028a9090959c13a8abfc573e05c4">&#9670;&#160;</a></span>on_nameLineEdit_editingFinished</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::on_nameLineEdit_editingFinished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обработки окончания однострочного текстового блока, отвечающее за названия судна </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4_cgraph" id="ad6/d0f/class_edit_com_table_window_afbb6028a9090959c13a8abfc573e05c4_cgraph">
+<area shape="rect" title="функция обработки окончания однострочного текстового блока, отвечающее за названия судна" alt="" coords="5,63,229,103"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="277,5,428,45"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba" title="функция&#45;сеттер нового название судна" alt="" coords="298,70,407,95"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#aad855d683c6899cf5bd6fc2b4ae50b23" title="функция обновления отображаемого имени судна в QComboBox" alt="" coords="277,120,428,160"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adb7e30147cd7dbb8a62f16b7afb98020" name="adb7e30147cd7dbb8a62f16b7afb98020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb7e30147cd7dbb8a62f16b7afb98020">&#9670;&#160;</a></span>on_nameLineEdit_returnPressed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::on_nameLineEdit_returnPressed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обработки нажатия на кнопку "Возврата" (Return) однострочного текстового блока, отвечающее за названия судна </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020_cgraph" id="ad6/d0f/class_edit_com_table_window_adb7e30147cd7dbb8a62f16b7afb98020_cgraph">
+<area shape="rect" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="5,63,224,103"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="272,5,423,45"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba" title="функция&#45;сеттер нового название судна" alt="" coords="293,70,402,95"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#aad855d683c6899cf5bd6fc2b4ae50b23" title="функция обновления отображаемого имени судна в QComboBox" alt="" coords="272,120,423,160"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2c6ee958dddacb1ec9a9ee81810bde18" name="a2c6ee958dddacb1ec9a9ee81810bde18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c6ee958dddacb1ec9a9ee81810bde18">&#9670;&#160;</a></span>on_subLifeBut_clicked</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::on_subLifeBut_clicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обработки нажатия на графическую кнопку удаление одной жизни судну </p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18_cgraph" id="ad6/d0f/class_edit_com_table_window_a2c6ee958dddacb1ec9a9ee81810bde18_cgraph">
+<area shape="rect" title="функция обработки нажатия на графическую кнопку удаление одной жизни судну" alt="" coords="5,35,167,75"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#ad717d97998e3cbd2b19efa3a1f41d705" title="вспомогательная функция, использующаяся для получения выбраного судна в QComboBox живых судов" alt="" coords="215,5,365,45"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1" title="функция отнимания жизней у судна" alt="" coords="237,70,343,95"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297" title="функция&#45;сеттер статуса уничтожения судна" alt="" coords="413,70,556,95"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aad855d683c6899cf5bd6fc2b4ae50b23" name="aad855d683c6899cf5bd6fc2b4ae50b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad855d683c6899cf5bd6fc2b4ae50b23">&#9670;&#160;</a></span>updateDisplayName</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::updateDisplayName </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обновления отображаемого имени судна в QComboBox </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>новое имя </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23_icgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23_icgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23_icgraph" id="ad6/d0f/class_edit_com_table_window_aad855d683c6899cf5bd6fc2b4ae50b23_icgraph">
+<area shape="rect" title="функция обновления отображаемого имени судна в QComboBox" alt="" coords="277,37,428,77"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#afbb6028a9090959c13a8abfc573e05c4" title="функция обработки окончания однострочного текстового блока, отвечающее за названия судна" alt="" coords="5,5,229,45"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#adb7e30147cd7dbb8a62f16b7afb98020" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="8,69,227,109"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af9cdc43038af1b742b41cc73c9af517b" name="af9cdc43038af1b742b41cc73c9af517b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9cdc43038af1b742b41cc73c9af517b">&#9670;&#160;</a></span>updateLifeLineEdit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void EditComTableWindow::updateLifeLineEdit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d1d/class_ship.html">Ship</a> *&#160;</td>
+          <td class="paramname"><em>ship</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>функция обновления однострочного текстового блока, отвечающее за количество жизней у судна </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">указатель</td><td>на судно, у которой обновилось количество жизней </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_cgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_cgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_cgraph" id="ad6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_cgraph">
+<area shape="rect" title="функция обновления однострочного текстового блока, отвечающее за количество жизней у судна" alt="" coords="5,23,156,63"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f" title="функция&#45;геттер количества жизней судна" alt="" coords="204,5,365,31"/>
+<area shape="rect" href="../../d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="230,55,339,80"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_icgraph.png" border="0" usemap="#ad6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_icgraph" alt=""/></div>
+<map name="ad6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_icgraph" id="ad6/d0f/class_edit_com_table_window_af9cdc43038af1b742b41cc73c9af517b_icgraph">
+<area shape="rect" title="функция обновления однострочного текстового блока, отвечающее за количество жизней у судна" alt="" coords="212,5,363,45"/>
+<area shape="rect" href="../../d6/d0f/class_edit_com_table_window.html#a9d3a878bc1bba9879ee20c82437591f8" title="конструктор окна" alt="" coords="5,5,164,45"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ac9f0295c42dc4dd81d04128acb755a67" name="ac9f0295c42dc4dd81d04128acb755a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9f0295c42dc4dd81d04128acb755a67">&#9670;&#160;</a></span>_ships</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;<a class="el" href="../../d3/d1d/class_ship.html">Ship</a> *&gt; EditComTableWindow::_ships</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>список живых судов </p>
+
+</div>
+</div>
+<a id="a76ec75210396fca1a11ea6c09c64aad0" name="a76ec75210396fca1a11ea6c09c64aad0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ec75210396fca1a11ea6c09c64aad0">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::EditComTableWindow* EditComTableWindow::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>указатель на графический интерфейс </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li><a class="el" href="../../d1/d22/editcomtablewindow_8h_source.html">editcomtablewindow.h</a></li>
+<li><a class="el" href="../../d2/df4/editcomtablewindow_8cpp.html">editcomtablewindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d6/d0f/class_edit_com_table_window.html">EditComTableWindow</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

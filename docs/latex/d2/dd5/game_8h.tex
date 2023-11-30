@@ -1,0 +1,111 @@
+\hypertarget{game_8h}{}\doxysection{Файл game.\+h}
+\label{game_8h}\index{game.h@{game.h}}
+
+
+Файл который содержит перечисление EGame\+State и класс \mbox{\hyperlink{class_game}{Game}}, отвечающий за контроль и управление игрой.  
+
+
+{\ttfamily \#include $<$QObject$>$}\newline
+{\ttfamily \#include $<$QTimer$>$}\newline
+{\ttfamily \#include $<$QRandom\+Generator$>$}\newline
+{\ttfamily \#include \char`\"{}field.\+h\char`\"{}}\newline
+Граф включаемых заголовочных файлов для game.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d1/d10/game_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{df/dcc/game_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_game}{Game}}
+\begin{DoxyCompactList}\small\item\em класс отвечающий за состояние и управление ходом игры \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}} \{ \newline
+\mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa8f638f3ce0919f4bd420a2ed77cb3b00}{NOTSTARTED}}
+, \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa13d000b4d7dc70d90239b7430d1eb6b2}{START}}
+, \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa83d15ce98a5839ec86db2d3dfb23dfea}{PLACING\+\_\+\+SHIPS}}
+, \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad50cf309d7568040619ed26ee6835a84}{GAME}}
+, \newline
+\mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad126f509c35e1661274f8b72693c7848}{QUESTION}}
+, \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaabd11813ad5c217a8d8d07c1d6cb01b1e}{SHOT}}
+, \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa17ba9bae1b8d7e8d6c12d46ec58e0769}{TIMER}}
+, \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaadc6f24fd6915a3f2786a1b7045406924}{END}}
+ \}
+\begin{DoxyCompactList}\small\item\em перечисление отвечающее за состоянии/стадии игры. Может принимать значения\+: NOTSTARTED -\/ игра еще не стартовала, START -\/ начало игры, PLACING\+\_\+\+SHIPS -\/ стадия растоновки игры, GAME -\/ стадия игры, QUESTION -\/ стадия задания вопроса, SHOT -\/ стадия выстрела, TIMER -\/ стадия работы таймера, END -\/ конец игры. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл который содержит перечисление EGame\+State и класс \mbox{\hyperlink{class_game}{Game}}, отвечающий за контроль и управление игрой. 
+
+\begin{DoxyAuthor}{Автор}
+Evgeniy btnt51 (\href{mailto:prog@btnt51.ru}{\texttt{ prog@btnt51.\+ru}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+2023-\/02-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}} 
+\index{game.h@{game.h}!EGameState@{EGameState}}
+\index{EGameState@{EGameState}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{EGameState}{EGameState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGame\+State}}}
+
+
+
+перечисление отвечающее за состоянии/стадии игры. Может принимать значения\+: NOTSTARTED -\/ игра еще не стартовала, START -\/ начало игры, PLACING\+\_\+\+SHIPS -\/ стадия растоновки игры, GAME -\/ стадия игры, QUESTION -\/ стадия задания вопроса, SHOT -\/ стадия выстрела, TIMER -\/ стадия работы таймера, END -\/ конец игры. 
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOTSTARTED@{NOTSTARTED}!game.h@{game.h}}\index{game.h@{game.h}!NOTSTARTED@{NOTSTARTED}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa8f638f3ce0919f4bd420a2ed77cb3b00}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa8f638f3ce0919f4bd420a2ed77cb3b00}} 
+NOTSTARTED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{START@{START}!game.h@{game.h}}\index{game.h@{game.h}!START@{START}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa13d000b4d7dc70d90239b7430d1eb6b2}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa13d000b4d7dc70d90239b7430d1eb6b2}} 
+START&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLACING\_SHIPS@{PLACING\_SHIPS}!game.h@{game.h}}\index{game.h@{game.h}!PLACING\_SHIPS@{PLACING\_SHIPS}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa83d15ce98a5839ec86db2d3dfb23dfea}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa83d15ce98a5839ec86db2d3dfb23dfea}} 
+PLACING\+\_\+\+SHIPS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GAME@{GAME}!game.h@{game.h}}\index{game.h@{game.h}!GAME@{GAME}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad50cf309d7568040619ed26ee6835a84}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad50cf309d7568040619ed26ee6835a84}} 
+GAME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUESTION@{QUESTION}!game.h@{game.h}}\index{game.h@{game.h}!QUESTION@{QUESTION}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad126f509c35e1661274f8b72693c7848}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad126f509c35e1661274f8b72693c7848}} 
+QUESTION&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SHOT@{SHOT}!game.h@{game.h}}\index{game.h@{game.h}!SHOT@{SHOT}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaabd11813ad5c217a8d8d07c1d6cb01b1e}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaabd11813ad5c217a8d8d07c1d6cb01b1e}} 
+SHOT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIMER@{TIMER}!game.h@{game.h}}\index{game.h@{game.h}!TIMER@{TIMER}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa17ba9bae1b8d7e8d6c12d46ec58e0769}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa17ba9bae1b8d7e8d6c12d46ec58e0769}} 
+TIMER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{END@{END}!game.h@{game.h}}\index{game.h@{game.h}!END@{END}}}\mbox{\Hypertarget{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaadc6f24fd6915a3f2786a1b7045406924}\label{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaadc6f24fd6915a3f2786a1b7045406924}} 
+END&\\
+\hline
+
+\end{DoxyEnumFields}

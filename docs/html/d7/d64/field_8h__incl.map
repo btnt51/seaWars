@@ -1,0 +1,8 @@
+<map id="field.h" name="field.h">
+<area shape="rect" id="node1" title="Файл который содержит перечисление ECell и класс Field, отвечающий за игровое поле." alt="" coords="96,5,153,31"/>
+<area shape="rect" id="node2" href="$d7/daf/ship_8h.html" title="файл содержащий класс, отвечающий за работу и обработку сущности судна" alt="" coords="96,79,153,104"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,152,76,177"/>
+<area shape="rect" id="node6" title=" " alt="" coords="177,79,248,104"/>
+<area shape="rect" id="node4" title=" " alt="" coords="100,152,163,177"/>
+<area shape="rect" id="node5" title=" " alt="" coords="187,152,238,177"/>
+</map>

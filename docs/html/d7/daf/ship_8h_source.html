@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Seawars: Исходный файл ship.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Seawars
+   </div>
+   <div id="projectbrief">Интелектуальная quiz игра</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d7/daf/ship_8h_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ship.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/daf/ship_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#ifndef SHIPS_H</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#define SHIPS_H</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;QColor&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &lt;tuple&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d3/d1d/class_ship.html">Ship</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    Q_OBJECT</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_class" href="../../d3/d1d/class_ship.html">Ship</a>(QString name, <span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column, QColor *clr = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="../../d3/d1d/class_ship.html#a43cd6eeaffc11b49239b091621963a65">~Ship</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba">setName</a>(QString name);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a395c39e9d53f0a3d0f721d1956b0b928">setCoordinat</a>(<span class="keywordtype">int</span> row, <span class="keywordtype">int</span> column);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297">setDeadStatus</a>(<span class="keywordtype">bool</span> isDead);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a69978093c1ee8dd862fe20666eae6dac">setAmmountOfLifes</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> amountOfLifes);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#abdbd6ad47c00da77a4745a812a2162d1">addLifes</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> amountOfAddedLifes = 1);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#aab8b4af926606b39f635b1f39c5772ac">sendLife</a>(<a class="code hl_class" href="../../d3/d1d/class_ship.html">Ship</a>* deadShip);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1">subLifes</a>(<span class="keywordtype">int</span> amountOfSubsLifes = 1);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a9aa06161da7ad367ae13f553eda8f91b">setHitStatus</a>(<span class="keywordtype">bool</span> hitStatus);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a8fc233a064429097429fa1f24fd65460">setAnswerStatus</a>(<span class="keywordtype">bool</span> answerStatus);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    std::tuple&lt;int, int&gt; <a class="code hl_function" href="../../d3/d1d/class_ship.html#a314f0f26111dc825e7b825e58c9eed87">getCoordinats</a>();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    QString <a class="code hl_function" href="../../d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9">getName</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f">getAmountOfLifes</a>();</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a18e35004e8b1acf3dccf2c17d27a0f08">getDeadStatus</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a45071fc26bf5a59c331ef58309c77a2e">getHitStatus</a>();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#aa93dd347a3f7cd122b84659d16921320">getAnswerStatus</a>();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a3875e4c774c5b39f740ed2b9a0bb7f0b">getNumber</a>();</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a1d45fed8cebb6c0d5d776083558ad5fb">getRow</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keywordtype">int</span> <a class="code hl_function" href="../../d3/d1d/class_ship.html#a256d1ca51a6d16a0db97f0bf6733ce29">getColumn</a>();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    QColor *<a class="code hl_function" href="../../d3/d1d/class_ship.html#a8dcd2fc8a985fb084dbb6f030baa7cc8">getColor</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>signals:</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a7b07b013ae4373ab39d65a53b63895b0">  114</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="../../d3/d1d/class_ship.html#a7b07b013ae4373ab39d65a53b63895b0">shipIsDead</a>(<a class="code hl_class" href="../../d3/d1d/class_ship.html">Ship</a> *ship);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a722175894dd7a4bbbacd67e1aa0769e9">  118</a></span>    <span class="keywordtype">void</span> <a class="code hl_signal" href="../../d3/d1d/class_ship.html#a722175894dd7a4bbbacd67e1aa0769e9">updateShipInfo</a>(<a class="code hl_class" href="../../d3/d1d/class_ship.html">Ship</a> *ship);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a90843e267ba86bed8ee44ca3fdda3d8c">  122</a></span>    QString <a class="code hl_variable" href="../../d3/d1d/class_ship.html#a90843e267ba86bed8ee44ca3fdda3d8c">_name</a>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a394c9df9e6908669024566e562cdea7f">  125</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#a394c9df9e6908669024566e562cdea7f">_row</a>;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a7155bdffef6c9931a60fdf312973a684">  128</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#a7155bdffef6c9931a60fdf312973a684">_column</a>;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a3f22696ee9c41e970533e1fffc4092a1">  131</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#a3f22696ee9c41e970533e1fffc4092a1">_isDead</a>;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#ae8f3dfbf4d35fb5ca6d8d4edec512eef">  134</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#ae8f3dfbf4d35fb5ca6d8d4edec512eef">_lifes</a>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#af3fd15aec7ffd1aadccdfde7111a9550">  137</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#af3fd15aec7ffd1aadccdfde7111a9550">_isRightAnswer</a>;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#abf881ad4ef036278eb1659f4b00ef679">  140</a></span>    <span class="keywordtype">bool</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#abf881ad4ef036278eb1659f4b00ef679">_isHited</a>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a90fe5a1734e7c23fc4b7c5403e6b19f6">  143</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#a90fe5a1734e7c23fc4b7c5403e6b19f6">_number</a>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a662063bcedebc62ee1144ad62fa908aa">  146</a></span>    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d3/d1d/class_ship.html#a662063bcedebc62ee1144ad62fa908aa">amountOfShips</a>;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../d3/d1d/class_ship.html#a45f6347daeb0e7988eb845e537ff8ba9">  149</a></span>    QColor* <a class="code hl_variable" href="../../d3/d1d/class_ship.html#a45f6347daeb0e7988eb845e537ff8ba9">_color</a>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>};</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span><span class="preprocessor">#endif </span><span class="comment">// SHIPS_H</span></div>
+<div class="ttc" id="aclass_ship_html"><div class="ttname"><a href="../../d3/d1d/class_ship.html">Ship</a></div><div class="ttdoc">класс, отвечающий за работу и обработку сущности судна</div><div class="ttdef"><b>Definition:</b> ship.h:20</div></div>
+<div class="ttc" id="aclass_ship_html_a0d164eae840870f5044397cce65f1297"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a0d164eae840870f5044397cce65f1297">Ship::setDeadStatus</a></div><div class="ttdeci">void setDeadStatus(bool isDead)</div><div class="ttdoc">функция-сеттер статуса уничтожения судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:36</div></div>
+<div class="ttc" id="aclass_ship_html_a18e35004e8b1acf3dccf2c17d27a0f08"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a18e35004e8b1acf3dccf2c17d27a0f08">Ship::getDeadStatus</a></div><div class="ttdeci">bool getDeadStatus()</div><div class="ttdoc">функция-геттер статуса уничтожения судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:94</div></div>
+<div class="ttc" id="aclass_ship_html_a1d45fed8cebb6c0d5d776083558ad5fb"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a1d45fed8cebb6c0d5d776083558ad5fb">Ship::getRow</a></div><div class="ttdeci">int getRow()</div><div class="ttdoc">функция-геттер ряда судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:110</div></div>
+<div class="ttc" id="aclass_ship_html_a256d1ca51a6d16a0db97f0bf6733ce29"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a256d1ca51a6d16a0db97f0bf6733ce29">Ship::getColumn</a></div><div class="ttdeci">int getColumn()</div><div class="ttdoc">функция-геттер столбца судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:114</div></div>
+<div class="ttc" id="aclass_ship_html_a314f0f26111dc825e7b825e58c9eed87"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a314f0f26111dc825e7b825e58c9eed87">Ship::getCoordinats</a></div><div class="ttdeci">std::tuple&lt; int, int &gt; getCoordinats()</div><div class="ttdoc">функция-геттер коориданат судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:82</div></div>
+<div class="ttc" id="aclass_ship_html_a3875e4c774c5b39f740ed2b9a0bb7f0b"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a3875e4c774c5b39f740ed2b9a0bb7f0b">Ship::getNumber</a></div><div class="ttdeci">int getNumber()</div><div class="ttdoc">функция-геттер порядкового номера судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:106</div></div>
+<div class="ttc" id="aclass_ship_html_a394c9df9e6908669024566e562cdea7f"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a394c9df9e6908669024566e562cdea7f">Ship::_row</a></div><div class="ttdeci">int _row</div><div class="ttdoc">ряд судна</div><div class="ttdef"><b>Definition:</b> ship.h:125</div></div>
+<div class="ttc" id="aclass_ship_html_a395c39e9d53f0a3d0f721d1956b0b928"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a395c39e9d53f0a3d0f721d1956b0b928">Ship::setCoordinat</a></div><div class="ttdeci">void setCoordinat(int row, int column)</div><div class="ttdoc">функция-сеттер новых координат судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:31</div></div>
+<div class="ttc" id="aclass_ship_html_a3f22696ee9c41e970533e1fffc4092a1"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a3f22696ee9c41e970533e1fffc4092a1">Ship::_isDead</a></div><div class="ttdeci">bool _isDead</div><div class="ttdoc">статус уничтожения судна</div><div class="ttdef"><b>Definition:</b> ship.h:131</div></div>
+<div class="ttc" id="aclass_ship_html_a43cd6eeaffc11b49239b091621963a65"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a43cd6eeaffc11b49239b091621963a65">Ship::~Ship</a></div><div class="ttdeci">~Ship()</div><div class="ttdoc">деструктор судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:21</div></div>
+<div class="ttc" id="aclass_ship_html_a45071fc26bf5a59c331ef58309c77a2e"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a45071fc26bf5a59c331ef58309c77a2e">Ship::getHitStatus</a></div><div class="ttdeci">bool getHitStatus()</div><div class="ttdoc">функция-геттер статуса ранения судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:98</div></div>
+<div class="ttc" id="aclass_ship_html_a45f6347daeb0e7988eb845e537ff8ba9"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a45f6347daeb0e7988eb845e537ff8ba9">Ship::_color</a></div><div class="ttdeci">QColor * _color</div><div class="ttdoc">указатель на цвет судна</div><div class="ttdef"><b>Definition:</b> ship.h:149</div></div>
+<div class="ttc" id="aclass_ship_html_a662063bcedebc62ee1144ad62fa908aa"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a662063bcedebc62ee1144ad62fa908aa">Ship::amountOfShips</a></div><div class="ttdeci">static int amountOfShips</div><div class="ttdoc">статическое суммарное колчество судов</div><div class="ttdef"><b>Definition:</b> ship.h:146</div></div>
+<div class="ttc" id="aclass_ship_html_a69978093c1ee8dd862fe20666eae6dac"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a69978093c1ee8dd862fe20666eae6dac">Ship::setAmmountOfLifes</a></div><div class="ttdeci">void setAmmountOfLifes(unsigned int amountOfLifes)</div><div class="ttdoc">функция-сеттер количества жизней судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:42</div></div>
+<div class="ttc" id="aclass_ship_html_a70dd81492479eec2bcdbb8f38edf10ba"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a70dd81492479eec2bcdbb8f38edf10ba">Ship::setName</a></div><div class="ttdeci">void setName(QString name)</div><div class="ttdoc">функция-сеттер нового название судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:26</div></div>
+<div class="ttc" id="aclass_ship_html_a7155bdffef6c9931a60fdf312973a684"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a7155bdffef6c9931a60fdf312973a684">Ship::_column</a></div><div class="ttdeci">int _column</div><div class="ttdoc">столбец судна</div><div class="ttdef"><b>Definition:</b> ship.h:128</div></div>
+<div class="ttc" id="aclass_ship_html_a722175894dd7a4bbbacd67e1aa0769e9"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a722175894dd7a4bbbacd67e1aa0769e9">Ship::updateShipInfo</a></div><div class="ttdeci">void updateShipInfo(Ship *ship)</div><div class="ttdoc">сигнал обновления судна</div></div>
+<div class="ttc" id="aclass_ship_html_a7b07b013ae4373ab39d65a53b63895b0"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a7b07b013ae4373ab39d65a53b63895b0">Ship::shipIsDead</a></div><div class="ttdeci">void shipIsDead(Ship *ship)</div><div class="ttdoc">сигнал о том что судно уничтожено</div></div>
+<div class="ttc" id="aclass_ship_html_a8b8778c63a4bcd2c008fe60fbed47f3f"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f">Ship::getAmountOfLifes</a></div><div class="ttdeci">unsigned int getAmountOfLifes()</div><div class="ttdoc">функция-геттер количества жизней судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:90</div></div>
+<div class="ttc" id="aclass_ship_html_a8dcd2fc8a985fb084dbb6f030baa7cc8"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a8dcd2fc8a985fb084dbb6f030baa7cc8">Ship::getColor</a></div><div class="ttdeci">QColor * getColor()</div><div class="ttdoc">функция-геттер цвета судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:118</div></div>
+<div class="ttc" id="aclass_ship_html_a8fc233a064429097429fa1f24fd65460"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a8fc233a064429097429fa1f24fd65460">Ship::setAnswerStatus</a></div><div class="ttdeci">void setAnswerStatus(bool answerStatus)</div><div class="ttdoc">функция-сеттер статуса данного правильного ответа судном</div><div class="ttdef"><b>Definition:</b> ship.cpp:76</div></div>
+<div class="ttc" id="aclass_ship_html_a90843e267ba86bed8ee44ca3fdda3d8c"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a90843e267ba86bed8ee44ca3fdda3d8c">Ship::_name</a></div><div class="ttdeci">QString _name</div><div class="ttdoc">название судна</div><div class="ttdef"><b>Definition:</b> ship.h:122</div></div>
+<div class="ttc" id="aclass_ship_html_a90fe5a1734e7c23fc4b7c5403e6b19f6"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a90fe5a1734e7c23fc4b7c5403e6b19f6">Ship::_number</a></div><div class="ttdeci">int _number</div><div class="ttdoc">порядковый номер судна</div><div class="ttdef"><b>Definition:</b> ship.h:143</div></div>
+<div class="ttc" id="aclass_ship_html_a9aa06161da7ad367ae13f553eda8f91b"><div class="ttname"><a href="../../d3/d1d/class_ship.html#a9aa06161da7ad367ae13f553eda8f91b">Ship::setHitStatus</a></div><div class="ttdeci">void setHitStatus(bool hitStatus)</div><div class="ttdoc">функция-сеттер статуса раненния судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:70</div></div>
+<div class="ttc" id="aclass_ship_html_aa93dd347a3f7cd122b84659d16921320"><div class="ttname"><a href="../../d3/d1d/class_ship.html#aa93dd347a3f7cd122b84659d16921320">Ship::getAnswerStatus</a></div><div class="ttdeci">bool getAnswerStatus()</div><div class="ttdoc">функция-геттер статуса данного правильного ответа судном</div><div class="ttdef"><b>Definition:</b> ship.cpp:102</div></div>
+<div class="ttc" id="aclass_ship_html_aab8b4af926606b39f635b1f39c5772ac"><div class="ttname"><a href="../../d3/d1d/class_ship.html#aab8b4af926606b39f635b1f39c5772ac">Ship::sendLife</a></div><div class="ttdeci">void sendLife(Ship *deadShip)</div><div class="ttdoc">функция отправки жизней уничтоженному судну ( отнимает 5 жизни у отпровителя и добавляет 5 жизней уни...</div><div class="ttdef"><b>Definition:</b> ship.cpp:55</div></div>
+<div class="ttc" id="aclass_ship_html_abdbd6ad47c00da77a4745a812a2162d1"><div class="ttname"><a href="../../d3/d1d/class_ship.html#abdbd6ad47c00da77a4745a812a2162d1">Ship::addLifes</a></div><div class="ttdeci">void addLifes(unsigned int amountOfAddedLifes=1)</div><div class="ttdoc">функция добавления жизней судну</div><div class="ttdef"><b>Definition:</b> ship.cpp:50</div></div>
+<div class="ttc" id="aclass_ship_html_abf881ad4ef036278eb1659f4b00ef679"><div class="ttname"><a href="../../d3/d1d/class_ship.html#abf881ad4ef036278eb1659f4b00ef679">Ship::_isHited</a></div><div class="ttdeci">bool _isHited</div><div class="ttdoc">статус ранения судна</div><div class="ttdef"><b>Definition:</b> ship.h:140</div></div>
+<div class="ttc" id="aclass_ship_html_ac4f4839d8fc68dc22e0c853747dce0e9"><div class="ttname"><a href="../../d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9">Ship::getName</a></div><div class="ttdeci">QString getName()</div><div class="ttdoc">функция-геттер названия судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:86</div></div>
+<div class="ttc" id="aclass_ship_html_ae8f3dfbf4d35fb5ca6d8d4edec512eef"><div class="ttname"><a href="../../d3/d1d/class_ship.html#ae8f3dfbf4d35fb5ca6d8d4edec512eef">Ship::_lifes</a></div><div class="ttdeci">unsigned int _lifes</div><div class="ttdoc">количество жизней судна</div><div class="ttdef"><b>Definition:</b> ship.h:134</div></div>
+<div class="ttc" id="aclass_ship_html_aec078d68acef5aef3101a4d791c26de1"><div class="ttname"><a href="../../d3/d1d/class_ship.html#aec078d68acef5aef3101a4d791c26de1">Ship::subLifes</a></div><div class="ttdeci">void subLifes(int amountOfSubsLifes=1)</div><div class="ttdoc">функция отнимания жизней у судна</div><div class="ttdef"><b>Definition:</b> ship.cpp:60</div></div>
+<div class="ttc" id="aclass_ship_html_af3fd15aec7ffd1aadccdfde7111a9550"><div class="ttname"><a href="../../d3/d1d/class_ship.html#af3fd15aec7ffd1aadccdfde7111a9550">Ship::_isRightAnswer</a></div><div class="ttdeci">bool _isRightAnswer</div><div class="ttdoc">статус данного правильного ответа судна</div><div class="ttdef"><b>Definition:</b> ship.h:137</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/daf/ship_8h.html">ship.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

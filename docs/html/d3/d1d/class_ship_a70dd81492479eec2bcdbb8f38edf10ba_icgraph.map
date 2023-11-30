@@ -1,0 +1,5 @@
+<map id="Ship::setName" name="Ship::setName">
+<area shape="rect" id="node1" title="функция&#45;сеттер нового название судна" alt="" coords="277,45,387,70"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#afbb6028a9090959c13a8abfc573e05c4" title="функция обработки окончания однострочного текстового блока, отвечающее за названия судна" alt="" coords="5,5,229,45"/>
+<area shape="rect" id="node3" href="$d6/d0f/class_edit_com_table_window.html#adb7e30147cd7dbb8a62f16b7afb98020" title="функция обработки нажатия на кнопку &quot;Возврата&quot; (Return) однострочного текстового блока,..." alt="" coords="8,69,227,109"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="field.h" name="field.h">
+<area shape="rect" id="node1" title="Файл который содержит перечисление ECell и класс Field, отвечающий за игровое поле." alt="" coords="57,5,115,31"/>
+<area shape="rect" id="node2" href="$d4/dd0/field_8cpp.html" title=" " alt="" coords="5,79,76,104"/>
+<area shape="rect" id="node3" href="$d2/dd5/game_8h.html" title="Файл который содержит перечисление EGameState и класс Game, отвечающий за контроль и управление игрой..." alt="" coords="100,79,165,104"/>
+<area shape="rect" id="node4" href="$df/dd9/game_8cpp.html" title=" " alt="" coords="36,152,115,177"/>
+<area shape="rect" id="node5" href="$d9/d53/mainwindow_8h.html" title="Файл который содержит класс, отвечающий за главный экран приложения" alt="" coords="139,152,241,177"/>
+<area shape="rect" id="node6" href="$df/d0a/main_8cpp.html" title=" " alt="" coords="93,225,167,251"/>
+<area shape="rect" id="node7" href="$d8/dd9/mainwindow_8cpp.html" title=" " alt="" coords="191,225,309,251"/>
+</map>

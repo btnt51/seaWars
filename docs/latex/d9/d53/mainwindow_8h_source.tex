@@ -1,0 +1,128 @@
+\hypertarget{mainwindow_8h_source}{}\doxysection{mainwindow.\+h}
+\mbox{\hyperlink{mainwindow_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#ifndef\ MAINWINDOW\_H}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#define\ MAINWINDOW\_H}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QMainWindow>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QTime>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QPainter>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QResizeEvent>}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{game_8h}{game.h}}"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{shipname_8h}{shipname.h}}"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{deadshipwindow_8h}{deadshipwindow.h}}"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{winnerwindow_8h}{winnerwindow.h}}"{}}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{editcomtablewindow_8h}{editcomtablewindow.h}}"{}}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00029\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}};\ \}}
+\DoxyCodeLine{00030\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_main_window}{MainWindow}}\ :\ \textcolor{keyword}{public}\ QMainWindow}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window}{MainWindow}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \mbox{\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\string~MainWindow}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aad75236c74a5c340c3e18749a9b5eb4f}{resizeEvent}}(QResizeEvent\ *event)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ab30e2df74cd3c1778bc546da3d9b3efb}{on\_fieldTable\_cellClicked}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a1af75eca1df7b05f330959eb187ab93a}{on\_placeBut\_clicked}}();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ad449f47f919c88fd16c55fd6a311b548}{updateTimer}}();}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a8bc70626215bfbe408ea664ea91ba758}{initializeUI}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a9e56e724c70851a62c0294ecfec15934}{initializeFieldTable}}();}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a00f01f0b3d87a69a698093e1b54be59e}{initializeCommandsTable}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a5098bd70995dedcc0c0f021ee9609217}{initializeLayout}}();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a20ad0eb454422be4413c81e079b5913a}{initializeTimers}}();}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a0904d1962a7182b0cdf8f6177ae3ad18}{initializePposkLogo}}();}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_add1236fd226b73f0d9e352f5cb044f1d}{on\_shootBut\_clicked}}();}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a7778d2179a8c89de890ee3aff82e708f}{on\_timerBut\_clicked}}();}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a1110beccc4c985846923f837c82ca7b8}{updateCommandShip}}(\mbox{\hyperlink{class_ship}{Ship}}*\ ship);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_af01910751d176af9410fa3633474f192}{updateDeadShip}}(\mbox{\hyperlink{class_ship}{Ship}}*\ ship);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a25c2d8230b7609a98dd150d28a86963e}{on\_commandsTable\_cellClicked}}(\textcolor{keywordtype}{int}\ row,\ \textcolor{keywordtype}{int}\ column);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_af651aa0bac796089d80deb9a9fa97243}{convertCoordinates}}(std::tuple<int,\ int>\ pair);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ std::tuple<int,\ int>\ \mbox{\hyperlink{class_main_window_af651aa0bac796089d80deb9a9fa97243}{convertCoordinates}}(QString\ coordinates);}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ QColor*\ \mbox{\hyperlink{class_main_window_a2111434723e3181d0470638a0c92c934}{getColor}}();}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ad4f6e4b62d408f6d9162b3bad3c2113f}{setNameQstring}}(QString\ name);}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_ad5f434debe673c33bdf3a5f955507972}{setNameAndCoordinates}}(QString\ name,\ QString\ coordinates);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a7326befac70806a0ef7854cd0300cf57}{on\_addShipBut\_clicked}}();}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_aaf9e8654153aa29b2de127aa7d1a9d1c}{clearBackgroundFieldsTable}}();}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_af3bcf24a3fa3f0305f62e55b1ffbe1e2}{calculateLifes}}();}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a8403715ec328434ebf1e464c9be2eeb5}{on\_editShipsBut\_clicked}}();}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a6865908102f77692f29ef39dd4d9ee96}{on\_endBut\_clicked}}();}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00138\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_afc1c046a5974c9a1a68e0dc94cd9b30d}{setShip}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ column,\ \mbox{\hyperlink{class_ship}{Ship}}\ *ship);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \mbox{\hyperlink{class_ship}{Ship}}\ *\mbox{\hyperlink{class_main_window_a06188c2b90c5af2387273fde1ca4e699}{getShip}}(\textcolor{keywordtype}{size\_t}\ row,\ \textcolor{keywordtype}{size\_t}\ column);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ Ui::MainWindow\ *\mbox{\hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}};}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \mbox{\hyperlink{class_game}{Game}}*\ \mbox{\hyperlink{class_main_window_a2895bc0d4a64ed42dfb8080cb7264a3c}{\_game}};}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00160\ \ \ \ \ \ \ QImage*\ \mbox{\hyperlink{class_main_window_ab8b100386521d1f2fcf8cac7d7b07cbc}{\_anchor}};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00163\ \ \ \ \ \ \ QPixmap*\ \mbox{\hyperlink{class_main_window_aec04fb254587f8fd8cf5f03f074393ca}{\_pposkLogo}};}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00166\ \ \ \ \ \ \ QTime*\ \mbox{\hyperlink{class_main_window_af94eb71eb5184f93ff912c77dec70416}{\_time}};}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ QTimer*\ \mbox{\hyperlink{class_main_window_abce32dfbf36b68e286221cb26672dbe1}{\_timer}};}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00172\ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_a9ec0315567bc791b3d3a61f3f50c7407}{\_shipNameString}};}
+\DoxyCodeLine{00173\ }
+\DoxyCodeLine{00175\ \ \ \ \ \ \ QVector<Ship*>\ \mbox{\hyperlink{class_main_window_a60f010694879780ccc709a1c87fa4168}{\_ships}};}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00178\ \ \ \ \ \ \ QVector<QPair<int,\ int>>\ \mbox{\hyperlink{class_main_window_af84a834297a9e9899cf1f52bf3b73e2a}{\_blackList}};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00181\ \ \ \ \ \ \ QVector<QColor*>\ \mbox{\hyperlink{class_main_window_a80e6388577c7611b44a6d899b950733f}{\_colorList}};}
+\DoxyCodeLine{00182\ }
+\DoxyCodeLine{00184\ \ \ \ \ \ \ QString\ \mbox{\hyperlink{class_main_window_a3316691eb1af12457a3399b2cf1d9387}{\_coordinates}};}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \mbox{\hyperlink{class_ship_name}{ShipName}}*\ \mbox{\hyperlink{class_main_window_acfc4f0994e1b1bccb66f9a6e2a88b733}{\_shipForm}};}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_main_window_a0bbc77b7ba21b0d2cb4ef51695c77a96}{\_amountOfShots}};}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00193\ \ \ \ \ \ \ QSize\ \mbox{\hyperlink{class_main_window_a56d1991b761d9b420ca12349c496e7b2}{defSize}};}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_a8fc364f7411f32a9ffaaef6045c6db28}{initializeButtons}}();}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_main_window_acc57d86037d0e7babbd0370c07092ab9}{setDarkTheme}}();}
+\DoxyCodeLine{00200\ \};}
+\DoxyCodeLine{00201\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWINDOW\_H}}
+
+\end{DoxyCode}

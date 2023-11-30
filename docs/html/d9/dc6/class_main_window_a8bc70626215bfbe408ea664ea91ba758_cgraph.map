@@ -1,0 +1,10 @@
+<map id="MainWindow::initializeUI" name="MainWindow::initializeUI">
+<area shape="rect" id="node1" title="вспомогательная функция инициализации графического интерфейса пользователя" alt="" coords="5,184,172,209"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#a8fc364f7411f32a9ffaaef6045c6db28" title="функция инициализации кнопок графического интерфейса" alt="" coords="231,5,428,31"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#a00f01f0b3d87a69a698093e1b54be59e" title="вспомогталельная функция инциализации таблицы команд&#45;участников" alt="" coords="220,55,439,95"/>
+<area shape="rect" id="node4" href="$d9/dc6/class_main_window.html#a9e56e724c70851a62c0294ecfec15934" title="вспомогательная функция инциализации таблицы игрового поля" alt="" coords="239,119,419,159"/>
+<area shape="rect" id="node5" href="$d9/dc6/class_main_window.html#a5098bd70995dedcc0c0f021ee9609217" title="вспомогательная функция инициализации макета" alt="" coords="234,184,425,209"/>
+<area shape="rect" id="node6" href="$d9/dc6/class_main_window.html#a0904d1962a7182b0cdf8f6177ae3ad18" title="вспомогтаельная функции иницилзации изображения&#45;логотипа ППОСК" alt="" coords="221,233,438,259"/>
+<area shape="rect" id="node7" href="$d9/dc6/class_main_window.html#a20ad0eb454422be4413c81e079b5913a" title="вспомогательная функция инициализации таймера" alt="" coords="233,283,425,308"/>
+<area shape="rect" id="node8" href="$d9/dc6/class_main_window.html#acc57d86037d0e7babbd0370c07092ab9" title="функция установки темной темы графического интерфейса" alt="" coords="234,332,425,357"/>
+</map>

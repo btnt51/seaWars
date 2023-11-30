@@ -1,0 +1,5 @@
+<map id="Ship::getAnswerStatus" name="Ship::getAnswerStatus">
+<area shape="rect" id="node1" title="функция&#45;геттер статуса данного правильного ответа судном" alt="" coords="439,13,595,38"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#a8fc233a064429097429fa1f24fd65460" title="функция&#45;сеттер статуса данного правильного ответа судном" alt="" coords="235,13,391,38"/>
+<area shape="rect" id="node3" href="$d9/dc6/class_main_window.html#ab30e2df74cd3c1778bc546da3d9b3efb" title="функция обработка нажатия на таблицу" alt="" coords="5,5,187,45"/>
+</map>

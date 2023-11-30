@@ -1,0 +1,263 @@
+\hypertarget{class_field}{}\doxysection{Класс Field}
+\label{class_field}\index{Field@{Field}}
+
+
+класс-\/обёртка над массивом клеток игрового поля  
+
+
+
+
+{\ttfamily \#include $<$field.\+h$>$}
+
+
+
+Граф наследования\+:Field\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{d8/dcf/class_field__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Field\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{da/dc8/class_field__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_field_a3e804c92273d9159f413f227b535c672}{Field}} ()
+\begin{DoxyCompactList}\small\item\em конструктор поля \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_field_a01a426e6cdef543658d8b9ba5bc96477}{set\+Cell}} (size\+\_\+t row, size\+\_\+t column, \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}} cell)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер типа клетки \end{DoxyCompactList}\item 
+\mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}} \mbox{\hyperlink{class_field_aa176b943f299aff7645721c0aea868af}{get\+Cell}} (size\+\_\+t row, size\+\_\+t column)
+\begin{DoxyCompactList}\small\item\em функция-\/геттер типа клетки \end{DoxyCompactList}\item 
+QVector$<$ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}} $>$ \mbox{\hyperlink{class_field_a4bf2a1137a925fe3770eabbb9e356dbd}{get\+Field}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер массива клеток \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_field_a6ac30ecc650ecb2be9d277d4cf73053b}{check\+Dots\+Or}} (size\+\_\+t row, size\+\_\+t column)
+\begin{DoxyCompactList}\small\item\em вспомогательная функция проверки клетки с использованием логического \char`\"{}ИЛИ\char`\"{} \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_field_ad7cb2c1ca78483dc1ee45425337c4b6b}{check\+Dots\+And}} (size\+\_\+t row, size\+\_\+t column)
+\begin{DoxyCompactList}\small\item\em вспомогательная функция проверки клетки с использованием логического \char`\"{}И\char`\"{} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_field_abd5b876cdb484d678c20b0c03ba2536a}{clear}} ()
+\begin{DoxyCompactList}\small\item\em вспомогательная функция очистки массива клеток \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+QVector$<$ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}} $>$ \mbox{\hyperlink{class_field_a59f36b690570f1f24ded3a37e332da88}{\+\_\+field}}
+\begin{DoxyCompactList}\small\item\em массив клеток \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+класс-\/обёртка над массивом клеток игрового поля 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_field_a3e804c92273d9159f413f227b535c672}\label{class_field_a3e804c92273d9159f413f227b535c672}} 
+\index{Field@{Field}!Field@{Field}}
+\index{Field@{Field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{Field()}{Field()}}
+{\footnotesize\ttfamily Field\+::\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+конструктор поля 
+
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{dc/d67/class_field_a3e804c92273d9159f413f227b535c672_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_field_ad7cb2c1ca78483dc1ee45425337c4b6b}\label{class_field_ad7cb2c1ca78483dc1ee45425337c4b6b}} 
+\index{Field@{Field}!checkDotsAnd@{checkDotsAnd}}
+\index{checkDotsAnd@{checkDotsAnd}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{checkDotsAnd()}{checkDotsAnd()}}
+{\footnotesize\ttfamily bool Field\+::check\+Dots\+And (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+вспомогательная функция проверки клетки с использованием логического \char`\"{}И\char`\"{} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд клетки \\
+\hline
+{\em column} & столбец клетки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если клетка в пределах игрового поля иначе false 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d67/class_field_ad7cb2c1ca78483dc1ee45425337c4b6b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_field_a6ac30ecc650ecb2be9d277d4cf73053b}\label{class_field_a6ac30ecc650ecb2be9d277d4cf73053b}} 
+\index{Field@{Field}!checkDotsOr@{checkDotsOr}}
+\index{checkDotsOr@{checkDotsOr}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{checkDotsOr()}{checkDotsOr()}}
+{\footnotesize\ttfamily bool Field\+::check\+Dots\+Or (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{column }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+вспомогательная функция проверки клетки с использованием логического \char`\"{}ИЛИ\char`\"{} 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд клетки \\
+\hline
+{\em column} & столбец клетки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+true, если клетка в пределах игрового поля иначе false 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d67/class_field_a6ac30ecc650ecb2be9d277d4cf73053b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_field_abd5b876cdb484d678c20b0c03ba2536a}\label{class_field_abd5b876cdb484d678c20b0c03ba2536a}} 
+\index{Field@{Field}!clear@{clear}}
+\index{clear@{clear}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Field\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+вспомогательная функция очистки массива клеток 
+
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{dc/d67/class_field_abd5b876cdb484d678c20b0c03ba2536a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_field_aa176b943f299aff7645721c0aea868af}\label{class_field_aa176b943f299aff7645721c0aea868af}} 
+\index{Field@{Field}!getCell@{getCell}}
+\index{getCell@{getCell}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{getCell()}{getCell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}} Field\+::get\+Cell (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{column }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер типа клетки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд клетки \\
+\hline
+{\em column} & столбец клетки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+тип клетки 
+\end{DoxyReturn}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{dc/d67/class_field_aa176b943f299aff7645721c0aea868af_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d67/class_field_aa176b943f299aff7645721c0aea868af_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_field_a4bf2a1137a925fe3770eabbb9e356dbd}\label{class_field_a4bf2a1137a925fe3770eabbb9e356dbd}} 
+\index{Field@{Field}!getField@{getField}}
+\index{getField@{getField}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{getField()}{getField()}}
+{\footnotesize\ttfamily QVector$<$ \mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}} $>$ Field\+::get\+Field (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер массива клеток 
+
+\begin{DoxyReturn}{Возвращает}
+массив клеток 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_field_a01a426e6cdef543658d8b9ba5bc96477}\label{class_field_a01a426e6cdef543658d8b9ba5bc96477}} 
+\index{Field@{Field}!setCell@{setCell}}
+\index{setCell@{setCell}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{setCell()}{setCell()}}
+{\footnotesize\ttfamily void Field\+::set\+Cell (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{size\+\_\+t}]{column,  }\item[{\mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}}}]{cell }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер типа клетки 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & ряд клетки \\
+\hline
+{\em column} & столбец клетки \\
+\hline
+{\em cell} & новое значение клетки \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{dc/d67/class_field_a01a426e6cdef543658d8b9ba5bc96477_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{dc/d67/class_field_a01a426e6cdef543658d8b9ba5bc96477_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_field_a59f36b690570f1f24ded3a37e332da88}\label{class_field_a59f36b690570f1f24ded3a37e332da88}} 
+\index{Field@{Field}!\_field@{\_field}}
+\index{\_field@{\_field}!Field@{Field}}
+\doxysubsubsection{\texorpdfstring{\_field}{\_field}}
+{\footnotesize\ttfamily QVector$<$\mbox{\hyperlink{field_8h_a350b40b6b50e61b5933378d5ff9bd89f}{ECell}}$>$ Field\+::\+\_\+field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+массив клеток 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{field_8h}{field.\+h}}\item 
+\mbox{\hyperlink{field_8cpp}{field.\+cpp}}\end{DoxyCompactItemize}

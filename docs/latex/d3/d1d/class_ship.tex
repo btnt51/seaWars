@@ -1,0 +1,731 @@
+\hypertarget{class_ship}{}\doxysection{Класс Ship}
+\label{class_ship}\index{Ship@{Ship}}
+
+
+класс, отвечающий за работу и обработку сущности судна  
+
+
+
+
+{\ttfamily \#include $<$ship.\+h$>$}
+
+
+
+Граф наследования\+:Ship\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d0/dae/class_ship__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Ship\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{d1/d3a/class_ship__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Сигналы}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_ship_a7b07b013ae4373ab39d65a53b63895b0}{ship\+Is\+Dead}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em сигнал о том что судно уничтожено \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a722175894dd7a4bbbacd67e1aa0769e9}{update\+Ship\+Info}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$ship)
+\begin{DoxyCompactList}\small\item\em сигнал обновления судна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ship_aca015da17a09375ecb044b758dda3523}{Ship}} (QString name, int row, int column, QColor $\ast$clr=nullptr)
+\begin{DoxyCompactList}\small\item\em конструктор судна \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ship_a43cd6eeaffc11b49239b091621963a65}{$\sim$\+Ship}} ()
+\begin{DoxyCompactList}\small\item\em деструктор судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a70dd81492479eec2bcdbb8f38edf10ba}{set\+Name}} (QString name)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер нового название судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a395c39e9d53f0a3d0f721d1956b0b928}{set\+Coordinat}} (int row, int column)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер новых координат судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a0d164eae840870f5044397cce65f1297}{set\+Dead\+Status}} (bool is\+Dead)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер статуса уничтожения судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a69978093c1ee8dd862fe20666eae6dac}{set\+Ammount\+Of\+Lifes}} (unsigned int amount\+Of\+Lifes)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер количества жизней судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_abdbd6ad47c00da77a4745a812a2162d1}{add\+Lifes}} (unsigned int amount\+Of\+Added\+Lifes=1)
+\begin{DoxyCompactList}\small\item\em функция добавления жизней судну \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_aab8b4af926606b39f635b1f39c5772ac}{send\+Life}} (\mbox{\hyperlink{class_ship}{Ship}} $\ast$dead\+Ship)
+\begin{DoxyCompactList}\small\item\em функция отправки жизней уничтоженному судну ( отнимает 5 жизни у отпровителя и добавляет 5 жизней уничтоженному судну) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_aec078d68acef5aef3101a4d791c26de1}{sub\+Lifes}} (int amount\+Of\+Subs\+Lifes=1)
+\begin{DoxyCompactList}\small\item\em функция отнимания жизней у судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a9aa06161da7ad367ae13f553eda8f91b}{set\+Hit\+Status}} (bool hit\+Status)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер статуса раненния судна \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ship_a8fc233a064429097429fa1f24fd65460}{set\+Answer\+Status}} (bool answer\+Status)
+\begin{DoxyCompactList}\small\item\em функция-\/сеттер статуса данного правильного ответа судном \end{DoxyCompactList}\item 
+std\+::tuple$<$ int, int $>$ \mbox{\hyperlink{class_ship_a314f0f26111dc825e7b825e58c9eed87}{get\+Coordinats}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер коориданат судна \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_ship_ac4f4839d8fc68dc22e0c853747dce0e9}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер названия судна \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_ship_a8b8778c63a4bcd2c008fe60fbed47f3f}{get\+Amount\+Of\+Lifes}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер количества жизней судна \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ship_a18e35004e8b1acf3dccf2c17d27a0f08}{get\+Dead\+Status}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер статуса уничтожения судна \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ship_a45071fc26bf5a59c331ef58309c77a2e}{get\+Hit\+Status}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер статуса ранения судна \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ship_aa93dd347a3f7cd122b84659d16921320}{get\+Answer\+Status}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер статуса данного правильного ответа судном \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ship_a3875e4c774c5b39f740ed2b9a0bb7f0b}{get\+Number}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер порядкового номера судна \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ship_a1d45fed8cebb6c0d5d776083558ad5fb}{get\+Row}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер ряда судна \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ship_a256d1ca51a6d16a0db97f0bf6733ce29}{get\+Column}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер столбца судна \end{DoxyCompactList}\item 
+QColor $\ast$ \mbox{\hyperlink{class_ship_a8dcd2fc8a985fb084dbb6f030baa7cc8}{get\+Color}} ()
+\begin{DoxyCompactList}\small\item\em функция-\/геттер цвета судна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+QString \mbox{\hyperlink{class_ship_a90843e267ba86bed8ee44ca3fdda3d8c}{\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em название судна \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ship_a394c9df9e6908669024566e562cdea7f}{\+\_\+row}}
+\begin{DoxyCompactList}\small\item\em ряд судна \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ship_a7155bdffef6c9931a60fdf312973a684}{\+\_\+column}}
+\begin{DoxyCompactList}\small\item\em столбец судна \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ship_a3f22696ee9c41e970533e1fffc4092a1}{\+\_\+is\+Dead}}
+\begin{DoxyCompactList}\small\item\em статус уничтожения судна \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_ship_ae8f3dfbf4d35fb5ca6d8d4edec512eef}{\+\_\+lifes}}
+\begin{DoxyCompactList}\small\item\em количество жизней судна \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ship_af3fd15aec7ffd1aadccdfde7111a9550}{\+\_\+is\+Right\+Answer}}
+\begin{DoxyCompactList}\small\item\em статус данного правильного ответа судна \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ship_abf881ad4ef036278eb1659f4b00ef679}{\+\_\+is\+Hited}}
+\begin{DoxyCompactList}\small\item\em статус ранения судна \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_ship_a90fe5a1734e7c23fc4b7c5403e6b19f6}{\+\_\+number}}
+\begin{DoxyCompactList}\small\item\em порядковый номер судна \end{DoxyCompactList}\item 
+QColor $\ast$ \mbox{\hyperlink{class_ship_a45f6347daeb0e7988eb845e537ff8ba9}{\+\_\+color}}
+\begin{DoxyCompactList}\small\item\em указатель на цвет судна \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые статические данные}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{class_ship_a662063bcedebc62ee1144ad62fa908aa}{amount\+Of\+Ships}} = 0
+\begin{DoxyCompactList}\small\item\em статическое суммарное колчество судов \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+класс, отвечающий за работу и обработку сущности судна 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{class_ship_aca015da17a09375ecb044b758dda3523}\label{class_ship_aca015da17a09375ecb044b758dda3523}} 
+\index{Ship@{Ship}!Ship@{Ship}}
+\index{Ship@{Ship}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{Ship()}{Ship()}}
+{\footnotesize\ttfamily Ship\+::\+Ship (\begin{DoxyParamCaption}\item[{QString}]{name,  }\item[{int}]{row,  }\item[{int}]{column,  }\item[{QColor $\ast$}]{clr = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+конструктор судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & название судна \\
+\hline
+{\em row} & ряд судно \\
+\hline
+{\em column} & столбец судна \\
+\hline
+{\em clr} & указатель на цвет судна \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ship_a43cd6eeaffc11b49239b091621963a65}\label{class_ship_a43cd6eeaffc11b49239b091621963a65}} 
+\index{Ship@{Ship}!````~Ship@{$\sim$Ship}}
+\index{````~Ship@{$\sim$Ship}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ship()}{~Ship()}}
+{\footnotesize\ttfamily Ship\+::$\sim$\+Ship (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+деструктор судна 
+
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{class_ship_abdbd6ad47c00da77a4745a812a2162d1}\label{class_ship_abdbd6ad47c00da77a4745a812a2162d1}} 
+\index{Ship@{Ship}!addLifes@{addLifes}}
+\index{addLifes@{addLifes}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{addLifes()}{addLifes()}}
+{\footnotesize\ttfamily void Ship\+::add\+Lifes (\begin{DoxyParamCaption}\item[{unsigned int}]{amount\+Of\+Added\+Lifes = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+функция добавления жизней судну 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em amount\+Of\+Added\+Lifes} & количество добавляемых жизней \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_abdbd6ad47c00da77a4745a812a2162d1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a8b8778c63a4bcd2c008fe60fbed47f3f}\label{class_ship_a8b8778c63a4bcd2c008fe60fbed47f3f}} 
+\index{Ship@{Ship}!getAmountOfLifes@{getAmountOfLifes}}
+\index{getAmountOfLifes@{getAmountOfLifes}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getAmountOfLifes()}{getAmountOfLifes()}}
+{\footnotesize\ttfamily unsigned int Ship\+::get\+Amount\+Of\+Lifes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер количества жизней судна 
+
+\begin{DoxyReturn}{Возвращает}
+количество жизней судна 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a8b8778c63a4bcd2c008fe60fbed47f3f_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_aa93dd347a3f7cd122b84659d16921320}\label{class_ship_aa93dd347a3f7cd122b84659d16921320}} 
+\index{Ship@{Ship}!getAnswerStatus@{getAnswerStatus}}
+\index{getAnswerStatus@{getAnswerStatus}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getAnswerStatus()}{getAnswerStatus()}}
+{\footnotesize\ttfamily bool Ship\+::get\+Answer\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер статуса данного правильного ответа судном 
+
+\begin{DoxyReturn}{Возвращает}
+статус данного правильного ответа судном\+: true -\/ правильный, false -\/ неправильный 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_aa93dd347a3f7cd122b84659d16921320_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a8dcd2fc8a985fb084dbb6f030baa7cc8}\label{class_ship_a8dcd2fc8a985fb084dbb6f030baa7cc8}} 
+\index{Ship@{Ship}!getColor@{getColor}}
+\index{getColor@{getColor}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily QColor $\ast$ Ship\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер цвета судна 
+
+\begin{DoxyReturn}{Возвращает}
+цвет судна 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a8dcd2fc8a985fb084dbb6f030baa7cc8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a256d1ca51a6d16a0db97f0bf6733ce29}\label{class_ship_a256d1ca51a6d16a0db97f0bf6733ce29}} 
+\index{Ship@{Ship}!getColumn@{getColumn}}
+\index{getColumn@{getColumn}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getColumn()}{getColumn()}}
+{\footnotesize\ttfamily int Ship\+::get\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер столбца судна 
+
+\begin{DoxyReturn}{Возвращает}
+столбец судна 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a256d1ca51a6d16a0db97f0bf6733ce29_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a314f0f26111dc825e7b825e58c9eed87}\label{class_ship_a314f0f26111dc825e7b825e58c9eed87}} 
+\index{Ship@{Ship}!getCoordinats@{getCoordinats}}
+\index{getCoordinats@{getCoordinats}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getCoordinats()}{getCoordinats()}}
+{\footnotesize\ttfamily std\+::tuple$<$ int, int $>$ Ship\+::get\+Coordinats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер коориданат судна 
+
+\begin{DoxyReturn}{Возвращает}
+кортеж кооридант судна, первое Х, второе Y 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a314f0f26111dc825e7b825e58c9eed87_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a18e35004e8b1acf3dccf2c17d27a0f08}\label{class_ship_a18e35004e8b1acf3dccf2c17d27a0f08}} 
+\index{Ship@{Ship}!getDeadStatus@{getDeadStatus}}
+\index{getDeadStatus@{getDeadStatus}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getDeadStatus()}{getDeadStatus()}}
+{\footnotesize\ttfamily bool Ship\+::get\+Dead\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер статуса уничтожения судна 
+
+\begin{DoxyReturn}{Возвращает}
+статус уничтожения судна true -\/ унчитожен, false -\/ живой 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ship_a45071fc26bf5a59c331ef58309c77a2e}\label{class_ship_a45071fc26bf5a59c331ef58309c77a2e}} 
+\index{Ship@{Ship}!getHitStatus@{getHitStatus}}
+\index{getHitStatus@{getHitStatus}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getHitStatus()}{getHitStatus()}}
+{\footnotesize\ttfamily bool Ship\+::get\+Hit\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер статуса ранения судна 
+
+\begin{DoxyReturn}{Возвращает}
+статус ранения судна\+: true -\/ ранен, false -\/ неранен 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_ship_ac4f4839d8fc68dc22e0c853747dce0e9}\label{class_ship_ac4f4839d8fc68dc22e0c853747dce0e9}} 
+\index{Ship@{Ship}!getName@{getName}}
+\index{getName@{getName}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily QString Ship\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер названия судна 
+
+\begin{DoxyReturn}{Возвращает}
+название судна 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_ac4f4839d8fc68dc22e0c853747dce0e9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a3875e4c774c5b39f740ed2b9a0bb7f0b}\label{class_ship_a3875e4c774c5b39f740ed2b9a0bb7f0b}} 
+\index{Ship@{Ship}!getNumber@{getNumber}}
+\index{getNumber@{getNumber}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getNumber()}{getNumber()}}
+{\footnotesize\ttfamily int Ship\+::get\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер порядкового номера судна 
+
+\begin{DoxyReturn}{Возвращает}
+порядковый номер судна 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a3875e4c774c5b39f740ed2b9a0bb7f0b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a1d45fed8cebb6c0d5d776083558ad5fb}\label{class_ship_a1d45fed8cebb6c0d5d776083558ad5fb}} 
+\index{Ship@{Ship}!getRow@{getRow}}
+\index{getRow@{getRow}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{getRow()}{getRow()}}
+{\footnotesize\ttfamily int Ship\+::get\+Row (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+функция-\/геттер ряда судна 
+
+\begin{DoxyReturn}{Возвращает}
+ряд судна 
+\end{DoxyReturn}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a1d45fed8cebb6c0d5d776083558ad5fb_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_aab8b4af926606b39f635b1f39c5772ac}\label{class_ship_aab8b4af926606b39f635b1f39c5772ac}} 
+\index{Ship@{Ship}!sendLife@{sendLife}}
+\index{sendLife@{sendLife}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{sendLife()}{sendLife()}}
+{\footnotesize\ttfamily void Ship\+::send\+Life (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{dead\+Ship }\end{DoxyParamCaption})}
+
+
+
+функция отправки жизней уничтоженному судну ( отнимает 5 жизни у отпровителя и добавляет 5 жизней уничтоженному судну) 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em dead\+Ship} & указатель на уничтоженное судно \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_aab8b4af926606b39f635b1f39c5772ac_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{d3/d1d/class_ship_aab8b4af926606b39f635b1f39c5772ac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a69978093c1ee8dd862fe20666eae6dac}\label{class_ship_a69978093c1ee8dd862fe20666eae6dac}} 
+\index{Ship@{Ship}!setAmmountOfLifes@{setAmmountOfLifes}}
+\index{setAmmountOfLifes@{setAmmountOfLifes}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{setAmmountOfLifes()}{setAmmountOfLifes()}}
+{\footnotesize\ttfamily void Ship\+::set\+Ammount\+Of\+Lifes (\begin{DoxyParamCaption}\item[{unsigned int}]{amount\+Of\+Lifes }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер количества жизней судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em amount\+Of\+Lifes} & новое количество жизней судна \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a69978093c1ee8dd862fe20666eae6dac_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a69978093c1ee8dd862fe20666eae6dac_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a8fc233a064429097429fa1f24fd65460}\label{class_ship_a8fc233a064429097429fa1f24fd65460}} 
+\index{Ship@{Ship}!setAnswerStatus@{setAnswerStatus}}
+\index{setAnswerStatus@{setAnswerStatus}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{setAnswerStatus()}{setAnswerStatus()}}
+{\footnotesize\ttfamily void Ship\+::set\+Answer\+Status (\begin{DoxyParamCaption}\item[{bool}]{answer\+Status }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер статуса данного правильного ответа судном 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em answer\+Status} & новый статус данного правильного ответа судном\+: true -\/ правильный, false -\/ неправильный \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a8fc233a064429097429fa1f24fd65460_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a8fc233a064429097429fa1f24fd65460_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a395c39e9d53f0a3d0f721d1956b0b928}\label{class_ship_a395c39e9d53f0a3d0f721d1956b0b928}} 
+\index{Ship@{Ship}!setCoordinat@{setCoordinat}}
+\index{setCoordinat@{setCoordinat}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{setCoordinat()}{setCoordinat()}}
+{\footnotesize\ttfamily void Ship\+::set\+Coordinat (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер новых координат судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em row} & новый ряд судна \\
+\hline
+{\em column} & новый столбец судна \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_ship_a0d164eae840870f5044397cce65f1297}\label{class_ship_a0d164eae840870f5044397cce65f1297}} 
+\index{Ship@{Ship}!setDeadStatus@{setDeadStatus}}
+\index{setDeadStatus@{setDeadStatus}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{setDeadStatus()}{setDeadStatus()}}
+{\footnotesize\ttfamily void Ship\+::set\+Dead\+Status (\begin{DoxyParamCaption}\item[{bool}]{is\+Dead }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер статуса уничтожения судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em is\+Dead} & новый статус уничтожения судна true -\/ унчитожен, false -\/ живой \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a0d164eae840870f5044397cce65f1297_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a9aa06161da7ad367ae13f553eda8f91b}\label{class_ship_a9aa06161da7ad367ae13f553eda8f91b}} 
+\index{Ship@{Ship}!setHitStatus@{setHitStatus}}
+\index{setHitStatus@{setHitStatus}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{setHitStatus()}{setHitStatus()}}
+{\footnotesize\ttfamily void Ship\+::set\+Hit\+Status (\begin{DoxyParamCaption}\item[{bool}]{hit\+Status }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер статуса раненния судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em hit\+Status} & новый статус ранения судна\+: true -\/ ранен, false -\/ неранен \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{d3/d1d/class_ship_a9aa06161da7ad367ae13f553eda8f91b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a70dd81492479eec2bcdbb8f38edf10ba}\label{class_ship_a70dd81492479eec2bcdbb8f38edf10ba}} 
+\index{Ship@{Ship}!setName@{setName}}
+\index{setName@{setName}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Ship\+::set\+Name (\begin{DoxyParamCaption}\item[{QString}]{name }\end{DoxyParamCaption})}
+
+
+
+функция-\/сеттер нового название судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & новое название судна \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a70dd81492479eec2bcdbb8f38edf10ba_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a7b07b013ae4373ab39d65a53b63895b0}\label{class_ship_a7b07b013ae4373ab39d65a53b63895b0}} 
+\index{Ship@{Ship}!shipIsDead@{shipIsDead}}
+\index{shipIsDead@{shipIsDead}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{shipIsDead}{shipIsDead}}
+{\footnotesize\ttfamily void Ship\+::ship\+Is\+Dead (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+сигнал о том что судно уничтожено 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ship} & указатель на уничтоженное судно \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a7b07b013ae4373ab39d65a53b63895b0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_aec078d68acef5aef3101a4d791c26de1}\label{class_ship_aec078d68acef5aef3101a4d791c26de1}} 
+\index{Ship@{Ship}!subLifes@{subLifes}}
+\index{subLifes@{subLifes}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{subLifes()}{subLifes()}}
+{\footnotesize\ttfamily void Ship\+::sub\+Lifes (\begin{DoxyParamCaption}\item[{int}]{amount\+Of\+Subs\+Lifes = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+функция отнимания жизней у судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em amount\+Of\+Subs\+Lifes} & количество отнимаемых жизней у судна \\
+\hline
+\end{DoxyParams}
+Граф вызовов\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{d3/d1d/class_ship_aec078d68acef5aef3101a4d791c26de1_cgraph}
+\end{center}
+\end{figure}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_aec078d68acef5aef3101a4d791c26de1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_ship_a722175894dd7a4bbbacd67e1aa0769e9}\label{class_ship_a722175894dd7a4bbbacd67e1aa0769e9}} 
+\index{Ship@{Ship}!updateShipInfo@{updateShipInfo}}
+\index{updateShipInfo@{updateShipInfo}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{updateShipInfo}{updateShipInfo}}
+{\footnotesize\ttfamily void Ship\+::update\+Ship\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ship}{Ship}} $\ast$}]{ship }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+сигнал обновления судна 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em ship} & указатель на обновленное судно \\
+\hline
+\end{DoxyParams}
+Граф вызова функции\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{d3/d1d/class_ship_a722175894dd7a4bbbacd67e1aa0769e9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{class_ship_a45f6347daeb0e7988eb845e537ff8ba9}\label{class_ship_a45f6347daeb0e7988eb845e537ff8ba9}} 
+\index{Ship@{Ship}!\_color@{\_color}}
+\index{\_color@{\_color}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_color}{\_color}}
+{\footnotesize\ttfamily QColor$\ast$ Ship\+::\+\_\+color\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+указатель на цвет судна 
+
+\mbox{\Hypertarget{class_ship_a7155bdffef6c9931a60fdf312973a684}\label{class_ship_a7155bdffef6c9931a60fdf312973a684}} 
+\index{Ship@{Ship}!\_column@{\_column}}
+\index{\_column@{\_column}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_column}{\_column}}
+{\footnotesize\ttfamily int Ship\+::\+\_\+column\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+столбец судна 
+
+\mbox{\Hypertarget{class_ship_a3f22696ee9c41e970533e1fffc4092a1}\label{class_ship_a3f22696ee9c41e970533e1fffc4092a1}} 
+\index{Ship@{Ship}!\_isDead@{\_isDead}}
+\index{\_isDead@{\_isDead}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_isDead}{\_isDead}}
+{\footnotesize\ttfamily bool Ship\+::\+\_\+is\+Dead\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+статус уничтожения судна 
+
+\mbox{\Hypertarget{class_ship_abf881ad4ef036278eb1659f4b00ef679}\label{class_ship_abf881ad4ef036278eb1659f4b00ef679}} 
+\index{Ship@{Ship}!\_isHited@{\_isHited}}
+\index{\_isHited@{\_isHited}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_isHited}{\_isHited}}
+{\footnotesize\ttfamily bool Ship\+::\+\_\+is\+Hited\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+статус ранения судна 
+
+\mbox{\Hypertarget{class_ship_af3fd15aec7ffd1aadccdfde7111a9550}\label{class_ship_af3fd15aec7ffd1aadccdfde7111a9550}} 
+\index{Ship@{Ship}!\_isRightAnswer@{\_isRightAnswer}}
+\index{\_isRightAnswer@{\_isRightAnswer}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_isRightAnswer}{\_isRightAnswer}}
+{\footnotesize\ttfamily bool Ship\+::\+\_\+is\+Right\+Answer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+статус данного правильного ответа судна 
+
+\mbox{\Hypertarget{class_ship_ae8f3dfbf4d35fb5ca6d8d4edec512eef}\label{class_ship_ae8f3dfbf4d35fb5ca6d8d4edec512eef}} 
+\index{Ship@{Ship}!\_lifes@{\_lifes}}
+\index{\_lifes@{\_lifes}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_lifes}{\_lifes}}
+{\footnotesize\ttfamily unsigned int Ship\+::\+\_\+lifes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+количество жизней судна 
+
+\mbox{\Hypertarget{class_ship_a90843e267ba86bed8ee44ca3fdda3d8c}\label{class_ship_a90843e267ba86bed8ee44ca3fdda3d8c}} 
+\index{Ship@{Ship}!\_name@{\_name}}
+\index{\_name@{\_name}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily QString Ship\+::\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+название судна 
+
+\mbox{\Hypertarget{class_ship_a90fe5a1734e7c23fc4b7c5403e6b19f6}\label{class_ship_a90fe5a1734e7c23fc4b7c5403e6b19f6}} 
+\index{Ship@{Ship}!\_number@{\_number}}
+\index{\_number@{\_number}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_number}{\_number}}
+{\footnotesize\ttfamily int Ship\+::\+\_\+number\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+порядковый номер судна 
+
+\mbox{\Hypertarget{class_ship_a394c9df9e6908669024566e562cdea7f}\label{class_ship_a394c9df9e6908669024566e562cdea7f}} 
+\index{Ship@{Ship}!\_row@{\_row}}
+\index{\_row@{\_row}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{\_row}{\_row}}
+{\footnotesize\ttfamily int Ship\+::\+\_\+row\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ряд судна 
+
+\mbox{\Hypertarget{class_ship_a662063bcedebc62ee1144ad62fa908aa}\label{class_ship_a662063bcedebc62ee1144ad62fa908aa}} 
+\index{Ship@{Ship}!amountOfShips@{amountOfShips}}
+\index{amountOfShips@{amountOfShips}!Ship@{Ship}}
+\doxysubsubsection{\texorpdfstring{amountOfShips}{amountOfShips}}
+{\footnotesize\ttfamily int Ship\+::amount\+Of\+Ships = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+статическое суммарное колчество судов 
+
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ship_8h}{ship.\+h}}\item 
+\mbox{\hyperlink{ship_8cpp}{ship.\+cpp}}\end{DoxyCompactItemize}

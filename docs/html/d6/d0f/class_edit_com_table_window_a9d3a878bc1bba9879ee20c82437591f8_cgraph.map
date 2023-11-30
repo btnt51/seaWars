@@ -1,0 +1,7 @@
+<map id="EditComTableWindow::EditComTableWindow" name="EditComTableWindow::EditComTableWindow">
+<area shape="rect" id="node1" title="конструктор окна" alt="" coords="5,37,164,77"/>
+<area shape="rect" id="node2" href="$d6/d0f/class_edit_com_table_window.html#a53b1f146fd4ad5519500c76fcae6f7fc" title="вспомогательная функция, использующаяся для заполнения QComboBox живых судов" alt="" coords="212,5,363,45"/>
+<area shape="rect" id="node4" href="$d6/d0f/class_edit_com_table_window.html#af9cdc43038af1b742b41cc73c9af517b" title="функция обновления однострочного текстового блока, отвечающее за количество жизней у судна" alt="" coords="212,69,363,109"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="437,21,546,46"/>
+<area shape="rect" id="node5" href="$d3/d1d/class_ship.html#a8b8778c63a4bcd2c008fe60fbed47f3f" title="функция&#45;геттер количества жизней судна" alt="" coords="411,77,572,102"/>
+</map>

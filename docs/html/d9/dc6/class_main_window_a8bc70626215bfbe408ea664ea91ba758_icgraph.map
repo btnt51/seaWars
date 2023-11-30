@@ -1,0 +1,4 @@
+<map id="MainWindow::initializeUI" name="MainWindow::initializeUI">
+<area shape="rect" id="node1" title="вспомогательная функция инициализации графического интерфейса пользователя" alt="" coords="233,5,400,31"/>
+<area shape="rect" id="node2" href="$d9/dc6/class_main_window.html#a996c5a2b6f77944776856f08ec30858d" title="конструктор главного экрана" alt="" coords="5,5,185,31"/>
+</map>

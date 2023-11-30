@@ -1,0 +1,4 @@
+<map id="MainWindow::getShip" name="MainWindow::getShip">
+<area shape="rect" id="node1" title="функция получения указателя на судно" alt="" coords="5,5,155,31"/>
+<area shape="rect" id="node2" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="203,5,337,31"/>
+</map>

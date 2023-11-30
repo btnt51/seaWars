@@ -1,0 +1,41 @@
+\hypertarget{deadshipwindow_8h_source}{}\doxysection{deadshipwindow.\+h}
+\mbox{\hyperlink{deadshipwindow_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ DEADSHIPWINDOW\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ DEADSHIPWINDOW\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ship_8h}{ship.h}}"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QStandardItemModel>}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdead_ship_window}{deadShipWindow}};}
+\DoxyCodeLine{00022\ \ \ \ \ \}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classdead_ship_window}{deadShipWindow}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00027\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classdead_ship_window}{deadShipWindow}}(QVector<Ship\ *>\ shipList,\ \mbox{\hyperlink{class_ship}{Ship}}\ *deadShip\ =\ \textcolor{keyword}{nullptr},\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classdead_ship_window_a12786cf373d9c1792ffc7ad262f6ea23}{\string~deadShipWindow}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdead_ship_window_a8d8a1738f9714213c7f4399e5143bb0d}{on\_buttonBox\_accepted}}();}
+\DoxyCodeLine{00044\ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classdead_ship_window_aa72e270374b22dc609f5e71fa4e8f5c9}{addItem}}(\mbox{\hyperlink{class_ship}{Ship}}\ *ship);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_ship}{Ship}}*\ \mbox{\hyperlink{classdead_ship_window_ad782d4e42263d49e666702c205875d2e}{getShip}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00055\ \ \ \ \ Ui::deadShipWindow\ *\mbox{\hyperlink{classdead_ship_window_a530a4da2c22dba11b4d2c5ff5f88c6cb}{ui}};}
+\DoxyCodeLine{00057\ \ \ \ \ QVector<Ship*\ >\ \mbox{\hyperlink{classdead_ship_window_a0869d6ccba2f168441e392dc7b9e13f9}{\_shipsList}};}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{class_ship}{Ship}}*\ \mbox{\hyperlink{classdead_ship_window_a47f65c3feaa0bc0d3a6777c00cc7bbe6}{\_deadShip}};}
+\DoxyCodeLine{00060\ \};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DEADSHIPWINDOW\_H}}
+
+\end{DoxyCode}

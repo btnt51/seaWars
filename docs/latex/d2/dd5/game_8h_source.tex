@@ -1,0 +1,61 @@
+\hypertarget{game_8h_source}{}\doxysection{game.\+h}
+\mbox{\hyperlink{game_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ GAME\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ GAME\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QTimer>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QRandomGenerator>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{field_8h}{field.h}}"{}}}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGameState}}\ \{}
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa8f638f3ce0919f4bd420a2ed77cb3b00}{NOTSTARTED}},}
+\DoxyCodeLine{00027\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa13d000b4d7dc70d90239b7430d1eb6b2}{START}},}
+\DoxyCodeLine{00028\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa83d15ce98a5839ec86db2d3dfb23dfea}{PLACING\_SHIPS}},}
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad50cf309d7568040619ed26ee6835a84}{GAME}},}
+\DoxyCodeLine{00030\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaad126f509c35e1661274f8b72693c7848}{QUESTION}},}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaabd11813ad5c217a8d8d07c1d6cb01b1e}{SHOT}},}
+\DoxyCodeLine{00032\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaa17ba9bae1b8d7e8d6c12d46ec58e0769}{TIMER}},\ }
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aaadc6f24fd6915a3f2786a1b7045406924}{END}}}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game}{Game}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \ \ Q\_OBJECT}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{class_field}{Field}}\ *\mbox{\hyperlink{class_game_ace4df0b7a9e827efe27dc31c37b7f462}{getField}}();}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00050\ \ \ std::tuple<int,\ int>\ \mbox{\hyperlink{class_game_a3a80bdbd9caccffddc1dd29f26fe8f1e}{getRandomValueForXY}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ std::tuple<int,\ int>\ \mbox{\hyperlink{class_game_a3a80bdbd9caccffddc1dd29f26fe8f1e}{getRandomValueForXY}}(QVector<QPair<int,\ int>\ >\ blackList);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a8bf2784cf8402b061e61a8c29f86ca66}{setGameState}}(\mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGameState}}\ gameState);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00063\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGameState}}\ \mbox{\hyperlink{class_game_a73e32e85469afb28297752f4246b2505}{getGameState}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_a3ee78adbf253678b6c00e391b30f10fe}{clearThisRoundShots}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ signals:}
+\DoxyCodeLine{00070\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_ac9f4eacc2fcd7c362700f7d4f1a49216}{sendUpdatedShipToTable}}(\mbox{\hyperlink{class_ship}{Ship}}\ *ship);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00074\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_af5735cfcdcabb02b707406fb5a15601f}{getUpdatedShip}}(\mbox{\hyperlink{class_ship}{Ship}}\ *ship);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00080\ \ \ \mbox{\hyperlink{class_field}{Field}}\ *\mbox{\hyperlink{class_game_a75f29334acabb1fc3450b43ee04481e7}{\_field}};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00083\ \ \ \mbox{\hyperlink{game_8h_a0cfce4c19b5bb6dba9a8417d745cb7aa}{EGameState}}\ \mbox{\hyperlink{class_game_a45a146dd1f47a462e5b7ab962f872865}{\_currentState}};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00086\ \ \ QVector<QPair<int,\ int>\ >\ \mbox{\hyperlink{class_game_ae3db165815a39a7582fea6eb137a00f0}{thisRoundShots}};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GAME\_H}}
+
+\end{DoxyCode}

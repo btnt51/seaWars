@@ -1,0 +1,5 @@
+<map id="Ship::setAnswerStatus" name="Ship::setAnswerStatus">
+<area shape="rect" id="node1" title="функция&#45;сеттер статуса данного правильного ответа судном" alt="" coords="5,31,161,56"/>
+<area shape="rect" id="node2" href="$d3/d1d/class_ship.html#aa93dd347a3f7cd122b84659d16921320" title="функция&#45;геттер статуса данного правильного ответа судном" alt="" coords="209,5,365,31"/>
+<area shape="rect" id="node3" href="$d3/d1d/class_ship.html#ac4f4839d8fc68dc22e0c853747dce0e9" title="функция&#45;геттер названия судна" alt="" coords="233,55,342,80"/>
+</map>

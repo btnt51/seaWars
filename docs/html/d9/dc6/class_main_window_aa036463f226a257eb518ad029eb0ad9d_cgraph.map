@@ -1,0 +1,7 @@
+<map id="MainWindow::convertCoordinates" name="MainWindow::convertCoordinates">
+<area shape="rect" id="node1" title="вспомогательная функция конвертации координат из строки в кортеж с целыми числами" alt="" coords="5,31,224,56"/>
+<area shape="rect" id="node2" href="$dd/d1f/class_game.html#a3a80bdbd9caccffddc1dd29f26fe8f1e" title="функция генерации кортежа координат" alt="" coords="272,31,473,56"/>
+<area shape="rect" id="node3" href="$df/dd9/game_8cpp.html#a43c5d50f121fb4d27c5561d61d4d45f3" title=" " alt="" coords="531,5,611,31"/>
+<area shape="rect" id="node4" href="$dc/d67/class_field.html#aa176b943f299aff7645721c0aea868af" title="функция&#45;геттер типа клетки" alt="" coords="521,55,620,80"/>
+<area shape="rect" id="node5" href="$dc/d67/class_field.html#a6ac30ecc650ecb2be9d277d4cf73053b" title="вспомогательная функция проверки клетки с использованием логического &quot;ИЛИ&quot;" alt="" coords="668,55,803,80"/>
+</map>

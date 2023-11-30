@@ -1,0 +1,5 @@
+<map id="MainWindow::updateTimer" name="MainWindow::updateTimer">
+<area shape="rect" id="node1" title="функция обновления таймера" alt="" coords="5,31,183,56"/>
+<area shape="rect" id="node2" href="$dd/d1f/class_game.html#a73e32e85469afb28297752f4246b2505" title="функция&#45;геттер текущего состояния/стадии игры" alt="" coords="231,5,380,31"/>
+<area shape="rect" id="node3" href="$dd/d1f/class_game.html#a8bf2784cf8402b061e61a8c29f86ca66" title="функция&#45;сеттер текущего состояния/стадии игры" alt="" coords="231,55,380,80"/>
+</map>
